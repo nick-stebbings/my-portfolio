@@ -1,35 +1,34 @@
 import React from 'react';
 
 import CustomLink from '@/components/CustomLink';
+import { ROUTE_STRINGS } from '@/routes/Routes';
 
 export default function Home() {
   return (
     <>
-      <main>
-        <section className='bg-dark'>
-          <div className='flex flex-col items-center justify-center min-h-screen text-white layout'>
-            <CustomLink href='https://github.com/theodorusclarence/vite-react-tailwind-starter'>
-              <h1>Vite React Tailwind Starter</h1>
-            </CustomLink>
-            <p className='mb-4'>
-              By{' '}
-              <CustomLink href='https://theodorusclarence.com'>
-                Theodorus Clarence
-              </CustomLink>
-            </p>
-
-            <div className='mt-8 text-dark'>
-              <p className='text-[#ffe347]'>JIT is on</p>
-            </div>
-            <footer className='absolute text-gray-300 bottom-2'>
-              © {new Date().getFullYear()}{' '}
-              <CustomLink href='https://theodorusclarence.com'>
-                Theodorus Clarence
-              </CustomLink>
-            </footer>
-          </div>
-        </section>
-      </main>
+      <header className='w-full min-h-screen, font-sans, bg-gray-900'>
+        <div>
+          <a
+            href='#'
+            className='flex items-center justify-center w-12 h-12 text-xl text-gray-900 bg-white rounded-full'
+          >
+            ES
+          </a>
+        </div>
+        <nav className='border-1 grid w-full grid-cols-4 pb-24 border-white'>
+          <ul>
+            {ROUTE_STRINGS.map((route, idx) => (
+              <li
+                key={idx}
+                className='text-xl tracking-widest text-white uppercase'
+              >
+                {route}
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </header>
+      <main>hi</main>
     </>
   );
 }

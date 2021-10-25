@@ -2,5 +2,10 @@
     "css.validate": false,
     "editor.formatOnSave": true,
     "editor.tabSize": 2,
-    "prettier.tabWidth": 2
+    "prettier.tabWidth": 2,
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#332650",
+        "titleBar.activeBackground": "#473670",
+        "titleBar.activeForeground": "#FCFBFD"
+    }
 }

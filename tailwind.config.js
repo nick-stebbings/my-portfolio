@@ -7,12 +7,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        primary: ['Inter', ...fontFamily.sans],
+        primary: ['Poppins', ...fontFamily.sans],
       },
       colors: {
-        primary: {
-          400: '#00E0F3',
-          500: '#00c4fd',
+        gray: {
+          900: '#a1a1a1',
         },
         dark: '#333333',
       },

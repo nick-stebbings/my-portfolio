@@ -8,4 +8,10 @@ export default defineConfig({
     alias: [{ find: '@', replacement: path.resolve(__dirname, '/src') }],
   },
   plugins: [reactRefresh()],
+
+  server: {
+    watch: {
+      usePolling: true,
+    },
+  },
 });
