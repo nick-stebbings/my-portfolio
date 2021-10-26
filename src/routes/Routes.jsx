@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-export const ROUTE_STRINGS = ['Interests', 'Background', 'Projects'];
+export const ROUTE_STRINGS = ['Projects', 'Skills', 'Background'];
 
 import Home from '@/pages/Home';
 

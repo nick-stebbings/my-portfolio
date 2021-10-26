@@ -7,13 +7,19 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        primary: ['Poppins', ...fontFamily.sans],
+        sans: ['Poppins', 'sans-serif'],
       },
       colors: {
         gray: {
-          900: '#a1a1a1',
+          900: '#1A1A1A',
         },
-        dark: '#333333',
+        accent: '#FEB002',
+      },
+      letterSpacing: {
+        widest: '0.125rem',
+      },
+      lineHeight: {
+        'extra-loose': '2.5',
       },
     },
   },
