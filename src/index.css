@@ -127,7 +127,7 @@ footer#contact {
 
   /* Write your own custom base styles here */
   h1 {
-    @apply md:text-5xl font-sans text-3xl font-bold;
+    @apply md:text-5xl mb-12 font-sans text-3xl font-bold;
   }
 
   h2 {

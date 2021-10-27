@@ -1,7 +1,6 @@
 import React, { useState, useRef } from 'react';
 import PROJECT_INFO from '@/routes/projectData';
 
-import dotsSvg from '/images/dots.svg?import&component';
 import SmoothScroll from 'smooth-scroll';
 import Modal from '@/components/Modal';
 import Header from '@/components/Header';
@@ -11,8 +10,11 @@ export default function Home() {
   const [currentModalContent, setCurrentModalContent] = useState({
     title: '1',
     mainText: '',
+    subText: '',
     img: '',
     gitLink: '',
+    langs: '',
+    skills: [],
   });
   const modalRef = useRef();
   const scroll = new SmoothScroll('a[href*="#"', {
