@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <header className='main-header md:pb-24 gap-y-4 gap-x-2 grid w-full'>
       <nav className='fixed top-0 left-0 z-50 grid w-full bg-gray-900'>
-        <div className='md:col-start-2 place-items-center md:pl-0 md:py-2 col-span-2 col-start-1 pt-4 pl-4'>
+        <div className='md:col-start-2 md:pl-0 md:py-2 grid items-center col-span-2 col-start-1 py-4 pl-4'>
           <a
             href='#top'
             className='md:text-xl flex items-center justify-center w-12 h-12 text-gray-900 bg-white rounded-full'
@@ -21,7 +21,7 @@ export default function Header() {
           {ROUTE_STRINGS.map((route, idx) => (
             <li
               key={idx}
-              className='md:mr-0 md:mt-0 hover:underline sm:text-lg md:py-4 py-2 mt-2 mr-4 text-xl tracking-widest text-white uppercase'
+              className='md:mr-0 md:mt-0 hover:underline sm:text-lg md:py-4 md:text-xl py-1 mt-1 mr-4 text-sm tracking-widest text-white uppercase'
             >
               <a href={`#${route.toLowerCase()}`}>{route}</a>
             </li>
@@ -32,8 +32,8 @@ export default function Header() {
         <span className='pl-5 text-[13px] text-white/50 font-medium tracking-widest uppercase border-l border-white/50'>
           Portfolio for
         </span>
-        <div className='mt-3 px-6 pt-12 text-[60px] text-white'>
-          <h1 className='sm:text-[80px] md:text-[100px]'>
+        <div className='mt-2 md:mt-3 pt-2 md:pt-12 text-[60px] text-white'>
+          <h1 className='sm:text-[70px] md:text-[80px] xl:text-[100px]'>
             Full-Stack Development
           </h1>
         </div>

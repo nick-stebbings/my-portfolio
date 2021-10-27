@@ -29,17 +29,17 @@ const SKILLS = {
   },
 };
 const skillStars = (skillsObj) => (
-  <p className='p-5'>
+  <div className='p-5'>
     <ul className='list-item mt-2 text-sm text-center'>
       {Object.entries(skillsObj).map(([lang, stars], idx) => {
         return (
           <li
             key={idx}
-            className='flex flex-no-wrap items-center justify-between w-full text-semibold text[#353535]'
+            className='flex flex-no-wrap items-center justify-around w-full text-semibold text[#353535]'
           >
-            <div className='text-gray-900'>{lang}</div>
-            <div className='h-12'>
-              <div className='flex'>
+            <div className='w-1/5 mr-1 text-gray-900'>{lang}</div>
+            <div className='flex justify-start h-12'>
+              <div className='flex items-center w-1/2'>
                 {[...new Array(stars)].map((num, idx) => fullStar(idx))}
                 {[...new Array(5 - stars)].map((num, idx) => emptyStar(idx))}
               </div>
@@ -48,7 +48,7 @@ const skillStars = (skillsObj) => (
         );
       })}
     </ul>
-  </p>
+  </div>
 );
 
 import SmoothScroll from 'smooth-scroll';
@@ -57,10 +57,10 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 const fullStar = (idx) => (
-  <div key={idx} className='text-blue-500'>
+  <div key={idx} className='pt-1 text-blue-500'>
     <svg
       xmlns='http://www.w3.org/2000/svg'
-      className='w-6 h-6'
+      className=' w-6 h-6'
       viewBox='0 0 24 24'
       fill='currentColor'
     >
@@ -69,7 +69,7 @@ const fullStar = (idx) => (
   </div>
 );
 const emptyStar = (idx) => (
-  <div key={idx} className='text-gray-400'>
+  <div key={idx} className='pr-1 text-gray-400'>
     <svg
       xmlns='http://www.w3.org/2000/svg'
       className='w-5 h-5'
@@ -100,6 +100,8 @@ export default function Home() {
     skills: [],
   });
   const [firstChecked, setFirstChecked] = useState(true);
+  const [secondChecked, setSecondChecked] = useState(false);
+  const [thirdChecked, setThirdChecked] = useState(false);
   const modalRef = useRef();
   const scroll = new SmoothScroll('a[href*="#"', {
     speed: 900,
@@ -129,7 +131,7 @@ export default function Home() {
         <Header />
         <section
           id='projects'
-          className='bg-gray-50 md:pt-16 md:pb-24 main-content-projects py-12'
+          className='bg-gray-50 md:pt-16 md:pb-24 main-content-projects md:py-16 pt-24 pb-4'
         >
           <div className='portfolio md:px-16 grid w-full h-full grid-cols-5 gap-6 px-4'>
             <div
@@ -190,7 +192,7 @@ export default function Home() {
         </section>
         <section
           id='skills'
-          className='main-content-skills flex flex-col items-center justify-around pt-12 bg-gray-200'
+          className='main-content-skills md:pt-12 flex flex-col items-center justify-around pt-24 bg-gray-200'
         >
           <h2 className='tracking-wider text-gray-900'>Skills Overview</h2>
           <div className='md:w-3/4 md:p-8 grid w-full h-full p-4 mx-auto'>
@@ -202,7 +204,10 @@ export default function Home() {
                   type='checkbox'
                   name='tabs'
                   defaultChecked={firstChecked}
-                  onChange={() => setFirstChecked(!firstChecked)}
+                  onChange={() => {
+                    setFirstChecked(!firstChecked);
+                    !firstChecked && setSecondChecked(true);
+                  }}
                 />
                 <label
                   className='block p-4 text-2xl leading-normal cursor-pointer'
@@ -220,6 +225,11 @@ export default function Home() {
                   id='tab-multi-two'
                   type='checkbox'
                   name='tabs'
+                  defaultChecked={secondChecked}
+                  onChange={() => {
+                    setSecondChecked(!secondChecked);
+                    !secondChecked && setThirdChecked(true);
+                  }}
                 />
                 <label
                   className='block p-4 text-2xl leading-normal cursor-pointer'
@@ -228,7 +238,7 @@ export default function Home() {
                   Applications
                 </label>
                 <div className='tab-content hover:border-blue-600 overflow-hidden leading-normal bg-gray-100 border-l-2 border-blue-500'>
-                  <p className='p-5'>{skillStars(SKILLS['apps'])}</p>
+                  <p className='w-full p-5'>{skillStars(SKILLS['apps'])}</p>
                 </div>
               </div>
               <div className='tab w-full overflow-hidden border-t'>
@@ -237,6 +247,7 @@ export default function Home() {
                   id='tab-multi-three'
                   type='checkbox'
                   name='tabs'
+                  defaultChecked={thirdChecked}
                 />
                 <label
                   className='block p-4 text-2xl leading-normal cursor-pointer'
