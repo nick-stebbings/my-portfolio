@@ -8,6 +8,7 @@ export default function ProjectCard({
   subText,
   demoLink,
   gitLink,
+  blogLink,
   skills,
   langs,
   libs,
@@ -40,7 +41,7 @@ export default function ProjectCard({
           </span>
           <h3>{subText}</h3>
           {mainText.split('//').map((para, idx) => (
-            <p className='mt-8 text-base text-gray-700' key={idx}>
+            <p className='mt-4 text-base text-gray-700' key={idx}>
               {para}
             </p>
           ))}
@@ -60,7 +61,7 @@ export default function ProjectCard({
                 clipRule='evenodd'
               />
             </svg>
-            <ul className='list-item mt-2'>
+            <ul className='list-item mt-2 text-sm text-center'>
               {libs && libs.map((lib, idx) => <li key={idx}>{lib}</li>)}
             </ul>
           </div>
@@ -73,7 +74,7 @@ export default function ProjectCard({
             >
               <path d='M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z' />
             </svg>
-            <ul className='list-item mt-2'>
+            <ul className='list-item mt-2 text-sm text-center'>
               {skills && skills.map((skill, idx) => <li key={idx}>{skill}</li>)}
             </ul>
           </div>
@@ -123,6 +124,34 @@ export default function ProjectCard({
                   </svg>
                 </div>
                 <div className='text-sm text-center'>Live Demo</div>
+              </a>
+            </div>
+          )}
+          {blogLink && (
+            <div className='flex items-center justify-center'>
+              <a
+                href={blogLink}
+                className='hover:text-blue-600'
+                target='_blank'
+              >
+                <div className='hover:text-blue-600 text-gray-900'>
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    className='w-24 h-24'
+                    fill='none'
+                    viewBox='-24 -24 72 72'
+                    fill='currentColor'
+                    alt='related medium article'
+                  >
+                    <path
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      strokeWidth={2}
+                      d='M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z'
+                    />
+                  </svg>
+                </div>
+                <div className='text-sm text-center'>Related Blog</div>
               </a>
             </div>
           )}

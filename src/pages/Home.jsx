@@ -22,7 +22,7 @@ export default function Home() {
   const modalRef = useRef();
   const scroll = new SmoothScroll('a[href*="#"', {
     speed: 900,
-    offset: 150,
+    offset: 50,
     clip: true,
   });
 
@@ -48,9 +48,9 @@ export default function Home() {
         <Header />
         <section
           id='projects'
-          className='bg-gray-50 md:py-24 main-content-projects py-12'
+          className='bg-gray-50 md:pt-16 md:pb-24 main-content-projects py-12'
         >
-          <div className='portfolio md:px-16 grid w-full h-full grid-cols-5 gap-5 px-4'>
+          <div className='portfolio md:px-16 grid w-full h-full grid-cols-5 gap-6 px-4'>
             <div
               style={{
                 backgroundImage: `url(${PROJECT_INFO['habitFractV2'].img})`,
@@ -58,16 +58,16 @@ export default function Home() {
               className='portfolio-item square'
               onClick={() => openPortfolioItemModal('habitFractV2')}
             >
-              1
+              <span className='project-tag'>HabitFract</span>
             </div>
             <div
               style={{
-                backgroundImage: `url(${PROJECT_INFO['habitFractV3'].img})`,
+                backgroundImage: `url(${PROJECT_INFO['habitFractV3'].img2})`,
               }}
               className='portfolio-item large-square'
               onClick={() => openPortfolioItemModal('habitFractV3')}
             >
-              2
+              <span className='project-tag'>p2p HabitFract</span>
             </div>
             <div
               style={{
@@ -76,7 +76,7 @@ export default function Home() {
               className='portfolio-item square'
               onClick={() => openPortfolioItemModal('habitFractV2api')}
             >
-              3
+              <span className='project-tag'>Web API</span>
             </div>
             <div
               style={{
@@ -85,7 +85,7 @@ export default function Home() {
               className='portfolio-item small-square'
               onClick={() => openPortfolioItemModal('habitFractV1')}
             >
-              4
+              <span className='project-tag'>Habit Triangles</span>
             </div>
             <div
               style={{
@@ -94,7 +94,7 @@ export default function Home() {
               className='portfolio-item tall'
               onClick={() => openPortfolioItemModal('instagramClone')}
             >
-              5
+              <span className='project-tag'>Insta Clone</span>
             </div>
             <div
               style={{
@@ -103,7 +103,7 @@ export default function Home() {
               className='portfolio-item wide'
               onClick={() => openPortfolioItemModal('auntJenny')}
             >
-              6
+              <span className='project-tag'>Shopify</span>
             </div>
           </div>
         </section>

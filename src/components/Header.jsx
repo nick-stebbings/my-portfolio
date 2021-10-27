@@ -31,8 +31,8 @@ export default function Header() {
         <span className='pl-5 text-[13px] text-white/50 font-medium tracking-widest uppercase border-l border-white/50'>
           Portfolio for
         </span>
-        <div className='mt-3 text-[55px] text-white font-medium leading-none'>
-          <h1 className='sm:text-[50px] leading-10 md:text-[100px]'>
+        <div className='mt-3 text-[55px] text-white'>
+          <h1 className='sm:text-[50px] md:text-[100px]'>
             Full-Stack Development
           </h1>
         </div>
@@ -71,7 +71,7 @@ export default function Header() {
         />
         <img className='relative' src='./images/avatar.jpg' alt='' />
       </div>
-      <div className='md:col-span-2 md:col-start-5 md:row-start-5 col-span-6 col-start-2 row-start-4'>
+      <div className='md:col-span-2 md:col-start-6 md:row-start-5 col-span-6 col-start-2 row-start-4'>
         <div className='pl-5 text-white text-[18px] leading-relaxed tracking-widest uppercase border-l border-white'>
           Now Developing:
         </div>
@@ -97,7 +97,7 @@ export default function Header() {
           className='aspect-1/1 bg-opacity-50 bg-cover'
           style={{
             backgroundImage: `url(${cvImg})`,
-            backgroundColor: '#33535',
+            backgroundColor: '#353535',
           }}
         />
       </div>

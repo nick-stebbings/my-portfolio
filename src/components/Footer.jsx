@@ -63,7 +63,7 @@ export default function Footer() {
                 fill='none'
                 viewBox='-24 -24 72 72'
                 fill='currentColor'
-                alt='my medium account'
+                alt='related medium article'
               >
                 <path
                   strokeLinecap='round'

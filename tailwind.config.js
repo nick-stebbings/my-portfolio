@@ -13,7 +13,7 @@ module.exports = {
         gray: {
           900: '#1A1A1A',
         },
-        accent: '#FEB002',
+        accent: '#FEB00A',
       },
       letterSpacing: {
         widest: '0.125rem',

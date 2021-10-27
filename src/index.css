@@ -40,7 +40,7 @@ footer#contact {
 
   .main-header,
   nav {
-    grid-template-columns: 50px repeat(6, minmax(0, 1fr)) 1rem;
+    grid-template-columns: 1rem repeat(6, minmax(0, 1fr)) 1rem;
   }
 
   section,
@@ -53,7 +53,7 @@ footer#contact {
 @screen md {
   .main-header,
   nav {
-    grid-template-columns: 50px repeat(6, minmax(0, 1fr)) 4rem;
+    grid-template-columns: 6rem repeat(6, minmax(0, 1fr)) 6rem;
   }
 
   .portfolio {
@@ -61,8 +61,11 @@ footer#contact {
   }
 }
 
+.project-tag {
+  @apply p-2 text-sm font-light bg-[#353535];
+}
 .portfolio-item {
-  @apply bg-accent bg-opacity-90 flex items-center justify-center font-sans font-semibold text-gray-900 bg-cover;
+  @apply bg-accent bg-opacity-90 bg-blend-hard-light flex items-center justify-center font-sans text-xl font-semibold text-white bg-cover;
 }
 
 .portfolio-item.small-square {
@@ -133,7 +136,7 @@ footer#contact {
 
   /* Write your own custom base styles here */
   h1 {
-    @apply md:text-5xl mb-12 font-sans text-3xl font-bold;
+    @apply md:text-5xl mb-12 font-sans text-3xl font-bold leading-10 tracking-wider;
   }
 
   h2 {
@@ -141,7 +144,7 @@ footer#contact {
   }
 
   h3 {
-    @apply md:text-3xl font-sans text-xl font-bold;
+    @apply md:text-xl mt-2 font-sans text-sm font-bold;
   }
 
   h4 {
