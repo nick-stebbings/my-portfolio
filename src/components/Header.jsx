@@ -1,6 +1,7 @@
 import React from 'react';
 import { ROUTE_STRINGS } from '@/routes/Routes';
 
+import cvImg from '/images/cv-pic.png';
 import dots from '/images/dots.svg';
 
 export default function Header() {
@@ -31,10 +32,9 @@ export default function Header() {
           Portfolio for
         </span>
         <div className='mt-3 text-[55px] text-white font-medium leading-none'>
-          <h1 className='sm:text-[50px] md:text-[100px]'>
-            Full-Stack Developer
+          <h1 className='sm:text-[50px] leading-10 md:text-[100px]'>
+            Full-Stack Development
           </h1>
-          Nicholas Stebbings
         </div>
       </div>
       <div className='md:col-start-7 md:row-start-4 relative col-start-2 row-start-3'>
@@ -93,13 +93,19 @@ export default function Header() {
         </p>
       </div>
       <div className='col-span-4 col-start-2'>
-        <div className='bg-[#353535] aspect-1/1' />
+        <div
+          className='aspect-1/1 bg-opacity-50 bg-cover'
+          style={{
+            backgroundImage: `url(${cvImg})`,
+            backgroundColor: '#33535',
+          }}
+        />
       </div>
       <div className='aspect-1/1 col-start-5'>
         <img src='./images/avatar.jpg' alt='' />
       </div>
       <div className='md:col-span-2 md:col-start-6 col-span-4 col-start-4 row-start-6'>
-        <div className='bg-[#353535] grid place-items-center aspect-2/1 relative'>
+        <div className='bg-[#080707] grid place-items-center aspect-2/1 relative'>
           <div className='place-items-center absolute bottom-0 right-0 grid w-12 h-12 text-white bg-blue-600 cursor-pointer'>
             <svg
               xmlns='http://www.w3.org/2000/svg'

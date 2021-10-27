@@ -3,7 +3,18 @@ import React from 'react';
 import ProjectCard from './ProjectCard';
 
 export default function Modal({ onClose, modalRef, cardData }) {
-  const { title, img, mainText, gitLink, langs, blogLink } = cardData;
+  const {
+    title,
+    img,
+    img2,
+    mainText,
+    gitLink,
+    langs,
+    libs,
+    skills,
+    blogLink,
+    demoLink,
+  } = cardData;
   return (
     <div
       ref={modalRef}
@@ -11,7 +22,7 @@ export default function Modal({ onClose, modalRef, cardData }) {
     >
       <div className='modal-overlay absolute w-full h-full bg-gray-900 opacity-50'></div>
 
-      <div className='modal-container h-2/3 z-50 w-11/12 mx-auto overflow-y-auto bg-white rounded shadow-lg'>
+      <div className='modal-container z-50 w-11/12 mx-auto overflow-y-auto bg-white rounded shadow-lg'>
         <div className='modal-close absolute top-0 right-0 z-50 flex flex-col items-center mt-4 mr-4 text-sm text-white cursor-pointer'>
           <svg
             className='text-white fill-current'
@@ -46,7 +57,10 @@ export default function Modal({ onClose, modalRef, cardData }) {
             mainText={mainText}
             gitLink={gitLink}
             blogLink={blogLink}
+            demoLink={demoLink}
             langs={langs}
+            libs={libs}
+            skills={skills}
           />
         </div>
       </div>

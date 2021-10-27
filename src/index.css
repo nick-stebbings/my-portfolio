@@ -8,10 +8,16 @@
   z-index: 100;
   transition: opacity 0.25s ease;
 }
+.modal-container {
+  max-height: 90%;
+}
 
 body.modal-active {
   overflow-x: hidden;
-  overflow-y: visible !important;
+
+  height: 100vh;
+  overflow-y: hidden;
+  /* overflow-y: visible !important; */
 }
 
 section,
@@ -56,7 +62,7 @@ footer#contact {
 }
 
 .portfolio-item {
-  @apply bg-accent flex items-center justify-center font-sans font-semibold text-gray-900;
+  @apply bg-accent bg-opacity-90 flex items-center justify-center font-sans font-semibold text-gray-900 bg-cover;
 }
 
 .portfolio-item.small-square {
