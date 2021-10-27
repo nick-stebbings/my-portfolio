@@ -2,13 +2,14 @@ import React from 'react';
 import { ROUTE_STRINGS } from '@/routes/Routes';
 
 import cvImg from '/images/cv-pic.png';
+import pyramidSvg from '/images/habit-pyramid.png';
 import dots from '/images/dots.svg';
 
 export default function Header() {
   return (
     <header className='main-header md:pb-24 gap-y-4 gap-x-2 grid w-full'>
       <nav className='fixed top-0 left-0 z-50 grid w-full bg-gray-900'>
-        <div className='md:col-start-2 place-items-center col-span-2 col-start-2 py-2'>
+        <div className='md:col-start-2 place-items-center md:pl-0 md:py-2 col-span-2 col-start-1 pt-4 pl-4'>
           <a
             href='#top'
             className='md:text-xl flex items-center justify-center w-12 h-12 text-gray-900 bg-white rounded-full'
@@ -16,11 +17,11 @@ export default function Header() {
             ns
           </a>
         </div>
-        <ul className='md:grid-cols-3 grid items-center col-span-4 col-start-4 text-right'>
+        <ul className='md:grid-cols-3 flex items-center justify-end col-span-4 col-start-4 gap-6 text-right'>
           {ROUTE_STRINGS.map((route, idx) => (
             <li
               key={idx}
-              className='hover:underline sm:text-lg md:py-4 py-2 text-xl tracking-widest text-white uppercase'
+              className='md:mr-0 md:mt-0 hover:underline sm:text-lg md:py-4 py-2 mt-2 mr-4 text-xl tracking-widest text-white uppercase'
             >
               <a href={`#${route.toLowerCase()}`}>{route}</a>
             </li>
@@ -63,7 +64,7 @@ export default function Header() {
           </a>
         </div>
       </div>
-      <div className='md:col-start-2 md:col-end-4 md:row-span-2 aspect-1/1 md:row-start-5 relative self-end col-span-4 col-start-4 row-start-3'>
+      <div className='md:col-start-2 md:col-end-4 md:row-span-2 aspect-1/1 md:row-start-5 md:row-start-3 relative self-end col-span-4 col-start-4 row-start-6'>
         <img
           src={dots}
           alt='decorative dots'
@@ -92,7 +93,7 @@ export default function Header() {
           <span className='text-gray-50'>TypesScript & Rust</span>.
         </p>
       </div>
-      <div className='col-span-4 col-start-2'>
+      <div className='md:col-span-4 md:col-start-2 md:row-start-auto col-span-4 col-start-4 row-start-3'>
         <div
           className='aspect-1/1 bg-opacity-50 bg-cover'
           style={{
@@ -145,7 +146,7 @@ export default function Header() {
       </div>
       <div className='col-start-4'>
         <div className='aspect-1/1 relative'>
-          <img src='./images/avatar.jpg' alt='' />
+          <img src={pyramidSvg} alt='' />
           <div className='place-items-center hover:bg-blue-600 hover:text-white absolute bottom-0 right-0 grid w-12 h-12 text-gray-900 transition-colors bg-white cursor-pointer'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -166,7 +167,7 @@ export default function Header() {
       </div>
       <div className='col-start-5'>
         <div className='pt-3 text-xl font-normal leading-loose text-white'>
-          Watch Trailer
+          Read Summary
         </div>
         <div className='text-[13px] text-white/50 leading-loose'>2 min</div>
       </div>
