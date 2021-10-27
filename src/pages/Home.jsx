@@ -103,7 +103,7 @@ export default function Home() {
   const modalRef = useRef();
   const scroll = new SmoothScroll('a[href*="#"', {
     speed: 900,
-    offset: 50,
+    offset: 20,
     clip: true,
   });
 

@@ -17,7 +17,7 @@ export default function Header() {
             ns
           </a>
         </div>
-        <ul className='md:grid-cols-3 flex items-center justify-end col-span-4 col-start-4 gap-6 text-right'>
+        <ul className='md:grid-cols-3 sm:flex sm:justify-end sm:gap-6 grid items-center col-span-4 col-start-4 text-right'>
           {ROUTE_STRINGS.map((route, idx) => (
             <li
               key={idx}
@@ -32,8 +32,8 @@ export default function Header() {
         <span className='pl-5 text-[13px] text-white/50 font-medium tracking-widest uppercase border-l border-white/50'>
           Portfolio for
         </span>
-        <div className='mt-3 text-[55px] text-white'>
-          <h1 className='sm:text-[50px] md:text-[100px]'>
+        <div className='mt-3 px-6 pt-12 text-[60px] text-white'>
+          <h1 className='sm:text-[80px] md:text-[100px]'>
             Full-Stack Development
           </h1>
         </div>
@@ -64,7 +64,7 @@ export default function Header() {
           </a>
         </div>
       </div>
-      <div className='md:col-start-2 md:col-end-4 md:row-span-2 aspect-1/1 md:row-start-5 md:row-start-3 relative self-end col-span-4 col-start-4 row-start-6'>
+      <div className='md:col-start-2 md:col-end-4 md:row-span-2 aspect-1/1 md:row-start-5 relative self-end col-span-4 col-start-4 row-start-6'>
         <img
           src={dots}
           alt='decorative dots'
