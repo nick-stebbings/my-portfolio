@@ -4,6 +4,16 @@
 @tailwind components;
 @tailwind utilities;
 
+.modal {
+  z-index: 100;
+  transition: opacity 0.25s ease;
+}
+
+body.modal-active {
+  overflow-x: hidden;
+  overflow-y: visible !important;
+}
+
 .stylistic-quote-mark {
   font-size: 5rem;
   right: 95%;
@@ -11,8 +21,24 @@
   @apply absolute hidden mr-2 font-sans leading-none text-red-900;
 }
 
-.portfolio {
-  grid-template-rows: repeat(6, minmax(0, 100px));
+@screen sm {
+  .stylistic-quote-mark {
+    @apply block;
+  }
+
+  .main-header {
+    grid-template-columns: 50px repeat(6, minmax(0, 1fr)) 15px;
+  }
+}
+
+@screen md {
+  .main-header {
+    grid-template-columns: 50px repeat(6, minmax(0, 1fr)) 50px;
+  }
+
+  .portfolio {
+    grid-template-rows: repeat(6, minmax(0, 100px));
+  }
 }
 
 .portfolio-item {

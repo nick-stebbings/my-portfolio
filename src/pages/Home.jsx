@@ -1,14 +1,34 @@
-import React from 'react';
-
-import dotsSvg from '/images/dots.svg?import&component';
+import React, { useState, useRef } from 'react';
 import { ROUTE_STRINGS } from '@/routes/Routes';
 
+import dotsSvg from '/images/dots.svg?import&component';
+import Modal from '@/components/Modal';
+
 export default function Home() {
+  const [currentModalContent, setCurrentModalContent] = useState('Hi');
+  const modalRef = useRef();
+
+  function toggleModal() {
+    modalRef.current.classList.toggle('opacity-0');
+    modalRef.current.classList.toggle('pointer-events-none');
+    document.classList.toggle('modal-active');
+  }
+
+  const openPortfolioItemModal = (itemNumber) => {
+    setCurrentModalContent(String(itemNumber));
+    toggleModal();
+  };
+
   return (
     <>
+      <Modal
+        onClose={toggleModal}
+        modalRef={modalRef}
+        children={currentModalContent}
+      ></Modal>
       <main className='w-full min-h-screen font-sans bg-gray-900'>
-        <header className='md:grid-cols-8 md:pb-24 grid w-full'>
-          <div className='md:col-start-2 place-items-center py-10'>
+        <header className='main-header md:pb-24 gap-y-4 gap-x-2 grid w-full'>
+          <div className='md:col-start-2 place-items-center col-span-2 col-start-2 py-10'>
             <a
               href='#'
               className='md:text-xl flex items-center justify-center w-12 h-12 text-gray-900 bg-white rounded-full'
@@ -16,26 +36,26 @@ export default function Home() {
               C
             </a>
           </div>
-          <ul className='md:grid-cols-4 md:col-span-4 md:col-start-4 grid items-center'>
+          <ul className='md:grid-cols-4 md:col-span-4 md:col-start-4 grid items-center col-span-4 col-start-4 text-center'>
             {ROUTE_STRINGS.map((route, idx) => (
               <li
                 key={idx}
-                className='sm:text-lg pb-4 text-xl tracking-widest text-white uppercase'
+                className='sm:text-lg md:py-4 py-2 text-xl tracking-widest text-white uppercase'
               >
                 {route}
               </li>
             ))}
           </ul>
-          <div className='md:col-span-5 md:col-start-2 md:row-span-3 md:py-24'>
+          <div className='md:col-span-5 md:col-start-2 md:row-span-3 md:py-24 col-span-6 col-start-2 row-start-2'>
             <span className='pl-5 text-[13px] text-white/50 font-medium tracking-widest uppercase border-l border-white/50'>
               Featured Class
             </span>
-            <div className='mt-3 text-[110px] text-white font-medium leading-none'>
+            <div className='mt-3 md:text-[110px] text-[55px] text-white font-medium leading-none'>
               The role of <br />
               User Interface Designer
             </div>
           </div>
-          <div className='md:col-start-7 md:row-start-4 relative'>
+          <div className='md:col-start-7 md:row-start-4 relative col-start-2 row-start-4'>
             <dotsSvg className='absolute top-0 right-0 w-24 translate-x-1/2 -translate-y-1/2' />
             <div className='px-7 bg-accent aspect-1/1 relative flex flex-col justify-between py-8 text-gray-900'>
               <svg
@@ -55,11 +75,11 @@ export default function Home() {
               <span className='text-2xl font-semibold'>Join The Class</span>
             </div>
           </div>
-          <div className='md:col-start-2 md:col-end-4 md:row-span-2 aspect-1/1 relative'>
+          <div className='md:col-start-2 md:col-end-4 md:row-span-2 aspect-1/1 md:row-start-5 relative self-end col-span-4 col-start-4 row-start-3'>
             <dotsSvg className='bottom-24 absolute left-0 -translate-x-1/2' />
-            <img className='relative' src='./img/avatar-1.png' alt='' />
+            <img className='relative' src='./images/avatar.jpg' alt='' />
           </div>
-          <div className='md:col-span-2 md:col-start-5'>
+          <div className='md:col-span-2 md:col-start-5 md:row-start-5 col-span-6 col-start-2 row-start-4'>
             <div className='pl-5 text-white text-[15px] leading-relaxed tracking-widest uppercase border-l border-white'>
               About
             </div>
@@ -72,9 +92,9 @@ export default function Home() {
             <div className='bg-[#353535] aspect-1/1' />
           </div>
           <div className='aspect-1/1 col-start-5'>
-            <img src='./img/avatar-2.png' alt='' />
+            <img src='./images/avatar.jpg' alt='' />
           </div>
-          <div className='col-span-2 col-start-6'>
+          <div className='md:col-span-2 md:col-start-6 col-span-4 col-start-4 row-start-6'>
             <div className='bg-[#353535] grid place-items-center aspect-2/1 relative'>
               <div className='place-items-center absolute bottom-0 right-0 grid w-12 h-12 text-white bg-blue-600 cursor-pointer'>
                 <svg
@@ -94,7 +114,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className='col-start-2'>
+          <div className='md:col-start-2 col-span-3 col-start-4'>
             <div className='pt-3 text-xl font-normal leading-loose text-white'>
               Karen William
             </div>
@@ -102,9 +122,22 @@ export default function Home() {
               Senior Designer
             </div>
           </div>
+          <div className='col-start-6'>
+            <div className='pt-3 text-xl font-normal leading-loose text-white'>
+              Testimonial
+            </div>
+            <div className='text-[13px] text-white/50 leading-loose'>
+              Tom Hope
+            </div>
+          </div>
+          <div className='col-start-7'>
+            <div className='pt-5 leading-loose text-right text-[13px] text-white/50'>
+              20:45
+            </div>
+          </div>
           <div className='col-start-4'>
             <div className='aspect-1/1 relative'>
-              <img src='./img/avatar-3.png' alt='' />
+              <img src='./images/avatar.jpg' alt='' />
               <div className='place-items-center hover:bg-blue-600 hover:text-white absolute bottom-0 right-0 grid w-12 h-12 text-gray-900 transition-colors bg-white cursor-pointer'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -123,20 +156,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className='col-start-6'>
-            <div className='pt-3 text-xl font-normal leading-loose text-white'>
-              Testimonial
-            </div>
-            <div className='text-[13px] text-white/50 leading-loose'>
-              Tom Hope
-            </div>
-          </div>
-          <div className='col-start-7'>
-            <div className='pt-5 leading-loose text-right text-[13px] text-white/50'>
-              20:45
-            </div>
-          </div>
-          <div className='col-start-4'>
+          <div className='col-start-5'>
             <div className='pt-3 text-xl font-normal leading-loose text-white'>
               Watch Trailer
             </div>
@@ -145,12 +165,42 @@ export default function Home() {
         </header>
         <section className='bg-gray-50 md:py-24 main-content py-12'>
           <div className='portfolio grid w-3/4 h-full grid-cols-5 gap-5 mx-auto'>
-            <div className='portfolio-item square'>1</div>
-            <div className='portfolio-item large-square'>2</div>
-            <div className='portfolio-item square'>3</div>
-            <div className='portfolio-item small-square'>4</div>
-            <div className='portfolio-item tall'>5</div>
-            <div className='portfolio-item wide'>6</div>
+            <div
+              className='portfolio-item square'
+              onClick={() => openPortfolioItemModal(1)}
+            >
+              1
+            </div>
+            <div
+              className='portfolio-item large-square'
+              onClick={() => openPortfolioItemModal(2)}
+            >
+              2
+            </div>
+            <div
+              className='portfolio-item square'
+              onClick={() => openPortfolioItemModal(3)}
+            >
+              3
+            </div>
+            <div
+              className='portfolio-item small-square'
+              onClick={() => openPortfolioItemModal(4)}
+            >
+              4
+            </div>
+            <div
+              className='portfolio-item tall'
+              onClick={() => openPortfolioItemModal(5)}
+            >
+              5
+            </div>
+            <div
+              className='portfolio-item wide'
+              onClick={() => openPortfolioItemModal(6)}
+            >
+              6
+            </div>
           </div>
         </section>
         <footer className='flex flex-col items-center w-full'>
@@ -248,7 +298,7 @@ export default function Home() {
                     d='M15 11a3 3 0 11-6 0 3 3 0 016 0z'
                   />
                 </svg>
-                <span className='flex block'>
+                <span className='flex'>
                   Rorikstraat 159 Wijk bij <br />
                   Duurstede The Netherlands
                 </span>
@@ -268,7 +318,7 @@ export default function Home() {
                     d='M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207'
                   />
                 </svg>
-                <span className='flex block'>support@company.com</span>
+                <span className='flex'>support@company.com</span>
               </li>
             </ul>
             <h2 className='sm:text-lg text-gray-50 pb-4 text-xl tracking-widest'>
