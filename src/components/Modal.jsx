@@ -1,6 +1,9 @@
 import React from 'react';
 
-export default function Modal({ onClose, modalRef, children }) {
+import ProjectCard from './ProjectCard';
+
+export default function Modal({ onClose, modalRef, cardData }) {
+  const { title, img, mainText, gitLink } = cardData;
   return (
     <div
       ref={modalRef}
@@ -38,7 +41,12 @@ export default function Modal({ onClose, modalRef, children }) {
             </div>
           </div>
 
-          {children}
+          <ProjectCard
+            title={title}
+            img={img}
+            mainText={mainText}
+            gitLink={gitLink}
+          />
 
           <div className='flex justify-end pt-2'>
             <button

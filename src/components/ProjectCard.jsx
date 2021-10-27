@@ -2,17 +2,17 @@ import React from 'react';
 
 export default function ProjectCard({ title, img, mainText, gitLink }) {
   return (
-    <div class=' w-full lg:max-w-full lg:flex'>
+    <div className=' lg:max-w-full lg:flex w-full'>
       <div
-        class='h-72 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden'
-        style={`background-image: url(${img})`}
+        className='h-72 lg:h-auto lg:w-48 lg:rounded-t-none lg:rounded-l flex-none overflow-hidden text-center bg-cover rounded-t'
+        style={{ backgroundImage: `url(${img})` }}
         title={title}
       ></div>
-      <div class='border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal'>
-        <div class='mb-8'>
-          <p class='text-sm text-gray-600 flex items-center'>
+      <div className='lg:border-l-0 lg:border-t lg:border-gray-400 lg:rounded-b-none lg:rounded-r flex flex-col justify-between p-4 leading-normal bg-white border-b border-l border-r border-gray-400 rounded-b'>
+        <div className='mb-8'>
+          <p className='flex items-center text-sm text-gray-600'>
             <svg
-              class='fill-current text-gray-500 w-3 h-3 mr-2'
+              className='w-3 h-3 mr-2 text-gray-500 fill-current'
               xmlns='http://www.w3.org/2000/svg'
               viewBox='0 0 20 20'
             >
@@ -20,20 +20,20 @@ export default function ProjectCard({ title, img, mainText, gitLink }) {
             </svg>
             Members only
           </p>
-          <div class='text-gray-900 font-bold text-xl mb-2'>
+          <div className='mb-2 text-xl font-bold text-gray-900'>
             Best Mountain Trails 2020
           </div>
-          <p class='text-gray-700 text-base'>{mainText}</p>
+          <p className='text-base text-gray-700'>{mainText}</p>
         </div>
-        <div class='flex items-center'>
+        <div className='flex items-center'>
           <img
-            class='w-10 h-10 rounded-full mr-4'
+            className='w-10 h-10 mr-4 rounded-full'
             src='/ben.png'
             alt='Git Repo'
           />
-          <div class='text-sm'>
+          <div className='text-sm'>
             <a href={gitLink} target='_blank'>
-              <span class='text-gray-900 leading-none'>Git Repo</span>
+              <span className='leading-none text-gray-900'>Git Repo</span>
             </a>
           </div>
         </div>

@@ -7,7 +7,7 @@ export default function Header() {
       <nav className='fixed top-0 left-0 z-50 grid w-full bg-gray-900'>
         <div className='md:col-start-2 place-items-center col-span-2 col-start-2 py-2'>
           <a
-            href='/'
+            href='#top'
             className='md:text-xl flex items-center justify-center w-12 h-12 text-gray-900 bg-white rounded-full'
           >
             ns

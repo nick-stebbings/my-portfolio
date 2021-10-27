@@ -4,12 +4,16 @@ import PROJECT_INFO from '@/routes/projectData';
 import dotsSvg from '/images/dots.svg?import&component';
 import SmoothScroll from 'smooth-scroll';
 import Modal from '@/components/Modal';
-import ProjectCard from '@/components/ProjectCard';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export default function Home() {
-  const [currentModalContent, setCurrentModalContent] = useState('Hi');
+  const [currentModalContent, setCurrentModalContent] = useState({
+    title: '1',
+    mainText: '',
+    img: '',
+    gitLink: '',
+  });
   const modalRef = useRef();
   const scroll = new SmoothScroll('a[href*="#"', {
     speed: 900,
@@ -21,8 +25,8 @@ export default function Home() {
     document.classList.toggle('modal-active');
   }
 
-  const openPortfolioItemModal = (itemNumber) => {
-    setCurrentModalContent(String(itemNumber));
+  const openPortfolioItemModal = (itemRef) => {
+    setCurrentModalContent(PROJECT_INFO[itemRef]);
     toggleModal();
   };
 
@@ -31,9 +35,9 @@ export default function Home() {
       <Modal
         onClose={toggleModal}
         modalRef={modalRef}
-        children={currentModalContent}
-      ></Modal>
-      <main className='w-full min-h-screen font-sans bg-gray-900'>
+        cardData={currentModalContent}
+      />
+      <main id='top' className='w-full min-h-screen font-sans bg-gray-900'>
         <Header />
         <section
           id='projects'
@@ -42,19 +46,19 @@ export default function Home() {
           <div className='portfolio md:px-16 grid w-full h-full grid-cols-5 gap-5 px-4'>
             <div
               className='portfolio-item square'
-              onClick={() => openPortfolioItemModal(1)}
+              onClick={() => openPortfolioItemModal('habitFractV2')}
             >
               1
             </div>
             <div
               className='portfolio-item large-square'
-              onClick={() => openPortfolioItemModal(2)}
+              onClick={() => openPortfolioItemModal('habitFractV3')}
             >
               2
             </div>
             <div
               className='portfolio-item square'
-              onClick={() => openPortfolioItemModal(3)}
+              onClick={() => openPortfolioItemModal('habitFractV2api')}
             >
               3
             </div>
@@ -66,13 +70,13 @@ export default function Home() {
             </div>
             <div
               className='portfolio-item tall'
-              onClick={() => openPortfolioItemModal(5)}
+              onClick={() => openPortfolioItemModal('instagramClone')}
             >
               5
             </div>
             <div
               className='portfolio-item wide'
-              onClick={() => openPortfolioItemModal(6)}
+              onClick={() => openPortfolioItemModal('auntJenny')}
             >
               6
             </div>

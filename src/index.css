@@ -36,6 +36,12 @@ footer#contact {
   nav {
     grid-template-columns: 50px repeat(6, minmax(0, 1fr)) 1rem;
   }
+
+  section,
+  footer#contact {
+    min-height: 100vh;
+    width: 100%;
+  }
 }
 
 @screen md {
