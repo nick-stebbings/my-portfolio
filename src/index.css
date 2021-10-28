@@ -99,7 +99,7 @@ body.modal-active {
 }
 
 .project-tag {
-  @apply p-2 text-sm font-light bg-[#353535];
+  @apply bg-gray-light p-2 text-sm font-light;
 }
 .portfolio-item {
   @apply bg-accent bg-opacity-90 bg-blend-hard-light flex items-center justify-center font-sans text-xl font-semibold text-white bg-cover;
@@ -133,7 +133,25 @@ footer#contact {
   width: 100%;
 }
 
+.footer-details {
+  @apply text-gray-300;
+  grid-template-rows: 2rem 1fr 2rem 1fr;
+  font-size: 0.75rem;
+}
+
+.email em {
+  @apply px-1 text-sm not-italic text-white uppercase;
+}
+.credits a {
+  @apply hover:underline text-sm italic text-white;
+}
+
 /** Media Queries **/
+
+.main-header,
+nav {
+  grid-template-columns: 0.5rem repeat(6, minmax(0, 1fr)) 0.5rem;
+}
 
 @screen sm {
   .stylistic-quote-mark {
@@ -173,7 +191,13 @@ footer#contact {
   .portfolio {
     grid-template-rows: repeat(6, minmax(0, 100px));
   }
+
+  .footer-details {
+    grid-template-rows: auto;
+    grid-template-columns: 3rem 1fr 3rem 1fr;
+  }
 }
+
 @screen lg {
   .main-header,
   nav {
@@ -187,6 +211,9 @@ footer#contact {
   }
   .aspect-2\/1 {
     aspect-ratio: 2 / 1;
+  }
+  .aspect-1\/2 {
+    aspect-ratio: 1 / 2;
   }
 }
 

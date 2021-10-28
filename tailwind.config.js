@@ -11,6 +11,8 @@ module.exports = {
       },
       colors: {
         gray: {
+          light: '#353535',
+          dark: '#080707',
           900: '#1A1A1A',
         },
         accent: '#FEB00A',

@@ -35,7 +35,7 @@ const skillStars = (skillsObj) => (
         return (
           <li
             key={idx}
-            className='flex flex-no-wrap items-center justify-around w-full text-semibold text[#353535]'
+            className='flex flex-no-wrap items-center justify-around w-full text-semibold text-gray-light'
           >
             <div className='w-1/5 mr-1 text-gray-900'>{lang}</div>
             <div className='flex justify-start h-12'>

@@ -99,25 +99,17 @@ export default function Footer() {
           </div>
         </div>
       </header>
-      <main className='md:grid-rows-1 md:grid-cols-4 grid-cols-1 grid-rows-4 bg-[#353535] w-full px-4 md:px-16'>
-        <h2 className='sm:text-lg text-gray-50 pb-4 text-xl tracking-widest'>
-          Legal
-        </h2>
-        <ul>
-          <li>General Terms & Conditions</li>
-          <li>Data Processing Agreement</li>
-          <li>Privacy Statement</li>
-        </ul>
-        <h2 className='sm:text-lg text-gray-50 pb-4 text-xl tracking-widest'>
-          Contact
+      <main className='footer-details md:grid-rows-1 md:grid-cols-4 bg-gray-light md:px-2 md:py-4 place-items-center md:gap-x-1 grid w-full grid-cols-1 grid-rows-4 px-1'>
+        <h2 className='sm:text-lg text-gray-50 text-xl tracking-widest'>
+          Info
         </h2>
         <ul>
           <li className='flex'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
-              className='w-6 h-6'
+              className='text-accent w-12 h-12'
               fill='none'
-              viewBox='0 0 24 24'
+              viewBox='0 0 36 36'
               stroke='currentColor'
             >
               <path
@@ -133,17 +125,16 @@ export default function Footer() {
                 d='M15 11a3 3 0 11-6 0 3 3 0 016 0z'
               />
             </svg>
-            <span className='flex'>
-              Rorikstraat 159 Wijk bij <br />
-              Duurstede The Netherlands
+            <span className='flex items-center pb-2'>
+              Oamaru, New Zealand <br />
             </span>
           </li>
           <li className='flex'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
-              className='w-6 h-6'
+              className='text-accent w-12 h-12'
               fill='none'
-              viewBox='0 0 24 24'
+              viewBox='0 0 36 36'
               stroke='currentColor'
             >
               <path
@@ -153,10 +144,42 @@ export default function Footer() {
                 d='M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207'
               />
             </svg>
-            <span className='flex'>support@company.com</span>
+            <span className='email flex items-center pb-2'>
+              <em>N</em> DOT <em>stebbings </em>AT <em>gmail.com</em>
+            </span>
+          </li>
+        </ul>{' '}
+        <h2 className='sm:text-lg text-gray-50 text-xl tracking-widest text-right'>
+          Design <br className='md:block hidden' /> Credit
+        </h2>
+        <ul className='credits md:list-disc md:text-left text-center list-none'>
+          <li>
+            inspired by{' '}
+            <a
+              href='https://www.youtube.com/channel/UCgz_8CY-6QVIrVuwA6CpZNA'
+              target='_blank'
+            >
+              Tailwind Collections
+            </a>{' '}
+            and{' '}
+            <a href='https://www.youtube.com/user/KepowOb' target='_blank'>
+              Kevin Powell
+            </a>
+          </li>
+          <li>
+            deployed with ease on{' '}
+            <a href='https://www.netlify.com' target='_blank'>
+              Netlify
+            </a>
+          </li>
+          <li>
+            components from{' '}
+            <a href='https://www.tailwindtoolbox.com' target='_blank'>
+              Tailwind Toolbox
+            </a>
           </li>
         </ul>
-        <h2 className='sm:text-lg text-gray-50 pb-4 text-xl tracking-widest'>
+        {/* <h2 className='sm:text-lg text-gray-50 pb-4 text-xl tracking-widest'>
           Latest Articles
         </h2>
         <ul>
@@ -172,7 +195,7 @@ export default function Footer() {
               Lorem ipsum dolor sit amet consectetur adipisicing elit.{' '}
             </div>
           </li>
-        </ul>
+        </ul> */}
       </main>
       <footer className='bg-flex flex-col justify-center w-full bg-gray-900'>
         <div className='text-gray-50 w-full py-2 text-center'>
