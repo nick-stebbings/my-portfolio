@@ -35,7 +35,7 @@ const skillStars = (skillsObj) => (
         return (
           <li
             key={idx}
-            className='flex flex-no-wrap items-center justify-around w-full text-semibold text-gray-light'
+            className='text-semibold text-gray-light flex flex-no-wrap items-center justify-around w-full'
           >
             <div className='w-1/5 mr-1 text-gray-900'>{lang}</div>
             <div className='flex justify-start h-12'>
@@ -203,10 +203,10 @@ export default function Home() {
                   id='tab-multi-one'
                   type='checkbox'
                   name='tabs'
-                  defaultChecked={firstChecked}
+                  checked={firstChecked}
                   onChange={() => {
                     setFirstChecked(!firstChecked);
-                    !firstChecked && setSecondChecked(true);
+                    setSecondChecked(firstChecked);
                   }}
                 />
                 <label
@@ -225,10 +225,11 @@ export default function Home() {
                   id='tab-multi-two'
                   type='checkbox'
                   name='tabs'
-                  defaultChecked={secondChecked}
+                  checked={secondChecked}
                   onChange={() => {
                     setSecondChecked(!secondChecked);
-                    !secondChecked && setThirdChecked(true);
+                    setFirstChecked(false);
+                    setThirdChecked(secondChecked);
                   }}
                 />
                 <label
@@ -247,7 +248,12 @@ export default function Home() {
                   id='tab-multi-three'
                   type='checkbox'
                   name='tabs'
-                  defaultChecked={thirdChecked}
+                  checked={thirdChecked}
+                  onChange={() => {
+                    setThirdChecked(!thirdChecked);
+                    setSecondChecked(false);
+                    setFirstChecked(thirdChecked);
+                  }}
                 />
                 <label
                   className='block p-4 text-2xl leading-normal cursor-pointer'

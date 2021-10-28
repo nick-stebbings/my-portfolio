@@ -10,40 +10,40 @@ export default function ContactForm() {
     msg: '',
   });
   return (
-    <div class='pt-24 md:pt-12 w-full p-4 my-4 md:px-12 lg:w-9/12 mx-auto rounded-2xl shadow-2xl'>
-      <div class='flex'>
-        <h1 class='text-gray-50 w-full'>Send me a message</h1>
+    <div className='md:pt-12 md:px-12 lg:w-9/12 rounded-2xl w-full p-4 pt-24 mx-auto my-4 shadow-2xl'>
+      <div className='flex'>
+        <h1 className='text-gray-50 w-full'>Send me a message</h1>
       </div>
-      <div class='grid grid-cols-1 gap-5 md:grid-cols-2 mt-5'>
+      <div className='md:grid-cols-2 grid grid-cols-1 gap-5 mt-5'>
         <input
-          class='w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline'
+          className='focus:outline-none focus:shadow-outline w-full p-3 mt-2 text-gray-900 bg-gray-100 rounded-lg'
           type='text'
           placeholder='First Name*'
         />
         <input
-          class='w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline'
+          className='focus:outline-none focus:shadow-outline w-full p-3 mt-2 text-gray-900 bg-gray-100 rounded-lg'
           type='text'
           placeholder='Last Name*'
         />
         <input
-          class='w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline'
+          className='focus:outline-none focus:shadow-outline w-full p-3 mt-2 text-gray-900 bg-gray-100 rounded-lg'
           type='email'
           placeholder='Email*'
         />
         <input
-          class='w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline'
+          className='focus:outline-none focus:shadow-outline w-full p-3 mt-2 text-gray-900 bg-gray-100 rounded-lg'
           type='number'
           placeholder='Phone*'
         />
       </div>
-      <div class='my-4'>
+      <div className='my-4'>
         <textarea
           placeholder='Message*'
-          class='w-full h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline'
+          className='focus:outline-none focus:shadow-outline w-full h-32 p-3 mt-2 text-gray-900 bg-gray-100 rounded-lg'
         ></textarea>
       </div>
-      <div class='my-2 w-1/2 lg:w-1/4 mx-auto'>
-        <button class='uppercase text-sm font-bold tracking-wide hover:bg-blue-500 bg-blue-600 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline'>
+      <div className='lg:w-1/4 w-1/2 mx-auto my-2'>
+        <button className='hover:bg-blue-500 focus:outline-none focus:shadow-outline w-full p-3 text-sm font-bold tracking-wide text-gray-100 uppercase bg-blue-600 rounded-lg'>
           Send Message
         </button>
       </div>

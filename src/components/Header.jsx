@@ -3,7 +3,6 @@ import { ROUTE_STRINGS } from '@/routes/Routes';
 
 import cvImg from '/images/cv-pic.png';
 import aJimg from '/images/aunt-jenny.jpg';
-import pyramidSvg from '/images/habit-pyramid.png';
 import dots from '/images/dots.svg';
 
 export default function Header() {
@@ -48,7 +47,7 @@ export default function Header() {
         <div className='px-7 bg-accent aspect-1/1 relative flex flex-col justify-between py-8 text-gray-900'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
-            className='w-6 h-6'
+            className='md:block hidden w-6 h-6'
             fill='none'
             viewBox='0 0 24 24'
             stroke='currentColor'
@@ -61,7 +60,21 @@ export default function Header() {
             />
           </svg>
           <a href='#contact'>
-            <span className='text-2xl font-semibold'>Drop Me a Line</span>
+            <div className='md:hidden text-gray-50 hover:text-blue-600 grid items-center pb-4 pl-1'>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                className='sm:w-12 sm:h-12 w-16 h-16'
+                fill='none'
+                viewBox='0 0 24 24'
+                fill='currentColor'
+              >
+                <path d='M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z' />
+                <path d='M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z' />
+              </svg>
+            </div>
+            <span className='md:block hidden text-2xl font-semibold'>
+              Drop Me a Line
+            </span>
           </a>
         </div>
       </div>
@@ -104,13 +117,13 @@ export default function Header() {
         />
       </div>
       <div className='aspect-1/1 col-start-5 row-start-6'>
-        <img src={aJimg} alt='' />
+        <img src={aJimg} alt='logo for Aunt Jenny' />
       </div>
       <div className='md:col-span-2 md:col-start-6 col-span-4 row-start-6'>
         <div className='bg-gray-light place-items-center xl:aspect-2/1 aspect-1/1 relative grid'>
           <a href='#projects' target='_blank'>
             <div className='place-items-center hover:text-blue-600 hover:bg-gray-50 absolute bottom-0 right-0 flex justify-between w-full h-12 px-2 text-white bg-blue-600 cursor-pointer'>
-              <span>Project Summary</span>
+              <span>To Project</span>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 className='w-6 h-6'
@@ -129,14 +142,7 @@ export default function Header() {
           </a>
         </div>
       </div>
-      <div className='md:col-start-2 col-span-4 col-start-4'>
-        <div className='pt-3 text-xl font-normal leading-loose text-white'>
-          Karen William
-        </div>
-        <div className='text-[13px] text-white/50 leading-loose'>
-          Senior Designer
-        </div>
-      </div>
+
       <div className='md:col-start-6 col-span-2 col-start-5'>
         <div className='pl-5 text-white text-[18px] leading-relaxed tracking-widest uppercase border-l border-white'>
           Testimonial
@@ -149,33 +155,6 @@ export default function Header() {
         <div className='absolute bottom-0 leading-loose text-right text-[13px] text-white/50'>
           Aunt Jenny
         </div>
-      </div>
-      <div className='col-start-4'>
-        <div className='aspect-1/1 md:row-start-auto relative row-start-7'>
-          <img src={pyramidSvg} alt='' />
-          <div className='place-items-center hover:bg-blue-600 hover:text-white md:w-12 md:h-12 absolute bottom-0 right-0 grid w-4 h-4 text-gray-900 transition-colors bg-white cursor-pointer'>
-            <svg
-              xmlns='http://www.w3.org/2000/svg'
-              className='md:w-6 md:h-6 w-3 h-3'
-              fill='none'
-              viewBox='0 0 24 24'
-              stroke='currentColor'
-            >
-              <path
-                strokeLinecap='round'
-                strokeLinejoin='round'
-                strokeWidth={2}
-                d='M13 5l7 7-7 7M5 5l7 7-7 7'
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
-      <div className='col-start-5'>
-        <div className='pt-3 text-xl font-normal leading-loose text-white'>
-          Read Summary
-        </div>
-        <div className='text-[13px] text-white/50 leading-loose'>2 min</div>
       </div>
     </header>
   );
