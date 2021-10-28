@@ -38,7 +38,7 @@ export default function Modal({ onClose, modalRef, cardData }) {
 
         <div className='modal-content px-6 py-4 text-left'>
           <div className='flex items-center justify-between pb-3'>
-            <p className='relative text-2xl font-bold'>
+            <p className='md:text-2xl sm:w-auto relative w-7/12 text-lg font-bold'>
               {title}
               {title.includes('Holochain') && (
                 <div className='-right-6 absolute top-0'>

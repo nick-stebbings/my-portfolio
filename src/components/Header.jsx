@@ -7,7 +7,7 @@ import dots from '/images/dots.svg';
 
 export default function Header() {
   return (
-    <header className='main-header md:pb-24 gap-y-12 gap-x-2 grid w-full'>
+    <header className='main-header md:pb-24 gap-y-12 gap-x-2 grid w-full pb-4'>
       <nav className='fixed top-0 left-0 z-50 grid w-full bg-gray-900'>
         <div className='md:col-start-2 md:pl-0 md:py-2 grid items-center col-span-2 col-start-1 py-4 pl-4'>
           <a
@@ -28,8 +28,8 @@ export default function Header() {
           ))}
         </ul>
       </nav>
-      <div className='md:col-span-5 md:col-start-2 md:row-span-3 md:py-24 col-span-6 col-start-2 row-start-2'>
-        <span className='pr-5 pl-5 text-[13px] text-white/50 font-medium tracking-widest uppercase border-l border-white/50'>
+      <div className='md:col-span-5 md:col-start-2 md:row-span-3 md:pb-12 md:pt-24 col-span-6 col-start-2 row-start-2'>
+        <span className='pr-5 pl-5 text-[13px] md:text-[20px] text-white/50 font-medium tracking-widest uppercase border-l border-white/50'>
           Portfolio for
         </span>
         <div className='mt-2 md:mt-3 pt-2 md:pt-12 text-[60px] text-white'>
@@ -44,7 +44,7 @@ export default function Header() {
           alt='decorative dots'
           className='absolute top-0 right-0 w-24 translate-x-1/2 -translate-y-1/2'
         />
-        <div className='px-7 bg-accent aspect-1/1 relative flex flex-col justify-between py-8 text-gray-900'>
+        <div className='bg-accent aspect-1/1 hover:text-gray-50 relative flex flex-col justify-between p-2 text-gray-900'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
             className='md:block hidden w-6 h-6'
@@ -60,7 +60,7 @@ export default function Header() {
             />
           </svg>
           <a href='#contact'>
-            <div className='md:hidden text-gray-50 hover:text-blue-600 grid items-center pb-4 pl-1'>
+            <div className='md:hidden text-gray-50 hover:text-gray-100 grid items-center pb-2 pl-1'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 className='sm:w-12 sm:h-12 w-16 h-16'
@@ -86,20 +86,20 @@ export default function Header() {
         />
         <img className='relative' src='./images/avatar.jpg' alt='' />
       </div>
-      <div className='md:col-span-2 md:col-start-6 md:row-start-5 col-span-6 col-start-2 row-start-4'>
+      <div className='md:col-span-2 md:row-start-5 col-span-6 col-start-2 row-start-4'>
         <div className='pl-5 text-white text-[18px] leading-relaxed tracking-widest uppercase border-l border-white'>
           Now Developing:
         </div>
-        <p className='pt-2 pl-5 text-[13px] text-white/50 leading-extra-loose'>
+        <p className='pt-2 pl-5 text-[13px] text-white/50 leading-extra-loose text-justify'>
           A <span className='uppercase'>decentralised</span> and P2P,{' '}
           <span className='bg-accent p-1 m-2 text-gray-800 uppercase'>
-            <span className='underline'>social</span>
+            <span className='text-gray-50 underline'>social</span>
           </span>{' '}
           &{' '}
           <span className='bg-accent p-1 m-2 text-gray-800 uppercase'>
             personal
           </span>
-          <span className='underline'>
+          <span>
             <em>fractally</em> structured
           </span>{' '}
           <span className='text-gray-50'>Habit Tracking </span>application with{' '}
@@ -109,7 +109,7 @@ export default function Header() {
       </div>
       <div className='md:col-span-4 md:col-start-2 md:row-start-auto col-span-4 col-start-4 row-start-3'>
         <div
-          className='aspect-1/1 bg-opacity-50 bg-cover'
+          className='aspect-1/1 -translate-y-12 bg-opacity-50 bg-cover'
           style={{
             backgroundImage: `url(${cvImg})`,
             backgroundColor: '#353535',
@@ -122,8 +122,8 @@ export default function Header() {
       <div className='md:col-span-2 md:col-start-6 col-span-4 row-start-6'>
         <div className='bg-gray-light place-items-center xl:aspect-2/1 aspect-1/1 relative grid'>
           <a href='#projects' target='_blank'>
-            <div className='place-items-center hover:text-blue-600 hover:bg-gray-50 absolute bottom-0 right-0 flex justify-between w-full h-12 px-2 text-white bg-blue-600 cursor-pointer'>
-              <span>To Project</span>
+            <div className='place-items-center hover:text-blue-600 hover:bg-gray-light md:w-full absolute bottom-0 right-0 flex justify-between h-12 px-2 text-white bg-blue-600 cursor-pointer'>
+              <span className='md:block hidden'>To Project</span>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 className='w-6 h-6'
@@ -143,7 +143,7 @@ export default function Header() {
         </div>
       </div>
 
-      <div className='md:col-start-6 col-span-2 col-start-5'>
+      <div className='md:col-start-6 col-span-2 col-start-4'>
         <div className='pl-5 text-white text-[18px] leading-relaxed tracking-widest uppercase border-l border-white'>
           Testimonial
         </div>
@@ -153,7 +153,7 @@ export default function Header() {
       </div>
       <div className='relative col-start-7'>
         <div className='absolute bottom-0 leading-loose text-right text-[13px] text-white/50'>
-          Aunt Jenny
+          Aunt Jenny Ltd.
         </div>
       </div>
     </header>

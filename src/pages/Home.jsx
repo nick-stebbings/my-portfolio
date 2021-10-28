@@ -29,13 +29,13 @@ const SKILLS = {
   },
 };
 const skillStars = (skillsObj) => (
-  <div className='p-5'>
+  <div className='md:p-5 p-2'>
     <ul className='list-item mt-2 text-sm text-center'>
       {Object.entries(skillsObj).map(([lang, stars], idx) => {
         return (
           <li
             key={idx}
-            className='text-semibold text-gray-light flex flex-no-wrap items-center justify-around w-full'
+            className='text-semibold text-gray-light flex flex-no-wrap items-center justify-around w-full mb-2'
           >
             <div className='w-1/5 mr-1 text-gray-900'>{lang}</div>
             <div className='flex justify-start h-12'>
@@ -104,9 +104,10 @@ export default function Home() {
   const [thirdChecked, setThirdChecked] = useState(false);
   const modalRef = useRef();
   const scroll = new SmoothScroll('a[href*="#"', {
-    speed: 900,
+    speed: 300,
     offset: 20,
     clip: true,
+    easing: 'easeOutQuad',
   });
 
   function toggleModal() {
@@ -192,9 +193,9 @@ export default function Home() {
         </section>
         <section
           id='skills'
-          className='main-content-skills md:pt-12 flex flex-col items-center justify-around pt-24 bg-gray-200'
+          className='main-content-skills md:pt-2 flex flex-col items-center justify-around pt-24 bg-gray-200'
         >
-          <h2 className='tracking-wider text-gray-900'>Skills Overview</h2>
+          <h1 className='mb-2 tracking-wider text-gray-900'>Skills Overview</h1>
           <div className='md:w-3/4 md:p-8 grid w-full h-full p-4 mx-auto'>
             <div className='shadow-md'>
               <div className='tab w-full overflow-hidden border-t'>
@@ -210,7 +211,7 @@ export default function Home() {
                   }}
                 />
                 <label
-                  className='block p-4 text-2xl leading-normal cursor-pointer'
+                  className='block p-4 text-xl leading-normal cursor-pointer'
                   htmlFor='tab-multi-one'
                 >
                   Programming Languages
@@ -233,13 +234,15 @@ export default function Home() {
                   }}
                 />
                 <label
-                  className='block p-4 text-2xl leading-normal cursor-pointer'
+                  className='block p-4 text-xl leading-normal cursor-pointer'
                   htmlFor='tab-multi-two'
                 >
                   Applications
                 </label>
                 <div className='tab-content hover:border-blue-600 overflow-hidden leading-normal bg-gray-100 border-l-2 border-blue-500'>
-                  <p className='w-full p-5'>{skillStars(SKILLS['apps'])}</p>
+                  <p className='md:p-5 w-full p-2'>
+                    {skillStars(SKILLS['apps'])}
+                  </p>
                 </div>
               </div>
               <div className='tab w-full overflow-hidden border-t'>
@@ -256,13 +259,13 @@ export default function Home() {
                   }}
                 />
                 <label
-                  className='block p-4 text-2xl leading-normal cursor-pointer'
+                  className='block p-4 text-xl leading-normal cursor-pointer'
                   htmlFor='tab-multi-three'
                 >
                   General
                 </label>
                 <div className='tab-content hover:border-blue-600 overflow-hidden leading-normal bg-gray-100 border-l-2 border-blue-500'>
-                  <p className='p-5'>{skillStars(SKILLS['general'])}</p>
+                  <p className='md:p-5 p-2'>{skillStars(SKILLS['general'])}</p>
                 </div>
               </div>
             </div>

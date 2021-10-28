@@ -20,9 +20,9 @@ export default function ProjectCard({
         style={{ backgroundImage: `url(${img})`, backgroundPosition: 'top' }}
         title={title}
       ></div>
-      <div className='lg:rounded-b-none drop-shadow-md flex flex-col justify-between p-4 leading-normal bg-gray-100'>
+      <div className='lg:rounded-b-none drop-shadow-md bg-gray-50 flex flex-col justify-between p-4 leading-normal'>
         <div className='mb-8'>
-          <span className='flex items-center text-sm text-gray-700'>
+          <span className='flex items-center text-sm text-gray-900'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               className='w-6 h-6'
@@ -39,9 +39,13 @@ export default function ProjectCard({
             </svg>
             <span className='pl-2'>{langs}</span>
           </span>
-          <h3>{subText}</h3>
+          <h2 className='mt-2 leading-normal tracking-wide'>{subText}</h2>
           {mainText.split('//').map((para, idx) => (
-            <p className='mt-4 text-base text-gray-700' key={idx}>
+            <p
+              className='md:leading-normal mt-4 text-lg leading-snug tracking-wide text-gray-900'
+              key={idx}
+              style={{ fontFamily: 'Inter' }}
+            >
               {para}
             </p>
           ))}
@@ -83,7 +87,7 @@ export default function ProjectCard({
           {gitLink && (
             <div className='flex items-center justify-center'>
               <a href={gitLink} className='hover:text-blue-600' target='_blank'>
-                <div className='hover:text-blue-600 text-gray-900'>
+                <div className='text-gray-900'>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     className='w-24 h-24'
@@ -160,7 +164,7 @@ export default function ProjectCard({
 
       {img2 && (
         <div
-          className='h-72 lg:h-auto lg:w-72 lg:rounded-t-none lg:rounded-l flex-none overflow-hidden text-center bg-cover rounded-t'
+          className='h-72 md:mt-0 lg:h-auto lg:w-72 lg:rounded-t-none lg:rounded-l flex-none mt-4 overflow-hidden text-center bg-cover rounded-t'
           style={{ backgroundImage: `url(${img2})`, backgroundPosition: 'top' }}
           title={title}
         ></div>

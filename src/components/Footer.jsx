@@ -154,7 +154,7 @@ export default function Footer() {
         <h2 className='sm:text-lg text-gray-50 text-xl tracking-widest text-right'>
           Design <br className='md:block hidden' /> Credit
         </h2>
-        <ul className='credits md:list-disc md:text-left pr-12 text-center list-none'>
+        <ul className='credits md:list-disc md:text-left md:pr-12 p-2 text-center list-none'>
           <li>
             inspired by{' '}
             <a
