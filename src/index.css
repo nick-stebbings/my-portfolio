@@ -147,7 +147,8 @@ footer#contact {
 .email em {
   @apply px-1 text-sm not-italic text-white uppercase;
 }
-.credits a {
+.credits a,
+.aj-ref a {
   @apply hover:underline text-sm italic text-white;
 }
 

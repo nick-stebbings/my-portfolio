@@ -122,7 +122,7 @@ export default function Header() {
       <div className='md:col-span-2 md:col-start-6 col-span-4 row-start-6'>
         <div className='bg-gray-light place-items-center xl:aspect-2/1 aspect-1/1 relative grid'>
           <a href='#projects' target='_blank'>
-            <div className='place-items-center hover:text-blue-600 hover:bg-gray-light md:w-full absolute bottom-0 right-0 flex justify-between h-12 px-2 text-white bg-blue-600 cursor-pointer'>
+            <div className='place-items-center hover:text-blue-600 hover:bg-gray-light md:w-full absolute bottom-0 right-0 flex justify-between h-12 px-2 text-white translate-y-2 bg-blue-600 cursor-pointer'>
               <span className='md:block hidden'>To Project</span>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
@@ -144,7 +144,7 @@ export default function Header() {
       </div>
 
       <div className='md:col-start-6 col-span-2 col-start-4'>
-        <div className='pl-5 text-white text-[18px] leading-relaxed tracking-widest uppercase border-l border-white'>
+        <div className='pl-5 text-white text-[18px] leading-relaxed tracking-widest uppercase border-l border-white flex place-content-end place-items-end'>
           Testimonial
         </div>
         <div className='text-[13px] pl-5 text-white/50 leading-loose'>
@@ -152,8 +152,10 @@ export default function Header() {
         </div>
       </div>
       <div className='relative col-start-7'>
-        <div className='absolute bottom-0 leading-loose text-right text-[13px] text-white/50'>
-          Aunt Jenny Ltd.
+        <div className='aj-ref absolute bottom-0 right-0 leading-loose text-right text-[13px] text-white/50'>
+          <a href='https://www.auntjenny.com.au/' target='_blank'>
+            Aunt Jenny Ltd.
+          </a>
         </div>
       </div>
     </header>
