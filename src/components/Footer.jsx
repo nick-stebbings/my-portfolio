@@ -1,4 +1,5 @@
 import React from 'react';
+import ContactForm from './ContactForm';
 
 export default function Footer() {
   return (
@@ -6,9 +7,10 @@ export default function Footer() {
       id='contact'
       className='flex flex-col items-center justify-end w-full'
     >
+      <ContactForm />
       <header className='contact-info flex flex-col items-center justify-between w-3/4'>
-        <div className='icons h-14 flex'>
-          <div className='text-accent flex items-center justify-center'>
+        <div className='icons h-14 text-accent flex'>
+          <div className='hover:text-gray-50 flex items-center justify-center'>
             <a
               href='https://github.com/nick-stebbings'
               target='_blank'
@@ -31,7 +33,7 @@ export default function Footer() {
               </svg>
             </a>
           </div>
-          <div className='text-accent flex items-center justify-center'>
+          <div className='hover:text-gray-50 flex items-center justify-center'>
             <a href='#' target='_blank' className='border-0'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
@@ -51,7 +53,7 @@ export default function Footer() {
             </a>
           </div>
 
-          <div className='text-accent flex items-center justify-center'>
+          <div className='hover:text-gray-50 flex items-center justify-center'>
             <a
               href='https://n-stebbings.medium.com/'
               target='_blank'
@@ -74,7 +76,7 @@ export default function Footer() {
               </svg>
             </a>
           </div>
-          <div className='text-accent flex items-center justify-center'>
+          <div className='hover:text-gray-50 flex items-center justify-center'>
             <a
               href='https://www.codewars.com/users/nick-stebbings'
               target='_blank'
@@ -152,7 +154,7 @@ export default function Footer() {
         <h2 className='sm:text-lg text-gray-50 text-xl tracking-widest text-right'>
           Design <br className='md:block hidden' /> Credit
         </h2>
-        <ul className='credits md:list-disc md:text-left text-center list-none'>
+        <ul className='credits md:list-disc md:text-left pr-12 text-center list-none'>
           <li>
             inspired by{' '}
             <a
