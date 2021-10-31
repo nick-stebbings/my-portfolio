@@ -258,15 +258,11 @@ header nav {
   nav {
     grid-template-columns: 12rem repeat(6, minmax(0, 1fr)) 12rem;
   }
-
-  .card-container {
-    max-width: 66%;
-  }
 }
 
 @media screen (min-width: 1680px) {
   .card-container {
-    max-width: 66%;
+    max-width: 75%;
   }
 }
 

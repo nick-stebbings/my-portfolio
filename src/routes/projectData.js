@@ -133,7 +133,7 @@ export default {
       'React Custom Hooks',
       'GraphQL Hooks',
       'JWT and OAuth flow',
-      'SSR',
+      'Server-side Rendering',
       'Processing Webhooks',
     ],
     libs: ['NextJS', 'Koa', 'React', 'Polaris', 'Sequelize'],
