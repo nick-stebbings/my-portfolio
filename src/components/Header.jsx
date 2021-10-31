@@ -135,6 +135,7 @@ export default function Header() {
       </div>
       <div className='md:col-span-2 md:col-start-6 col-span-4 row-start-6 mb-4'>
         <div className='place-items-center xl:aspect-2/1 aspect-1/1 bg-gray-light md:mr-0 relative grid mr-4'>
+          <span className='text-gray-5 text-center uppercase'>Latest Job</span>
           <a href='#projects' target='_blank'>
             <div
               className='place-items-center hover:text-blue-600 hover:bg-gray-200 md:w-full md:h-12 absolute bottom-0 right-0 flex justify-between h-6 px-2 text-white translate-y-2 bg-blue-600 cursor-pointer'
