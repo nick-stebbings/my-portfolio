@@ -135,7 +135,9 @@ export default function Header() {
       </div>
       <div className='md:col-span-2 md:col-start-6 col-span-4 row-start-6 mb-4'>
         <div className='place-items-center xl:aspect-2/1 aspect-1/1 bg-gray-light md:mr-0 relative grid mr-4'>
-          <span className='text-gray-5 text-center uppercase'>Latest Job</span>
+          <span className='text-gray-50 text-xl font-semibold text-center uppercase'>
+            Latest Client
+          </span>
           <a href='#projects' target='_blank'>
             <div
               className='place-items-center hover:text-blue-600 hover:bg-gray-200 md:w-full md:h-12 absolute bottom-0 right-0 flex justify-between h-6 px-2 text-white translate-y-2 bg-blue-600 cursor-pointer'
@@ -170,7 +172,7 @@ export default function Header() {
         </div>
       </div>
       <div className='relative col-start-7'>
-        <div className='aj-ref absolute bottom-0 right-0 leading-loose text-right text-[13px] text-gray-200 hidden md:block'>
+        <div className='aj-ref absolute bottom-0 right-0 leading-loose text-right text-[13px] text-gray-200 hidden md:hidden'>
           <a href='https://www.auntjenny.com.au/' target='_blank'>
             Aunt Jenny Ltd.
           </a>
