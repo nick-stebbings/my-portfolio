@@ -43,7 +43,7 @@ export default function Header() {
         <img
           src={dots}
           alt='decorative dots'
-          className='absolute top-0 right-0 w-24 translate-x-1/2 -translate-y-1/2'
+          className='md:-translate-y-1/4 sm:-translate-y-1/2 sm:-translate-x-1/2 absolute w-24'
         />
         <div className='bg-accent aspect-1/1 hover:text-gray-50 relative flex flex-col justify-between p-2 text-gray-900'>
           <svg
@@ -87,7 +87,7 @@ export default function Header() {
         <img
           src={dots}
           alt='decorative dots'
-          className='bottom-24 absolute left-0 -translate-x-1/2 translate-y-1/2'
+          className='bottom-24 md:-translate-y-1/4 sm:-translate-y-1/2 -translate-y-3/4 absolute left-0 -translate-x-1/2'
         />
         <img
           className='relative rounded-full'
@@ -160,7 +160,7 @@ export default function Header() {
         </div>
       </div>
 
-      <div className='md:col-start-6 translate-y-1/4 md:row-start-auto flex flex-col items-end justify-end col-span-2 col-start-4 row-start-6'>
+      <div className='md:col-start-6 translate-y-1/4 md:row-start-auto flex flex-col items-end justify-end hidden col-span-2 col-start-4 row-start-6'>
         <div className='pl-5 text-white text-[18px] leading-relaxed tracking-widest uppercase border-l border-white'>
           Testimonial
         </div>
