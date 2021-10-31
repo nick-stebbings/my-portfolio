@@ -6,6 +6,8 @@ export function toggleModal() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  document.title = 'n-stebb.dev - Portfolio for Full Stack Development';
+
   var openmodal = document.querySelectorAll('.modal-open');
   for (var i = 0; i < openmodal.length; i++) {
     openmodal[i].addEventListener('click', function (event) {
