@@ -23,7 +23,7 @@ export default function Modal({ onClose, modalRef, cardData }) {
     >
       <div className='modal-overlay absolute w-full h-full bg-gray-900 opacity-50'></div>
 
-      <div className='modal-container z-50 w-11/12 mx-auto overflow-y-auto bg-white rounded shadow-lg'>
+      <div className='modal-container w-11/12 mx-auto overflow-y-auto bg-white rounded shadow-lg'>
         <div className='modal-close absolute top-0 right-0 z-50 flex flex-col items-center mt-4 mr-4 text-sm text-white cursor-pointer'>
           <svg
             className='text-white fill-current'
@@ -36,9 +36,9 @@ export default function Modal({ onClose, modalRef, cardData }) {
           </svg>
         </div>
 
-        <div className='modal-content px-6 py-4 text-left'>
+        <div className='modal-content xl:text-center px-6 py-4 text-left'>
           <div className='flex items-center justify-between pb-3'>
-            <p className='md:text-2xl sm:w-auto relative w-7/12 text-lg font-bold'>
+            <p className='md:text-2xl sm:text-center sm:w-auto relative w-5/6 text-lg font-bold text-right'>
               {title}
               {title.includes('Holochain') && (
                 <div className='-right-6 absolute top-0'>

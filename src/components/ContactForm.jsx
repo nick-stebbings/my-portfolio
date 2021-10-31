@@ -42,7 +42,10 @@ export default function ContactForm() {
       );
   };
   return (
-    <div className='md:pt-12 md:px-12 lg:w-9/12 rounded-2xl w-full p-4 pt-24 mx-auto my-4 shadow-2xl'>
+    <div
+      id='contact-form'
+      className='md:pt-12 md:px-12 lg:w-9/12 rounded-2xl w-full p-4 pt-24 mx-auto my-4'
+    >
       <div className='flex'>
         <h1 className='text-gray-50 w-full tracking-wider'>
           Send me a message

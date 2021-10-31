@@ -1,11 +1,11 @@
 import happyTriangles from '/images/happy-triangles.jpg';
-import instaClone from '/images/insta-clone.png';
+import instaClone from '/images/insta-clone.jpg';
 import sinatraRecord from '/images/sinatra.jpg';
 import spinner from '/images/spinner.jpg';
 import pyramidBlocks from '/images/pyramid-blocks.png';
 import habitPyramid from '/images/habit-pyramid.png';
 import habitFractV2Img from '/images/habfract-screenshot-masked.png';
-import habitFractV2ImgFront from '/images/habitfractv2.jpg';
+import habitFractV2ImgFront from '/images/habitfractv2.png';
 
 export default {
   habitFractV1: {

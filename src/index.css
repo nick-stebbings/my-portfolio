@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -9,6 +10,32 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/** Hero **/
+
+.main-header::before,
+.main-header::after {
+  @apply w-full;
+  content: '';
+  height: 95%;
+  position: absolute;
+}
+
+.main-header > * {
+  @apply z-50;
+}
+
+.main-header::after {
+  @apply bg-gradient-to-br from-gray-900 to-transparent z-10;
+}
+
+/* Hero img */
+.main-header::before {
+  @apply mt-12 bg-bottom bg-cover;
+  opacity: 0.35;
+  background-image: url('/public/images/bokeh.jpg');
+  /* background-blend-mode: difference; */
+}
+
 /** Modal **/
 
 .modal {
@@ -16,12 +43,13 @@
   transition: opacity 0.25s ease;
 }
 .modal-container {
+  z-index: 101;
   max-height: 90%;
+  @apply md:mx-auto ml-0 mr-8;
 }
 
 body.modal-active {
   overflow-x: hidden;
-
   height: 100vh;
   overflow-y: hidden;
 }
@@ -139,7 +167,7 @@ footer#contact {
 }
 
 .footer-details {
-  @apply text-gray-300;
+  @apply pt-2 text-gray-300;
   grid-template-rows: 2rem 1fr 2rem 1fr;
   font-size: 0.75rem;
 }
@@ -155,11 +183,21 @@ footer#contact {
 /** Media Queries **/
 
 .main-header,
+.main-header,
 nav {
+  grid-template-rows: 7rem auto;
   grid-template-columns: 0.5rem repeat(6, minmax(0, 1fr)) 0.5rem;
 }
 
+header nav {
+  z-index: 90 !important;
+}
+
 @screen sm {
+  nav {
+    grid-template-rows: auto;
+  }
+
   .stylistic-quote-mark {
     @apply block;
   }
@@ -174,7 +212,7 @@ nav {
 
   .main-header,
   nav {
-    grid-template-columns: 1rem repeat(6, minmax(0, 1fr)) 1rem;
+    grid-template-columns: 3rem repeat(6, minmax(0, 1fr)) 3rem;
   }
 
   section,
@@ -191,7 +229,7 @@ nav {
 
   .main-header,
   nav {
-    grid-template-columns: 3rem repeat(6, minmax(0, 1fr)) 3rem;
+    grid-template-columns: 4.5rem repeat(6, minmax(0, 1fr)) 4.5rem;
   }
 
   .portfolio {
@@ -207,7 +245,22 @@ nav {
 @screen lg {
   .main-header,
   nav {
-    grid-template-columns: 5rem repeat(6, minmax(0, 1fr)) 5rem;
+    grid-template-columns: 8rem repeat(6, minmax(0, 1fr)) 8rem;
+  }
+
+  #contact-form {
+    @apply my-auto;
+  }
+}
+
+@screen xl {
+  .main-header,
+  nav {
+    grid-template-columns: 12rem repeat(6, minmax(0, 1fr)) 12rem;
+  }
+
+  .card-container {
+    max-width: 66%;
   }
 }
 
@@ -234,6 +287,13 @@ nav {
       url('/fonts/inter-regular-webfont.woff') format('woff');
   }
 
+  h1.hero-title,
+  .cta-btn {
+    font-family: 'Ubuntu Mono', monospace;
+    font-weight: 400;
+    @apply sm:text-left px-4 text-center;
+  }
+
   /* inter-500 - latin */
   @font-face {
     font-family: 'Inter';
@@ -256,7 +316,7 @@ nav {
 
   /* Write your own custom base styles here */
   h1 {
-    @apply md:text-5xl mb-12 font-sans text-3xl font-bold leading-10 tracking-wider;
+    @apply md:text-5xl mb-8 font-sans text-3xl font-bold leading-10 tracking-wider;
   }
 
   h2 {
@@ -273,6 +333,15 @@ nav {
 
   body {
     @apply md:text-base font-sans text-sm;
+  }
+
+  header ul li:last-of-type {
+    @apply mb-1;
+  }
+
+  #root {
+    background-image: url('/images/double-bubble-outline.png');
+    @apply bg-gray-50 bg-repeat;
   }
 
   .layout {

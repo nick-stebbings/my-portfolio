@@ -14,11 +14,11 @@ export default function ProjectCard({
   libs,
 }) {
   return (
-    <div className=' lg:max-w-full lg:flex w-full'>
+    <div className='card-container lg:mx-auto lg:flex w-full'>
       <div
         className='h-72 lg:h-auto lg:w-72 lg:rounded-t-none lg:rounded-l flex-none overflow-hidden text-center bg-cover rounded-t'
         style={{ backgroundImage: `url(${img})`, backgroundPosition: 'top' }}
-        title={title}
+        title={'first illustration'}
       ></div>
       <div className='lg:rounded-b-none drop-shadow-md bg-gray-50 flex flex-col justify-between p-4 leading-normal'>
         <div className='mb-8'>
@@ -166,7 +166,7 @@ export default function ProjectCard({
         <div
           className='h-72 md:mt-0 lg:h-auto lg:w-72 lg:rounded-t-none lg:rounded-l flex-none mt-4 overflow-hidden text-center bg-cover rounded-t'
           style={{ backgroundImage: `url(${img2})`, backgroundPosition: 'top' }}
-          title={title}
+          title={'second illustration'}
         ></div>
       )}
     </div>

@@ -8,7 +8,7 @@ export default function Footer() {
       className='flex flex-col items-center justify-end w-full'
     >
       <ContactForm />
-      <header className='contact-info flex flex-col items-center justify-between w-3/4'>
+      <header className='contact-info flex flex-col items-center justify-between w-3/4 pb-4'>
         <div className='icons h-14 text-accent flex'>
           <div className='hover:text-gray-50 flex items-center justify-center'>
             <a

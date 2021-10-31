@@ -86,19 +86,11 @@ const emptyStar = (idx) => (
     </svg>
   </div>
 );
+
 export default function Home() {
-  const [currentModalContent, setCurrentModalContent] = useState({
-    title: '1',
-    mainText: '',
-    subText: '',
-    img: '',
-    img2: '',
-    gitLink: '',
-    demoLink: '',
-    langs: '',
-    libs: '',
-    skills: [],
-  });
+  const [currentModalContent, setCurrentModalContent] = useState(
+    PROJECT_INFO['auntJenny']
+  );
   const [firstChecked, setFirstChecked] = useState(true);
   const [secondChecked, setSecondChecked] = useState(false);
   const [thirdChecked, setThirdChecked] = useState(false);
@@ -128,13 +120,16 @@ export default function Home() {
         modalRef={modalRef}
         cardData={currentModalContent}
       />
-      <main id='top' className='w-full min-h-screen font-sans bg-gray-900'>
+      <main
+        id='top'
+        className='layout w-full min-h-screen font-sans bg-gray-900'
+      >
         <Header />
         <section
           id='projects'
           className='bg-gray-50 md:pt-16 md:pb-24 main-content-projects md:py-16 pt-24 pb-4'
         >
-          <div className='portfolio md:px-16 grid w-full h-full grid-cols-5 gap-6 px-4'>
+          <div className='portfolio xl:p-0 md:place-content-center md:px-16 grid w-full h-full grid-cols-5 gap-6 px-4'>
             <div
               style={{
                 backgroundImage: `url(${PROJECT_INFO['habitFractV2'].img})`,
@@ -193,9 +188,8 @@ export default function Home() {
         </section>
         <section
           id='skills'
-          className='main-content-skills md:pt-2 flex flex-col items-center justify-around pt-24 bg-gray-200'
+          className='main-content-skills md:pt-20 flex flex-col items-center justify-around pt-12 bg-gray-100'
         >
-          <h1 className='mb-2 tracking-wider text-gray-900'>Skills Overview</h1>
           <div className='md:w-3/4 md:p-8 grid w-full h-full p-4 mx-auto'>
             <div className='shadow-md'>
               <div className='tab w-full overflow-hidden border-t'>
