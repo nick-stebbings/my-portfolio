@@ -10,7 +10,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/** Hero **/
+/** Hero and main bg **/
 
 .main-header::before,
 .main-header::after {
@@ -264,6 +264,12 @@ header nav {
   }
 }
 
+@media screen (min-width: 1680px) {
+  .card-container {
+    max-width: 66%;
+  }
+}
+
 @layer utilities {
   .aspect-1\/1 {
     aspect-ratio: 1 / 1;
@@ -340,8 +346,9 @@ header nav {
   }
 
   #root {
-    background-image: url('/images/double-bubble-outline.png');
-    @apply bg-gray-50 bg-repeat;
+    background-image: url('/images/funky-lines.png');
+    @apply bg-repeat;
+    @apply bg-gray-50;
   }
 
   .layout {
