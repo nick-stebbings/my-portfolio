@@ -83,11 +83,11 @@ export default function Header() {
           </a>
         </div>
       </div>
-      <div className='md:col-start-2 md:col-end-4 md:row-span-2 aspect-1/1 md:row-start-5 md:col-span-4 sm:-translate-y-1/2 -translate-y-3/4 relative self-end col-span-2 col-start-2 row-start-6'>
+      <div className='md:col-start-2 md:col-end-4 md:row-span-2 aspect-1/1 md:row-start-5 md:col-span-4 md:-translate-y-1/4 sm:-translate-y-1/2 -translate-y-3/4 relative self-end col-span-2 col-start-2 row-start-6'>
         <img
           src={dots}
           alt='decorative dots'
-          className='bottom-24 translate-y-3/4 absolute left-0 -translate-x-1/2'
+          className='bottom-24 absolute left-0 -translate-x-1/2 translate-y-1/2'
         />
         <img
           className='relative rounded-full'
@@ -120,7 +120,7 @@ export default function Header() {
         <img
           src={dots}
           alt='decorative dots'
-          className='w-36 -bottom-4 absolute right-0 translate-x-1/2'
+          className='w-36 -bottom-12 -right-12 absolute translate-x-1/2'
         />
         <div
           className='aspect-1/1 -translate-y-6 bg-opacity-50 bg-cover'
