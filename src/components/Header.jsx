@@ -43,7 +43,7 @@ export default function Header() {
         <img
           src={dots}
           alt='decorative dots'
-          className='absolute top-0 right-0 w-24 translate-x-1/2 translate-y-1/2'
+          className='absolute top-0 right-0 w-24 translate-x-1/2 -translate-y-1/2'
         />
         <div className='bg-accent aspect-1/1 hover:text-gray-50 relative flex flex-col justify-between p-2 text-gray-900'>
           <svg
@@ -83,11 +83,11 @@ export default function Header() {
           </a>
         </div>
       </div>
-      <div className='md:col-start-2 md:col-end-4 md:row-span-2 aspect-1/1 md:row-start-5 md:col-span-4 md:-translate-y-1/4 sm:-translate-y-1/2 -translate-y-3/4 relative self-end col-span-2 col-start-2 row-start-6'>
+      <div className='md:col-start-2 md:col-end-4 md:row-span-2 aspect-1/1 md:row-start-5 md:col-span-4 sm:-translate-y-1/2 -translate-y-3/4 relative self-end col-span-2 col-start-2 row-start-6'>
         <img
           src={dots}
           alt='decorative dots'
-          className='bottom-24 absolute left-0 -translate-x-1/2 translate-y-1/2'
+          className='bottom-24 translate-y-3/4 absolute left-0 -translate-x-1/2'
         />
         <img
           className='relative rounded-full'
@@ -99,7 +99,7 @@ export default function Header() {
         <div className='pl-5 pt-6 text-white text-sm md:text-[18px] leading-relaxed tracking-widest uppercase border-l border-white'>
           Now Developing:
         </div>
-        <p className='pt-4 pl-5 text-[15px] text-gray-200 leading-extra-loose text-justify'>
+        <p className='pt-4 pl-5 text-[13px] text-gray-200 leading-extra-loose text-justify'>
           A <span className='uppercase'>decentralised</span> and P2P,{' '}
           <span className='bg-accent p-1 m-2 text-gray-800'>
             <span className='text-gray-800 underline'>social</span>
