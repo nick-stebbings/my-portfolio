@@ -34,7 +34,12 @@ export default function Footer() {
             </a>
           </div>
           <div className='hover:text-gray-50 flex items-center justify-center'>
-            <a href='#' target='_blank' className='border-0'>
+            <a
+              href='www.linkedin.com/in/nick-stebbs-567ba4224
+'
+              target='_blank'
+              className='border-0'
+            >
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 className='w-24 h-24'

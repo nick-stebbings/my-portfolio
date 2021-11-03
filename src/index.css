@@ -136,6 +136,7 @@ body.modal-active {
 }
 .portfolio-item {
   @apply bg-accent bg-opacity-90 bg-blend-hard-light flex items-center justify-center font-sans text-xl font-semibold text-white bg-cover;
+  cursor: pointer;
 }
 
 .portfolio-item.small-square {
