@@ -2,10 +2,10 @@ import React, { useState, useRef } from 'react';
 import PROJECT_INFO from '@/routes/projectData';
 const SKILLS = {
   langs: {
-    JavaScript: 4,
+    JavaScript: 5,
     TypeScript: 3,
     Ruby: 4,
-    Rust: 2,
+    Rust: 3,
     SQL: 5,
     GraphQL: 4,
     HTML5: 5,

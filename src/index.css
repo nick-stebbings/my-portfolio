@@ -135,7 +135,7 @@ body.modal-active {
   @apply bg-gray-light p-2 text-sm font-light;
 }
 .portfolio-item {
-  @apply bg-accent bg-opacity-90 bg-blend-hard-light flex items-center justify-center font-sans text-xl font-semibold text-white bg-cover;
+  @apply bg-accent bg-opacity-90 hover:bg-opacity-100 bg-blend-hard-light flex items-center justify-center font-sans text-xl font-semibold text-white bg-cover;
   cursor: pointer;
 }
 

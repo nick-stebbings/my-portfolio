@@ -35,7 +35,7 @@ export default function Footer() {
           </div>
           <div className='hover:text-gray-50 flex items-center justify-center'>
             <a
-              href='www.linkedin.com/in/nick-stebbs-567ba4224
+              href='http://www.linkedin.com/in/nick-stebbs-567ba4224
 '
               target='_blank'
               className='border-0'
