@@ -45,7 +45,7 @@ export default {
     ],
     langs: 'Ruby, JavaScript, Sass & PostCSS',
     libs: ['D3js', 'Tailwind CSS', 'Webpack 4', 'Mithril'],
-    demoLink: 'https://habfract.life/#!/vis/habit-tree?demo=true',
+    demoLink: 'https://habfract.life',
     gitLink:
       'https://github.com/nick-stebbings/fractal-habits-SPA-tailwind-mithril',
 
