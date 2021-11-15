@@ -7,6 +7,35 @@ import habitPyramid from '/images/habit-pyramid.png';
 import habitFractV2Img from '/images/habfract-screenshot-masked.png';
 import habitFractV2ImgFront from '/images/habitfractv2.png';
 
+export const SKILLS = {
+  langs: {
+    JavaScript: 5,
+    TypeScript: 3,
+    Ruby: 4,
+    Rust: 3,
+    SQL: 5,
+    GraphQL: 4,
+    HTML5: 5,
+    CSS3: 4,
+  },
+  apps: {
+    'VSCode IDE': 4,
+    'Chrome DevTools': 4,
+    'Linux Command Line': 3,
+    Photoshop: 3,
+    Figma: 3,
+  },
+  general: {
+    'UX/UI Design': 4,
+    'Figma to Code': 5,
+    Planning: 3,
+    Debugging: 5,
+    Networking: 4,
+    'Learning Pace': 4,
+    Teamwork: 4,
+  },
+};
+
 export default {
   habitFractV1: {
     title: 'Local storage Habit Tracker',
@@ -31,7 +60,7 @@ export default {
   habitFractV2: {
     title: 'HabitFract v1 Frontend',
     mainText:
-      'A development of my first habit tracking app to include hierarchical visualisation of the habits using the d3 library (Data Driven Documents). This was a much more ambitious project than the one from which it stemmed. I moved to a multi-layered architecture: my first single-paged app. I also performed a full manual deployment to a Digital Ocean droplet, Dockerised both layers and used Github actions and DockerHub for CD//I spent some time working on integrating d3-hierarchy visualisations with a lightweight frontend framework called Mithril. Since Mithril is unopiniated about global state management I tried to find my own solutions using functional streams of data. This prepared me well for learning Redux and understanding React state hooks, but was ultimately buggy and hard to maintain.//I plan to reuse the d3 interface in v2 of the project, since much of the logic was componentised and written in JSX',
+      'A development of my first habit tracking app to include hierarchical visualisation of the habits using the d3 library (Data Driven Documents). This was a much more ambitious project than the one from which it stemmed. I moved to a multi-layered architecture: my first single-paged app. I also performed a full manual deployment to a Digital Ocean droplet, Dockerised both layers and used Github actions and DockerHub for CD//I spent some time working on integrating d3-hierarchy visualisations with a lightweight frontend framework called Mithril. Since Mithril is unopiniated about global state management I tried to find my own solutions using functional streams of data. This prepared me well for learning Redux and understanding React state hooks, but was ultimately buggy and hard to maintain. (I am now fixing that by migrating the UI to React & Redux.) //I plan to reuse the d3 interface in v2 of the project, since much of the logic was componentised and written in JSX',
     subText: 'A fractal habit tracking single page application',
     img2: habitFractV2Img,
     img: habitFractV2ImgFront,
@@ -45,12 +74,11 @@ export default {
     ],
     langs: 'Ruby, JavaScript, Sass & PostCSS',
     libs: ['D3js', 'Tailwind CSS', 'Webpack 4', 'Mithril'],
-    demoLink: 'https://habfract.life',
+    demoLink: 'https://habfract.life/#!/vis/habit-tree',
     gitLink:
-      'https://github.com/nick-stebbings/fractal-habits-SPA-tailwind-mithril',
-
-    // blogLink:
-    //   'https://github.com/nick-stebbings/fractal-habit-pyramid-sinatraAPI',
+      'https://github.com/nick-stebbings/fractal-habits-SPA-tailwind-react-redux',
+    blogLink:
+      'https://n-stebbings.medium.com/from-session-cookie-to-do-list-to-fractal-distributed-listmania-2da3e33728a?postPublishedType=repub',
   },
   habitFractV2api: {
     title: 'HabitFract v1 Web API',
@@ -73,8 +101,8 @@ export default {
     demoLink: 'https://api.habfract.life/demo/domain/1/habit_tree',
     gitLink:
       'https://github.com/nick-stebbings/fractal-habit-pyramid-sinatraAPI',
-    // blogLink:
-    //   'https://github.com/nick-stebbings/fractal-habit-pyramid-sinatraAPI',
+    blogLink:
+      'https://n-stebbings.medium.com/from-session-cookie-to-do-list-to-fractal-distributed-listmania-2da3e33728a?postPublishedType=repub',
   },
   habitFractV3: {
     title: 'HabitFract v2 on Holochain',
@@ -100,8 +128,8 @@ export default {
       'Redux Thunk Middleware for Holochain',
     ],
     langs: 'TypeScript, Rust',
-    // blogLink:
-    //   'https://github.com/nick-stebbings/fractal-habit-pyramid-sinatraAPI',
+    blogLink:
+      'https://n-stebbings.medium.com/from-local-storage-to-do-list-to-fractal-peer-to-peer-habit-tracker-3be56214c6ee?source=user_profile---------0-------------------------------',
   },
   instagramClone: {
     title: 'React Instagram Clone',

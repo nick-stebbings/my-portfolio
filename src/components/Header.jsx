@@ -18,7 +18,7 @@ export default function Header() {
             ns
           </a>
         </div>
-        <ul className='md:grid-cols-3 sm:flex sm:justify-end sm:gap-6 grid col-span-4 text-right'>
+        <ul className='md:grid-cols-3 sm:flex sm:gap-6 sm:-mr-8 md:col-span-4 grid items-center justify-end col-span-5 mr-2 text-right'>
           {ROUTE_STRINGS.map((route, idx) => (
             <li
               key={idx}
@@ -33,10 +33,8 @@ export default function Header() {
         <span className='px-5 text-[13px] md:text-[20px] text-gray-50 font-medium tracking-widest uppercase border-l border-gray-50'>
           Portfolio for
         </span>
-        <div className='mt-2 pt-2 md:-mt-4 text-[60px] text-white'>
-          <h1 className='hero-title sm:text-[70px] leading-relaxed md:text-[80px] xl:text-[100px]'>
-            Full Stack Delopment_
-          </h1>
+        <div className='md:mt-4 lg:mt-8 pt-2 mt-2 text-white'>
+          <h1 className='hero-title'>Full Stack Delopment_</h1>
         </div>
       </div>
       <div className='md:col-start-7 md:row-start-4 relative col-start-2 row-start-3'>
@@ -113,7 +111,51 @@ export default function Header() {
           </span>{' '}
           <span className='text-gray-50'>Habit Tracking </span>application with{' '}
           <span className='text-gray-50'>React & Redux</span> in{' '}
-          <span className='text-gray-50'>TypesScript & Rust</span>.
+          <span className='text-gray-50'>TypesScript & Rust</span>
+          <a
+            className='hover:text-blue-500 flex flex-row-reverse items-center text-right border-0'
+            href='https://n-stebbings.medium.com/from-local-storage-to-do-list-to-fractal-peer-to-peer-habit-tracker-3be56214c6ee?source=your_stories_page----------------------------------------'
+            target='_blank'
+          >
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              className='w-16 h-16'
+              fill='none'
+              viewBox='-24 -24 72 72'
+              fill='currentColor'
+              alt='related medium article'
+            >
+              <path
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                strokeWidth={2}
+                d='M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z'
+              />
+            </svg>
+            <span className='cta-btn text-xl uppercase'>Related Blog</span>
+          </a>
+          <a
+            className='hover:text-blue-500 flex flex-row-reverse items-center text-right border-0'
+            href='https://github.com/nick-stebbings/hc-react-redux-shared-todo-feed/tree/red-dots'
+            target='_blank'
+          >
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              className='w-16 h-16'
+              fill='none'
+              viewBox='-24 -24 72 72'
+              fill='currentColor'
+              alt='see the code'
+            >
+              <path
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                strokeWidth={2}
+                d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'
+              />
+            </svg>
+            <span className='cta-btn text-xl uppercase'>The Code</span>
+          </a>
         </p>
       </div>
       <div className='md:col-span-4 md:col-start-2 md:row-start-auto relative col-span-4 col-start-4 row-start-3'>
@@ -122,20 +164,22 @@ export default function Header() {
           alt='decorative dots'
           className='w-36 -bottom-12 -right-12 absolute translate-x-1/2'
         />
-        <div
-          className='aspect-1/1 -translate-y-6 bg-opacity-50 bg-cover'
-          style={{
-            backgroundImage: `url(${cvImg})`,
-            backgroundColor: '#353535',
-          }}
-        />
+        <a href='https://zety.com/profile/nick-stebbings' target='_blank'>
+          <div
+            className='aspect-1/1 -translate-y-6 bg-opacity-50 bg-cover'
+            style={{
+              backgroundImage: `url(${cvImg})`,
+              backgroundColor: '#353535',
+            }}
+          />
+        </a>
       </div>
       <div className='aspect-1/1 col-start-5 row-start-6'>
         <img src={aJimg} alt='logo for Aunt Jenny' />
       </div>
       <div className='md:col-span-2 md:col-start-6 col-span-4 row-start-6 mb-4'>
         <div className='place-items-center xl:aspect-2/1 aspect-1/1 bg-gray-light md:mr-0 relative grid mr-4'>
-          <span className='text-gray-50 text-xl font-semibold text-center uppercase'>
+          <span className='text-gray-50 cta-btn text-3xl font-semibold text-center'>
             Latest Client
           </span>
           <a href='#projects' target='_blank'>

@@ -44,12 +44,12 @@ export default function ContactForm() {
   return (
     <div
       id='contact-form'
-      className='md:pt-12 md:px-12 lg:w-9/12 rounded-2xl w-full p-4 pt-24 mx-auto my-4'
+      className='md:pt-12 md:px-12 lg:w-9/12 rounded-2xl w-full p-4 pt-24 mx-auto my-4 mb-12'
     >
       <div className='flex'>
-        <h1 className='text-gray-50 w-full tracking-wider'>
+        <h2 className='text-gray-50 w-full mb-4 leading-5 tracking-wider'>
           Send me a message
-        </h1>
+        </h2>
       </div>
       <div className='md:grid-cols-2 grid grid-cols-1 gap-5 mt-5'>
         <input

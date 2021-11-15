@@ -12,37 +12,15 @@ export default function Footer() {
         <div className='icons h-14 text-accent flex'>
           <div className='hover:text-gray-50 flex items-center justify-center'>
             <a
-              href='https://github.com/nick-stebbings'
+              href='https://www.linkedin.com/in/nick-stebbs-567ba4224'
               target='_blank'
-              className='border-0'
+              className='flex flex-col justify-end border-0'
             >
+              <span className='cta-btn hover:text-blue-500 text-white uppercase'>
+                LinkedIn
+              </span>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
-                className='w-24 h-24'
-                fill='none'
-                viewBox='-24 -24 72 72'
-                fill='currentColor'
-                alt='my github account'
-              >
-                <path
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                  strokeWidth={2}
-                  d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'
-                />
-              </svg>
-            </a>
-          </div>
-          <div className='hover:text-gray-50 flex items-center justify-center'>
-            <a
-              href='https://www.linkedin.com/in/nick-stebbs-567ba4224
-'
-              target='_blank'
-              className='border-0'
-            >
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                className='w-24 h-24'
                 fill='none'
                 viewBox='-24 -24 72 72'
                 fill='currentColor'
@@ -57,16 +35,43 @@ export default function Footer() {
               </svg>
             </a>
           </div>
+          <div className='hover:text-gray-50 flex items-center justify-center'>
+            <a
+              href='https://github.com/nick-stebbings'
+              target='_blank'
+              className='flex flex-col justify-end border-0'
+            >
+              <span className='cta-btn hover:text-blue-500 text-white uppercase'>
+                GitHub
+              </span>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                fill='none'
+                viewBox='-24 -24 72 72'
+                fill='currentColor'
+                alt='my github account'
+              >
+                <path
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  strokeWidth={2}
+                  d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'
+                />
+              </svg>
+            </a>
+          </div>
 
           <div className='hover:text-gray-50 flex items-center justify-center'>
             <a
               href='https://n-stebbings.medium.com/'
               target='_blank'
-              className='border-0'
+              className='flex flex-col justify-end border-0'
             >
+              <span className='cta-btn hover:text-blue-500 text-white uppercase'>
+                Medium
+              </span>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
-                className='w-24 h-24'
                 fill='none'
                 viewBox='-24 -24 72 72'
                 fill='currentColor'
@@ -85,11 +90,13 @@ export default function Footer() {
             <a
               href='https://www.codewars.com/users/nick-stebbings'
               target='_blank'
-              className='border-0'
+              className='flex flex-col justify-end border-0'
             >
+              <span className='cta-btn hover:text-blue-500 text-white uppercase'>
+                Code Wars
+              </span>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
-                className='w-24 h-24'
                 fill='none'
                 viewBox='-24 -24 72 72'
                 fill='currentColor'
@@ -106,7 +113,7 @@ export default function Footer() {
           </div>
         </div>
       </header>
-      <main className='footer-details md:grid-rows-1 md:grid-cols-4 bg-gray-light md:px-2 md:py-4 place-items-center md:gap-x-1 grid w-full grid-cols-1 grid-rows-4 px-1'>
+      <main className='footer-details md:grid-rows-1 md:grid-cols-4 bg-gray-light md:px-2 place-items-center md:gap-x-1 grid w-full grid-cols-1 grid-rows-4 px-1'>
         <h2 className='sm:text-lg text-gray-50 text-xl tracking-widest'>
           Info
         </h2>
@@ -157,21 +164,17 @@ export default function Footer() {
           </li>
         </ul>{' '}
         <h2 className='sm:text-lg text-gray-50 text-xl tracking-widest text-right'>
-          Design <br className='md:block hidden' /> Credit
+          This Site <br className='md:block hidden' />
         </h2>
         <ul className='credits md:list-disc md:text-left md:pr-12 p-2 text-center list-none'>
           <li>
-            inspired by{' '}
             <a
-              href='https://www.youtube.com/channel/UCgz_8CY-6QVIrVuwA6CpZNA'
+              href='https://github.com/nick-stebbings/my-portfolio'
               target='_blank'
             >
-              Tailwind Collections
+              Code
             </a>{' '}
-            and{' '}
-            <a href='https://www.youtube.com/user/KepowOb' target='_blank'>
-              Kevin Powell
-            </a>
+            in React & Tailwind CSS
           </li>
           <li>
             deployed with ease on{' '}
@@ -180,7 +183,7 @@ export default function Footer() {
             </a>
           </li>
           <li>
-            components from{' '}
+            some components from{' '}
             <a href='https://www.tailwindtoolbox.com' target='_blank'>
               Tailwind Toolbox
             </a>
@@ -205,8 +208,8 @@ export default function Footer() {
         </ul> */}
       </main>
       <footer className='bg-flex flex-col justify-center w-full bg-gray-900'>
-        <div className='text-gray-50 w-full py-2 text-center'>
-          ©2021 Ebb Stings' Web Things. All rights reserved.
+        <div className='text-gray-50 w-full py-2 text-xs text-center'>
+          ©2021 Nick Stebbings. All rights reserved.
         </div>
       </footer>
     </footer>

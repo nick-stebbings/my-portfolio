@@ -42,7 +42,7 @@ export default function ProjectCard({
           <h2 className='mt-2 leading-normal tracking-wide'>{subText}</h2>
           {mainText.split('//').map((para, idx) => (
             <p
-              className='md:leading-normal mt-4 text-lg leading-snug tracking-wide text-gray-900'
+              className='md:leading-normal md:mx-4 md:mt-6 mt-2 text-lg leading-snug tracking-wide text-left text-gray-900'
               key={idx}
               style={{ fontFamily: 'Inter' }}
             >
