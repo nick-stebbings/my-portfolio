@@ -16,10 +16,11 @@ export default function Footer() {
               target='_blank'
               className='flex flex-col justify-end border-0'
             >
-              <span className='cta-btn hover:text-blue-500 text-white uppercase'>
+              <span className='cta-btn hover:text-blue-500 text-center text-white uppercase'>
                 LinkedIn
               </span>
               <svg
+                className='w-24 h-24'
                 xmlns='http://www.w3.org/2000/svg'
                 fill='none'
                 viewBox='-24 -24 72 72'
@@ -41,10 +42,11 @@ export default function Footer() {
               target='_blank'
               className='flex flex-col justify-end border-0'
             >
-              <span className='cta-btn hover:text-blue-500 text-white uppercase'>
+              <span className='cta-btn hover:text-blue-500 text-center text-white uppercase'>
                 GitHub
               </span>
               <svg
+                className='w-24 h-24'
                 xmlns='http://www.w3.org/2000/svg'
                 fill='none'
                 viewBox='-24 -24 72 72'
@@ -67,10 +69,11 @@ export default function Footer() {
               target='_blank'
               className='flex flex-col justify-end border-0'
             >
-              <span className='cta-btn hover:text-blue-500 text-white uppercase'>
+              <span className='cta-btn hover:text-blue-500 text-center text-white uppercase'>
                 Medium
               </span>
               <svg
+                className='w-24 h-24'
                 xmlns='http://www.w3.org/2000/svg'
                 fill='none'
                 viewBox='-24 -24 72 72'
@@ -92,10 +95,11 @@ export default function Footer() {
               target='_blank'
               className='flex flex-col justify-end border-0'
             >
-              <span className='cta-btn hover:text-blue-500 text-white uppercase'>
+              <span className='cta-btn hover:text-blue-500 text-center text-white uppercase'>
                 Code Wars
               </span>
               <svg
+                className='w-24 h-24'
                 xmlns='http://www.w3.org/2000/svg'
                 fill='none'
                 viewBox='-24 -24 72 72'
