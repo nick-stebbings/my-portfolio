@@ -133,7 +133,7 @@ body.modal-active {
   @apply bg-gray-light p-2 text-sm font-light;
 }
 .portfolio-item {
-  @apply bg-accent bg-opacity-90 hover:bg-opacity-100 bg-blend-hard-light flex items-center justify-center font-sans text-xl font-semibold text-white bg-cover;
+  @apply bg-accent bg-opacity-90 shadow-lg md:shadow-sm hover:bg-opacity-100 bg-blend-hard-light flex items-center justify-center font-sans text-xl font-semibold text-white bg-cover;
   cursor: pointer;
 }
 
@@ -190,6 +190,16 @@ nav {
 
 header nav {
   z-index: 90 !important;
+}
+
+main,
+header nav {
+  @apply md:mx-auto;
+}
+
+.cv-img {
+  @apply hover:bg-blend-normal;
+  background-blend-mode: difference;
 }
 
 @screen sm {
@@ -275,7 +285,7 @@ header nav {
     grid-template-columns: 12rem repeat(6, minmax(0, 1fr)) 12rem;
   }
   .layout {
-    max-width: 70%;
+    max-width: 75%;
   }
 }
 
@@ -344,6 +354,7 @@ header nav {
   }
 
   .layout {
-    @apply w-11/12 mx-auto;
+    @apply w-11/12;
+    max-width: 100vw;
   }
 }

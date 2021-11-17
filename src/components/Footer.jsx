@@ -14,9 +14,9 @@ export default function Footer() {
             <a
               href='https://www.linkedin.com/in/nick-stebbs-567ba4224'
               target='_blank'
-              className='flex flex-col justify-end border-0'
+              className='flex flex-col hover:text-blue-500 justify-end border-0'
             >
-              <span className='cta-btn hover:text-blue-500 text-center text-white uppercase'>
+              <span className='cta-btn text-center text-white uppercase'>
                 LinkedIn
               </span>
               <svg
@@ -40,9 +40,9 @@ export default function Footer() {
             <a
               href='https://github.com/nick-stebbings'
               target='_blank'
-              className='flex flex-col justify-end border-0'
+              className='flex flex-col hover:text-blue-500 justify-end border-0'
             >
-              <span className='cta-btn hover:text-blue-500 text-center text-white uppercase'>
+              <span className='cta-btn text-center text-white uppercase'>
                 GitHub
               </span>
               <svg
@@ -67,9 +67,9 @@ export default function Footer() {
             <a
               href='https://n-stebbings.medium.com/'
               target='_blank'
-              className='flex flex-col justify-end border-0'
+              className='flex flex-col hover:text-blue-500 justify-end border-0'
             >
-              <span className='cta-btn hover:text-blue-500 text-center text-white uppercase'>
+              <span className='cta-btn text-center text-white uppercase'>
                 Medium
               </span>
               <svg
@@ -93,9 +93,9 @@ export default function Footer() {
             <a
               href='https://www.codewars.com/users/nick-stebbings'
               target='_blank'
-              className='flex flex-col justify-end border-0'
+              className='flex flex-col hover:text-blue-500 justify-end border-0'
             >
-              <span className='cta-btn hover:text-blue-500 text-center text-white uppercase'>
+              <span className='cta-btn text-center text-white uppercase'>
                 Code Wars
               </span>
               <svg
