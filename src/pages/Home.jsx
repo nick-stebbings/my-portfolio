@@ -40,8 +40,8 @@ export default function Home() {
       />
       <main id='top' className='layout w-full min-h-screen font-sans'>
         <Header />
-        <SkillsRack openPortfolioItemModal={openPortfolioItemModal} />
         <ProjectsRack openPortfolioItemModal={openPortfolioItemModal} />
+        <SkillsRack openPortfolioItemModal={openPortfolioItemModal} />
         <Footer />
       </main>
     </>
