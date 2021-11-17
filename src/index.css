@@ -29,10 +29,9 @@
 
 /* Hero img */
 .main-header::before {
-  @apply mt-12 bg-bottom bg-cover;
-  opacity: 0.35;
+  @apply bg-bottom bg-cover;
+  opacity: 0.15;
   background-image: url('/images/bokeh.jpg');
-  /* background-blend-mode: difference; */
 }
 
 /** Modal **/

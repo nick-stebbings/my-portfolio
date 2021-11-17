@@ -34,7 +34,7 @@ export default function Header() {
           Portfolio for
         </span>
         <div className='md:mt-4 lg:mt-8 pt-2 mt-2 text-white'>
-          <h1 className='hero-title'>Full Stack Delopment_</h1>
+          <h1 className='hero-title'>Full Stack Development_</h1>
         </div>
       </div>
       <div className='md:col-start-7 md:row-start-4 relative col-start-2 row-start-3'>
@@ -88,9 +88,10 @@ export default function Header() {
           className='bottom-24 md:-translate-y-1/4 sm:-translate-y-1/2 -translate-y-3/4 absolute left-0 -translate-x-1/2'
         />
         <img
-          className='absolute -top-40 rounded-full'
+          className='absolute lg:-top-40 rounded-full'
           src='./images/avatar.jpg'
           alt='picture of nick'
+          style={{ backgroundBlendMode: 'difference' }}
         />
       </div>
       <div className='md:col-span-2 md:row-start-5 col-span-6 col-start-2 row-start-4'>
