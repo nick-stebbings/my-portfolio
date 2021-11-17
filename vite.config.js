@@ -19,6 +19,9 @@ export default defineConfig({
   root: './',
   build: {
     outDir: 'dist',
+    rollupOptions: {
+      external: ['react-helmet-async'],
+    },
   },
   publicDir: 'public',
   server: {
