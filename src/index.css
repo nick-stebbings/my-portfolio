@@ -295,6 +295,10 @@ header nav {
     max-width: 75%;
   }
 
+  .modal-container {
+    max-width: 65%;
+  }
+
   .bg-accent.aspect-1\/1 span {
     @apply text-4xl ml-4;
   }
