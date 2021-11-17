@@ -51,7 +51,7 @@ export default function Header() {
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'
-              className='md:block hidden w-6 h-6'
+              className='md:block hidden xl:w-20 xl:h-20 xl:ml-2 w-6 h-6'
               fill='none'
               viewBox='0 0 24 24'
               stroke='currentColor'
@@ -92,7 +92,7 @@ export default function Header() {
           className='bottom-24 md:-translate-y-1/4 sm:-translate-y-1/2 -translate-y-3/4 absolute left-0 -translate-x-1/2'
         />
         <img
-          className='avatar-img absolute lg:-top-40'
+          className='avatar-img rounded-full absolute lg:-top-40'
           src='./images/avatar.jpg'
           alt='picture of nick'
         />

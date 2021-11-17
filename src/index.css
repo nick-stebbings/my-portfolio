@@ -43,7 +43,7 @@
 .modal-container {
   z-index: 101;
   max-height: 90%;
-  @apply md:mx-auto ml-0 mr-8;
+  @apply md:mx-auto ml-0;
 }
 
 body.modal-active {
@@ -261,10 +261,6 @@ header nav {
     height: 10vh;
   }
 
-  .modal-container {
-    width: 75%;
-  }
-
   main > header > nav {
     height: 10vh;
   }
@@ -280,30 +276,31 @@ header nav {
 }
 
 @screen xl {
+  .modal-container {
+    width: 75%;
+  }
+
   .main-header,
   nav {
     grid-template-columns: 12rem repeat(6, minmax(0, 1fr)) 12rem;
   }
+
   .layout {
-    max-width: 75%;
+    max-width: 85%;
   }
 }
 
-@media screen (min-width: 1680px) {
-  .card-container {
-    max-width: 50%;
+@media screen and (min-width: 1960px) {
+  .layout {
+    max-width: 75%;
   }
 
-  main.layout {
-    max-width: 85%;
-  }
-
-  span.cta-btn {
-    @apply text-5xl;
+  .bg-accent.aspect-1\/1 span {
+    @apply text-4xl ml-4;
   }
 
   header > nav + div > span {
-    @apply text-3xl;
+    @apply text-xl;
   }
 }
 

@@ -23,7 +23,7 @@ export default function Modal({ onClose, modalRef, cardData }) {
     >
       <div className='modal-overlay absolute w-full h-full bg-gray-900 opacity-50'></div>
 
-      <div className='modal-container w-11/12 mx-auto overflow-y-auto bg-white rounded shadow-lg'>
+      <div className='modal-container md:w-11/12 w-full mx-auto overflow-y-auto bg-white rounded shadow-lg'>
         <div className='modal-close absolute top-0 right-0 z-50 flex flex-col items-center mt-4 mr-4 text-sm text-white cursor-pointer'>
           <svg
             className='text-white fill-current'
