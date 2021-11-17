@@ -20,7 +20,7 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     rollupOptions: {
-      external: ['react-helmet-async'],
+      external: ['./react-helmet-async'],
     },
   },
   publicDir: 'public',
