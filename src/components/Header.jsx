@@ -8,8 +8,8 @@ import { toggleModal } from '@/helpers/modal';
 
 export default function Header() {
   return (
-    <header className='layout main-header sm:pb-24 gap-y-8 md:gap-y-16 gap-x-2 md:pt-12 relative grid w-full pb-16'>
-      <nav className='layout fixed top-0 z-50 grid w-full mx-auto bg-gray-900'>
+    <header className='main-header bg-gray-900 sm:pb-24 gap-y-8 md:gap-y-16 gap-x-2 md:pt-12 relative grid w-full pb-16'>
+      <nav className='layout fixed inset-x-0 top-0 z-50 grid w-full mx-auto bg-gray-900'>
         <div className='md:col-start-2 md:pl-0 md:py-2 grid items-center col-span-2 col-start-1 py-4 pl-4'>
           <a
             href='#top'
@@ -18,7 +18,7 @@ export default function Header() {
             ns
           </a>
         </div>
-        <ul className='md:grid-cols-3 sm:flex sm:gap-6 sm:-mr-8 md:col-span-4 grid items-center justify-end col-span-5 mr-2 text-right'>
+        <ul className='md:grid-cols-3 sm:flex sm:gap-6 sm:-mr-8 md:col-span-4 grid items-center justify-end col-span-5 mr-8 text-right'>
           {ROUTE_STRINGS.map((route, idx) => (
             <li
               key={idx}
@@ -29,7 +29,7 @@ export default function Header() {
           ))}
         </ul>
       </nav>
-      <div className='md:col-span-5 md:col-start-2 md:row-span-3 md:pb-12 md:pt-24 col-span-6 col-start-2 row-start-2'>
+      <div className='md:col-start-2 md:row-span-3 md:pb-12 md:pt-24 col-span-6 col-start-2 row-start-2'>
         <span className='px-5 text-[13px] md:text-[20px] text-gray-50 font-medium tracking-widest uppercase border-l border-gray-50'>
           Portfolio for
         </span>
@@ -75,7 +75,7 @@ export default function Header() {
                 <path d='M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z' />
               </svg>
             </div>
-            <span className='md:block cta-btn hidden text-xl font-semibold uppercase'>
+            <span className='md:block cta-btn hidden text-xl xl:text-2xl font-semibold uppercase'>
               Drop Me a Line
             </span>
           </a>
@@ -88,7 +88,7 @@ export default function Header() {
           className='bottom-24 md:-translate-y-1/4 sm:-translate-y-1/2 -translate-y-3/4 absolute left-0 -translate-x-1/2'
         />
         <img
-          className='relative rounded-full'
+          className='absolute -top-40 rounded-full'
           src='./images/avatar.jpg'
           alt='picture of nick'
         />

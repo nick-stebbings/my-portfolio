@@ -14,14 +14,14 @@ export default function ProjectCard({
   libs,
 }) {
   return (
-    <div className='card-container lg:mx-auto lg:flex w-full'>
+    <div className='card-container border-8 border-gray-50 justify-center lg:mx-auto lg:flex w-full'>
       <div
         className='h-72 lg:h-auto xl:w-72 lg:rounded-t-none lg:rounded-l flex-none overflow-hidden text-center bg-cover rounded-t'
         style={{ backgroundImage: `url(${img})`, backgroundPosition: 'top' }}
-        title={'first illustration'}
+        title={title}
       ></div>
-      <div className='lg:rounded-b-none drop-shadow-md bg-gray-50 flex flex-col justify-between p-4 leading-normal'>
-        <div className='mb-8'>
+      <div className='lg:rounded-b-none xl:max-w-1/2 drop-shadow-md bg-gray-50 flex flex-col justify-between p-4 leading-normal'>
+        <div className='mb-8 xl:mx-auto xl:mt-12'>
           <span className='flex items-center text-sm text-gray-900'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -42,9 +42,8 @@ export default function ProjectCard({
           <h2 className='mt-2 leading-normal tracking-wide'>{subText}</h2>
           {mainText.split('//').map((para, idx) => (
             <p
-              className='md:leading-normal md:mx-4 md:mt-6 mt-2 text-lg leading-snug tracking-wide text-left text-gray-900'
+              className='md:leading-normal font-serif md:mx-4 md:mt-6 mt-2 text-lg xl:text-xl leading-snug tracking-wide text-left text-gray-900'
               key={idx}
-              style={{ fontFamily: 'Inter' }}
             >
               {para}
             </p>

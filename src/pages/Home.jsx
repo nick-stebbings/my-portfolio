@@ -38,10 +38,7 @@ export default function Home() {
         modalRef={modalRef}
         cardData={currentModalContent}
       />
-      <main
-        id='top'
-        className='layout w-full min-h-screen font-sans bg-gray-900'
-      >
+      <main id='top' className='layout w-full min-h-screen font-sans'>
         <Header />
         <SkillsRack openPortfolioItemModal={openPortfolioItemModal} />
         <ProjectsRack openPortfolioItemModal={openPortfolioItemModal} />

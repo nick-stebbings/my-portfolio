@@ -5,11 +5,11 @@ export default function Footer() {
   return (
     <footer
       id='contact'
-      className='flex flex-col items-center justify-end w-full'
+      className='flex flex-col items-center justify-end w-full bg-gray-900'
     >
       <ContactForm />
-      <header className='contact-info flex flex-col items-center justify-between w-3/4 pb-4'>
-        <div className='icons h-14 text-accent flex'>
+      <header className='contact-info xl:relative xl:bottom-12 w-full bg-gray-900 flex flex-col items-center justify-between pb-4'>
+        <div className='icons xl:h-14 text-accent flex'>
           <div className='hover:text-gray-50 flex items-center justify-center'>
             <a
               href='https://www.linkedin.com/in/nick-stebbs-567ba4224'

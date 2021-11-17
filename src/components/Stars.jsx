@@ -38,7 +38,7 @@ export const SkillStars = ({ skillsObj }) => (
         return (
           <li
             key={idx}
-            className='text-semibold text-gray-light flex flex-no-wrap items-center justify-around w-full mb-2'
+            className='text-gray-light flex flex-no-wrap items-center justify-around w-full mb-2 xl:text-xl'
           >
             <div className='w-1/5 mr-1 text-gray-900'>{lang}</div>
             <div className='flex justify-start h-12'>

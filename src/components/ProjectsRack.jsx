@@ -5,7 +5,7 @@ export default function ProjectsRack({ openPortfolioItemModal }) {
   return (
     <section
       id='projects'
-      className='bg-gray-50 md:pt-16 md:pb-24 main-content-projects md:py-16 pt-24 pb-4'
+      className='bg-gray-transparent md:pt-16 main-content-projects pt-24 pb-4'
     >
       <div className='portfolio xl:p-0 md:place-content-center md:px-16 grid w-full h-full grid-cols-5 gap-6 px-4'>
         <div

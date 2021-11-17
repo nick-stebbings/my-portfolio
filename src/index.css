@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -14,10 +15,8 @@
 
 .main-header::before,
 .main-header::after {
-  @apply w-full;
+  @apply w-full h-full absolute;
   content: '';
-  height: 95%;
-  position: absolute;
 }
 
 .main-header > * {
@@ -54,7 +53,7 @@ body.modal-active {
   overflow-y: hidden;
 }
 
-/** Accordian **/
+/** Accordion **/
 
 /* Tab content - closed */
 .tab-content {
@@ -70,7 +69,7 @@ body.modal-active {
 /* Label formatting when open */
 .tab input:checked + label {
   /*@apply text-xl p-5 border-l-2 border-indigo-500 bg-gray-100 font-semibold text-indigo*/
-  font-size: 1.25rem; /*.text-xl*/
+  @apply text-xl xl:text-2xl; /*.text-xl*/
   padding: 1.25rem; /*.p-5*/
   border-left-width: 2px; /*.border-l-2*/
   border-color: #feb00a; /*.border-indigo*/
@@ -126,7 +125,7 @@ body.modal-active {
   @apply absolute hidden mr-2 font-sans leading-none text-red-900;
 }
 
-/** Porfolio Section **/
+/** Portfolio Section **/
 .portfolio {
   min-height: 80vh;
 }
@@ -234,7 +233,7 @@ header nav {
   }
 
   .portfolio {
-    grid-template-rows: repeat(6, minmax(0, 100px));
+    grid-template-rows: repeat(6, minmax(0, 150px));
   }
 
   .footer-details {
@@ -249,8 +248,25 @@ header nav {
     grid-template-columns: 8rem repeat(6, minmax(0, 1fr)) 8rem;
   }
 
+  main > header > nav {
+    height: 10vh;
+  }
+
+  .modal-container {
+    width: 75%;
+  }
+
+  main > header > nav {
+    height: 10vh;
+  }
+
   #contact-form {
     @apply my-auto;
+  }
+
+  #projects {
+    padding-top: 13vh;
+    padding-bottom: 10vh;
   }
 }
 
@@ -259,11 +275,26 @@ header nav {
   nav {
     grid-template-columns: 12rem repeat(6, minmax(0, 1fr)) 12rem;
   }
+  .layout {
+    max-width: 70%;
+  }
 }
 
 @media screen (min-width: 1680px) {
   .card-container {
-    max-width: 75%;
+    max-width: 50%;
+  }
+
+  main.layout {
+    max-width: 85%;
+  }
+
+  span.cta-btn {
+    @apply text-5xl;
+  }
+
+  header > nav + div > span {
+    @apply text-3xl;
   }
 }
 
@@ -280,16 +311,6 @@ header nav {
 }
 
 @layer base {
-  /* inter-regular - latin */
-  @font-face {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-display: optional;
-    src: url('/fonts/inter-regular-webfont.woff2') format('woff2'),
-      url('/fonts/inter-regular-webfont.woff') format('woff');
-  }
-
   h1.hero-title,
   .cta-btn {
     font-family: 'Ubuntu Mono', monospace;
@@ -297,33 +318,13 @@ header nav {
     @apply sm:text-left px-4 text-center;
   }
 
-  /* inter-500 - latin */
-  @font-face {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-display: optional;
-    src: url('/fonts/inter-medium-webfont.woff2') format('woff2'),
-      url('/fonts/inter-medium-webfont.woff') format('woff');
-  }
-
-  /* inter-700 - latin */
-  @font-face {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-display: optional;
-    src: url('/fonts/inter-bold-webfont.woff2') format('woff2'),
-      url('/fonts/inter-bold-webfont.woff') format('woff');
-  }
-
   /* Write your own custom base styles here */
   h1 {
-    @apply md:text-8xl mb-8 font-sans text-5xl font-bold leading-10 tracking-wider;
+    @apply md:text-8xl xl:text-9xl xl:leading-normal xl:text-center mb-8 font-sans text-5xl font-bold leading-10 tracking-wider;
   }
 
   h2 {
-    @apply md:text-4xl font-sans text-2xl font-bold;
+    @apply md:text-3xl xl:text-4xl xl:mb-8 xl:leading-normal font-sans text-2xl font-bold;
   }
 
   h3 {
@@ -340,16 +341,10 @@ header nav {
 
   #root {
     background-image: url('/images/funky-lines.png');
-    @apply bg-repeat;
-    @apply bg-gray-50;
+    @apply bg-repeat bg-gray-900;
   }
 
   .layout {
-    /* 750px */
-    /* max-width: 43.75rem; */
-
-    /* 1100px */
-    max-width: 68.75rem;
     @apply w-11/12 mx-auto;
   }
 }
