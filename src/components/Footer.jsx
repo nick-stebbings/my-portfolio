@@ -12,7 +12,7 @@ export default function Footer() {
         <div className='icons xl:h-14 text-accent flex'>
           <div className='hover:text-gray-50 flex items-center justify-center'>
             <a
-              href='https://www.linkedin.com/in/nick-stebbs-567ba4224'
+              href='https://www.linkedin.com/in/nick-stebbings-567ba4224/'
               target='_blank'
               className='flex flex-col hover:text-blue-500 justify-end border-0'
             >

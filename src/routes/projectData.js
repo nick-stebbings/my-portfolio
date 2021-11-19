@@ -6,7 +6,7 @@ import pyramidBlocks from '/images/pyramid-blocks.png';
 import habitPyramid from '/images/habit-pyramid.png';
 import habitFractV2Img from '/images/habfract-screenshot-masked.png';
 import habitFractV2ImgFront from '/images/habitfractv2.png';
-
+//TODo: add character reference.
 export const SKILLS = {
   langs: {
     JavaScript: 5,
@@ -16,12 +16,14 @@ export const SKILLS = {
     SQL: 5,
     GraphQL: 4,
     HTML5: 5,
-    CSS3: 4,
+    '(Pre & Post) CSS3': 4,
   },
   apps: {
     'VSCode IDE': 4,
     'Chrome DevTools': 4,
     'Linux Command Line': 3,
+    Git: 4,
+    Docker: 4,
     Photoshop: 3,
     Figma: 3,
   },
