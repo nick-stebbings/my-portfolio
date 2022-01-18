@@ -296,6 +296,18 @@ header nav {
   }
 }
 
+@media screen and (min-width: 400px) {
+  h1.hero-title {
+    @apply text-center text-5xl;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  h1.hero-title {
+    @apply text-7xl;
+  }
+}
+
 @media screen and (min-width: 1960px) {
   .layout {
     max-width: 75%;
@@ -331,7 +343,7 @@ header nav {
   .cta-btn {
     font-family: 'Ubuntu Mono', monospace;
     font-weight: 400;
-    @apply sm:text-left px-4 text-center;
+    @apply sm:text-left text-4xl px-4;
   }
 
   /* Write your own custom base styles here */

@@ -47,7 +47,7 @@ export default function Header() {
         <div className='bg-accent flex items-center justify-center aspect-1/1 hover:text-gray-50 relative rounded-full p-2 text-gray-900'>
           <a
             href='#contact'
-            className='hover:text-blue-600 flex pt-2 pl-2 justify-center items-center'
+            className='hover:text-blue-600 flex pt-2 px-4 md:px-12 justify-center items-center'
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -79,7 +79,7 @@ export default function Header() {
                 <path d='M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z' />
               </svg>
             </div>
-            <span className='md:block cta-btn hidden text-xl xl:text-2xl font-semibold uppercase'>
+            <span className='md:block cta-btn hidden text-base lg:text-xl xl:text-2xl font-semibold uppercase'>
               Drop Me a Line
             </span>
           </a>
