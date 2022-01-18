@@ -38,7 +38,7 @@ export default function Header() {
           <h1 className='hero-title'>Full Stack Development_</h1>
         </div>
       </div>
-      <div className='md:col-start-7 md:row-start-3 relative col-start-2 row-start-3'>
+      <div className='md:col-start-7 md:row-start-4 relative col-start-2 row-start-3'>
         <img
           src={dots}
           alt='decorative dots'
