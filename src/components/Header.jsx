@@ -19,11 +19,11 @@ export default function Header() {
             ns
           </a>
         </div>
-        <ul className='md:grid-cols-3 sm:flex sm:gap-6 sm:-mr-8 md:col-span-4 grid items-center justify-end col-span-5 mr-2 text-right'>
+        <ul className='md:grid-cols-3 sm:flex md:col-span-4 grid items-center justify-end col-span-5 mr-2 text-right'>
           {ROUTE_STRINGS.map((route, idx) => (
             <li
               key={idx}
-              className='md:mr-0 hover:underline sm:text-lg md:py-4 md:text-xl lg:px-4 items-center py-1 mt-1 text-sm tracking-widest text-white uppercase'
+              className='md:mr-0 hover:underline sm:text-lg md:py-4 sm:ml-6 md:ml-8 md:text-xl lg:px-0 items-center py-1 mt-1 text-sm tracking-widest text-white uppercase'
             >
               <a href={`#${route.toLowerCase()}`}>{route}</a>
             </li>
