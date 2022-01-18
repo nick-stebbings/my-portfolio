@@ -11,6 +11,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 /** Hero and main bg **/
 
 .main-header::before,
@@ -39,6 +44,7 @@
 .modal {
   z-index: 100;
   transition: opacity 0.25s ease;
+  max-width: 100vw;
 }
 .modal-container {
   z-index: 101;
