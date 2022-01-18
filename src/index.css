@@ -308,9 +308,19 @@ header nav {
   }
 }
 
+@media screen and (min-width: 1400px) {
+  h1.hero-title {
+    font-size: 6rem;
+  }
+}
+
 @media screen and (min-width: 1960px) {
   .layout {
     max-width: 75%;
+  }
+
+  h1 {
+    font-size: 5rem;
   }
 
   .modal-container {
@@ -348,7 +358,7 @@ header nav {
 
   /* Write your own custom base styles here */
   h1 {
-    @apply md:text-8xl xl:text-9xl xl:leading-normal xl:text-center mb-8 font-sans text-5xl font-bold leading-10 tracking-wider;
+    @apply md:text-8xl xl:leading-normal xl:text-center mb-8 font-sans text-5xl font-bold leading-10 tracking-wider;
   }
 
   h2 {

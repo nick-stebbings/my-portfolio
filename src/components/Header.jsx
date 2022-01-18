@@ -166,7 +166,7 @@ export default function Header() {
           </a>
         </p>
       </div>
-      <div className='md:col-span-4 md:col-start-2 md:row-start-auto relative col-span-4 col-start-4 row-start-3'>
+      <div className='xl:col-span-3 xl:col-start-3 md:col-start-2 md:row-start-auto relative col-span-4 col-start-4 row-start-3'>
         <img
           src={dots}
           alt='decorative dots'

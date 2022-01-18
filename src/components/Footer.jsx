@@ -16,9 +16,7 @@ export default function Footer() {
               target='_blank'
               className='flex flex-col hover:text-blue-500 justify-end border-0'
             >
-              <span className='cta-btn text-center text-white uppercase'>
-                LinkedIn
-              </span>
+              <span className='text-center text-white uppercase'>LinkedIn</span>
               <svg
                 className='w-24 h-24'
                 xmlns='http://www.w3.org/2000/svg'
@@ -42,9 +40,7 @@ export default function Footer() {
               target='_blank'
               className='flex flex-col hover:text-blue-500 justify-end border-0'
             >
-              <span className='cta-btn text-center text-white uppercase'>
-                GitHub
-              </span>
+              <span className='text-center text-white uppercase'>GitHub</span>
               <svg
                 className='w-24 h-24'
                 xmlns='http://www.w3.org/2000/svg'
@@ -69,9 +65,7 @@ export default function Footer() {
               target='_blank'
               className='flex flex-col hover:text-blue-500 justify-end border-0'
             >
-              <span className='cta-btn text-center text-white uppercase'>
-                Medium
-              </span>
+              <span className='text-center text-white uppercase'>Medium</span>
               <svg
                 className='w-24 h-24'
                 xmlns='http://www.w3.org/2000/svg'
@@ -95,7 +89,7 @@ export default function Footer() {
               target='_blank'
               className='flex flex-col hover:text-blue-500 justify-end border-0'
             >
-              <span className='cta-btn text-center text-white uppercase'>
+              <span className='text-center text-white uppercase'>
                 Code Wars
               </span>
               <svg
