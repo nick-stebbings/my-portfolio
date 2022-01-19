@@ -8,11 +8,6 @@ import ProjectsRack from '@/components/ProjectsRack';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
-export const openPortfolioItemModal = (itemRef) => {
-  setCurrentModalContent(PROJECT_INFO[itemRef]);
-  toggleModal();
-};
-
 export default function Home() {
   const [currentModalContent, setCurrentModalContent] = useState(
     PROJECT_INFO['auntJenny']
@@ -31,6 +26,11 @@ export default function Home() {
     document.body.classList.toggle('modal-active');
   }
 
+  const openPortfolioItemModal = (itemRef) => {
+    setCurrentModalContent(PROJECT_INFO[itemRef]);
+    toggleModal();
+  };
+
   return (
     <>
       <Modal
@@ -39,8 +39,8 @@ export default function Home() {
         cardData={currentModalContent}
       />
       <main id='top' className='layout w-full min-h-screen font-sans'>
-        <Header />
-        <ProjectsRack />
+        <Header openPortfolioItemModal={openPortfolioItemModal} />
+        <ProjectsRack openPortfolioItemModal={openPortfolioItemModal} />
         <SkillsRack />
         <Footer />
       </main>

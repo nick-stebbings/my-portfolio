@@ -4,10 +4,8 @@ import { ROUTE_STRINGS } from '@/routes/Routes';
 import cvImg from '/images/cv-pic.png';
 import aJimg from '/images/aunt-jenny.jpg';
 import dots from '/images/dots.svg';
-import { toggleModal } from '@/helpers/modal';
-import { openPortfolioItemModal } from '@/pages/Home';
 
-export default function Header() {
+export default function Header({ openPortfolioItemModal }) {
   return (
     <header className='main-header bg-gray-900 sm:pb-24 gap-y-8 md:gap-y-16 gap-x-2 md:pt-12 relative grid w-full pb-16'>
       <nav className='layout fixed inset-x-0 top-0 z-50 grid w-full bg-gray-900'>
@@ -241,7 +239,7 @@ export default function Header() {
           <a href='#projects' target='_blank'>
             <div
               className='place-items-center hover:text-blue-600 hover:bg-gray-200 md:w-full md:h-12 absolute bottom-0 right-0 flex justify-between h-6 px-2 text-white translate-y-2 bg-blue-600 cursor-pointer'
-              onClick={() => toggleModal()}
+              onClick={() => openPortfolioItemModal('auntJenny')}
             >
               <span className='md:block hidden'>Summary</span>
               <svg

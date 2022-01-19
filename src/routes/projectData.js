@@ -83,27 +83,12 @@ export default {
       'https://n-stebbings.medium.com/from-session-cookie-to-do-list-to-fractal-distributed-listmania-2da3e33728a?postPublishedType=repub',
   },
   habitFractV2Synopsis: {
-    title: 'HabitFract - an experiment in tracking habits hierarchically',
+    title:
+      'HabitFract - an experiment in tracking habits visually & hierarchically',
     mainText:
-      'A development of my first habit tracking app to include hierarchical visualisation of the habits using the d3 library (Data Driven Documents). This was a much more ambitious project than the one from which it stemmed. I moved to a multi-layered architecture: my first single-paged app. I also performed a full manual deployment to a Digital Ocean droplet, Dockerised both layers and used Github actions and DockerHub for CD//I spent some time working on integrating d3-hierarchy visualisations with a lightweight frontend framework called Mithril. Since Mithril is unopiniated about global state management I tried to find my own solutions using functional streams of data. This prepared me well for learning Redux and understanding React state hooks, but was ultimately buggy and hard to maintain. (I am now fixing that by migrating the UI to React & Redux.) //I plan to reuse the d3 interface in v2 of the project, since much of the logic was componentised and written in JSX',
-    subText: 'A fractal habit tracking single page application',
+      "Ever tried to follow a goal and had trouble trying to put it into action? Ok - that's a leading question... ",
     img2: habitFractV2Img,
     img: habitFractV2ImgFront,
-    skills: [
-      'CI/CD',
-      'Data Visualisation',
-      'Using MVC Frameworks',
-      'Figma Design from Scratch',
-      'Build-first methodology',
-      'Code Splitting',
-    ],
-    langs: 'Ruby, JavaScript, Sass & PostCSS',
-    libs: ['D3js', 'Tailwind CSS', 'Webpack 4', 'Mithril'],
-    demoLink: 'https://habfract.life/#!/vis/habit-tree',
-    gitLink:
-      'https://github.com/nick-stebbings/fractal-habits-SPA-tailwind-react-redux',
-    blogLink:
-      'https://n-stebbings.medium.com/from-session-cookie-to-do-list-to-fractal-distributed-listmania-2da3e33728a?postPublishedType=repub',
   },
   habitFractV2api: {
     title: 'HabitFract v1 Web API',
