@@ -1,7 +1,8 @@
 import React from 'react';
 import PROJECT_INFO from '@/routes/projectData';
+import { openPortfolioItemModal } from '@/pages/Home';
 
-export default function ProjectsRack({ openPortfolioItemModal }) {
+export default function ProjectsRack() {
   return (
     <section
       id='projects'

@@ -5,7 +5,7 @@ import cvImg from '/images/cv-pic.png';
 import aJimg from '/images/aunt-jenny.jpg';
 import dots from '/images/dots.svg';
 import { toggleModal } from '@/helpers/modal';
-import { backgroundPosition } from 'tailwindcss/defaultTheme';
+import { openPortfolioItemModal } from '@/pages/Home';
 
 export default function Header() {
   return (
@@ -118,12 +118,59 @@ export default function Header() {
           <span className='text-gray-50'>TypesScript & Rust</span>
           <a
             className='hover:text-blue-500 flex flex-row-reverse items-center text-right border-0'
+            href='https://habfract.life'
+            target='_blank'
+          >
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              className='w-12 h-12'
+              fill='none'
+              viewBox='-24 -24 72 72'
+              fill='currentColor'
+              alt='demonstration of the UI'
+            >
+              <path
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                strokeWidth={1}
+                d='M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1'
+              />
+            </svg>
+            <span className='cta-btn text-xl font-bold tracking-widest uppercase'>
+              UI Demo
+            </span>
+          </a>
+          <span
+            className='hover:text-blue-500 flex flex-row-reverse items-center text-right border-0 cursor-pointer'
+            onClick={() => openPortfolioItemModal('habitFractV2Synopsis')}
+          >
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              className='w-12 h-12'
+              fill='none'
+              viewBox='-24 -24 72 72'
+              fill='currentColor'
+              alt='project synopsis'
+            >
+              <path
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                strokeWidth={2}
+                d='M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z'
+              />
+            </svg>
+            <span className='cta-btn text-xl font-bold tracking-widest uppercase'>
+              Project Synopsis
+            </span>
+          </span>
+          <a
+            className='hover:text-blue-500 flex flex-row-reverse items-center text-right border-0'
             href='https://n-stebbings.medium.com/from-local-storage-to-do-list-to-fractal-peer-to-peer-habit-tracker-3be56214c6ee?source=your_stories_page----------------------------------------'
             target='_blank'
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'
-              className='w-16 h-16'
+              className='w-12 h-12'
               fill='none'
               viewBox='-24 -24 72 72'
               fill='currentColor'
@@ -147,7 +194,7 @@ export default function Header() {
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'
-              className='w-16 h-16'
+              className='w-12 h-12'
               fill='none'
               viewBox='-24 -24 72 72'
               fill='currentColor'
