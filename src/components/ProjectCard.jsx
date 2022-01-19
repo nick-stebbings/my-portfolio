@@ -14,9 +14,9 @@ export default function ProjectCard({
   libs,
 }) {
   return (
-    <div className='card-container border-8 border-gray-50 justify-center lg:mx-auto lg:flex w-full'>
+    <div className='card-container border-8 border-gray-50 justify-center lg:mx-auto flex flex-col lg:flex-row w-full'>
       <div
-        className='h-72 lg:h-auto xl:w-72 lg:rounded-t-none lg:rounded-l flex-none overflow-hidden text-center bg-cover rounded-t'
+        className='h-72 lg:h-auto lg:w-72 w-full lg:rounded-t-none lg:rounded-l flex-none overflow-hidden text-center bg-cover rounded-t'
         style={{ backgroundImage: `url(${img})`, backgroundPosition: 'top' }}
         title={title}
       ></div>
@@ -42,7 +42,7 @@ export default function ProjectCard({
           <h2 className='mt-2 leading-normal tracking-wide'>{subText}</h2>
           {mainText.split('//').map((para, idx) => (
             <p
-              className='md:leading-normal font-serif md:mx-4 md:mt-6 mt-2 text-lg xl:text-xl leading-snug tracking-wide text-left text-gray-900'
+              className='md:leading-normal font-serif lg:mx-4 lg:mt-6 mt-2 text-lg xl:text-xl leading-snug tracking-wide text-left text-gray-900'
               key={idx}
             >
               {para}
@@ -163,7 +163,7 @@ export default function ProjectCard({
 
       {img2 && (
         <div
-          className='h-72 md:mt-0 lg:h-auto xl:w-72 lg:rounded-t-none lg:rounded-l flex-none mt-4 overflow-hidden text-center bg-cover rounded-t'
+          className='h-72 lg:mt-0 lg:h-auto lg:w-72 w-full lg:rounded-t-none lg:rounded-l flex-none mt-4 overflow-hidden text-center bg-cover rounded-t'
           style={{ backgroundImage: `url(${img2})`, backgroundPosition: 'top' }}
           title={'second illustration'}
         ></div>

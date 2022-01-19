@@ -5,7 +5,10 @@ import spinner from '/images/spinner.jpg';
 import pyramidBlocks from '/images/pyramid-blocks.png';
 import habitPyramid from '/images/habit-pyramid.png';
 import habitFractV2Img from '/images/habfract-screenshot-masked.png';
+import habitFractV2ScreenshotDesktop from '/images/habit-synopsis-desktop-screenshot.png';
+import habitFractV2ScreenshotMobile from '/images/habit-synopsis-mobile-screenshot.png';
 import habitFractV2ImgFront from '/images/habitfractv2.png';
+
 //TODo: add character reference.
 export const SKILLS = {
   langs: {
@@ -87,7 +90,7 @@ export default {
       'HabitFract - an experiment in tracking habits visually & hierarchically',
     mainText:
       "Ever tried to follow a goal and had trouble trying to put it into action? Ok - that's a leading question... ",
-    img2: habitFractV2Img,
+    img2: habitFractV2ScreenshotDesktop,
     img: habitFractV2ImgFront,
   },
   habitFractV2api: {
