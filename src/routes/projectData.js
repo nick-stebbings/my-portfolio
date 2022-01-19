@@ -86,12 +86,12 @@ export default {
       'https://n-stebbings.medium.com/from-session-cookie-to-do-list-to-fractal-distributed-listmania-2da3e33728a?postPublishedType=repub',
   },
   habitFractV2Synopsis: {
-    title:
-      'HabitFract Synopsis - an experiment in tracking habits visually & hierarchically',
+    title: 'HabitFract: Synopsis',
+    subText: 'An experiment in tracking habits visually & hierarchically',
     mainText:
-      "Ever tried to follow a goal and had trouble trying to put it into action? Ok - that's a leading question... ",
+      "Ever tried to follow a goal and had trouble trying to put it into action? Ok - that's a leading question... // An API developed for the single-page-application HabitFract. I tried to separate concerns as much as possible to allow the use of different storage mediums via adapters in the ROM-rb ORM library. This was a complicated library to learn but it ultimately enabled me to populate the visualisations on the frontend from web-scraped data.//I scraped data from eHow using Cheerio, formulated it in a YAML file, then used a Ruby Tree library to adapt it into a hierarchical JSON ternary tree. This could later allow rapid seeding of the database based on the user's choice of data.",
     img2: habitFractV2ScreenshotDesktop,
-    img: habitFractV2ImgFront,
+    img: habitFractV2ScreenshotMobile,
   },
   habitFractV2api: {
     title: 'HabitFract v1 Web API',
