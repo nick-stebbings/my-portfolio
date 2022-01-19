@@ -47,7 +47,7 @@ export default function Header() {
         <div className='bg-accent flex items-center justify-center aspect-1/1 hover:text-gray-50 relative rounded-full p-2 text-gray-900'>
           <a
             href='#contact'
-            className='hover:text-blue-600 flex pt-2 px-4 md:px-12 justify-center items-center'
+            className='hover:text-gray-50 flex pt-2 px-4 md:px-12 justify-center items-center'
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -97,7 +97,7 @@ export default function Header() {
           alt='picture of nick'
         />
       </div>
-      <div className='md:col-span-2 md:row-start-5 col-span-6 col-start-2 row-start-4'>
+      <div className='md:col-span-3 md:row-start-5 col-span-6 col-start-2 row-start-4'>
         <div className='pl-5 pt-6 text-white text-md md:text-[20px] leading-relaxed tracking-widest uppercase border-l border-white'>
           Now Developing:
         </div>
