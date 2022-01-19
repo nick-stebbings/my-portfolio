@@ -87,7 +87,7 @@ export default {
   },
   habitFractV2Synopsis: {
     title:
-      'HabitFract - an experiment in tracking habits visually & hierarchically',
+      'HabitFract Synopsis - an experiment in tracking habits visually & hierarchically',
     mainText:
       "Ever tried to follow a goal and had trouble trying to put it into action? Ok - that's a leading question... ",
     img2: habitFractV2ScreenshotDesktop,
