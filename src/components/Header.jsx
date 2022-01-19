@@ -260,7 +260,14 @@ export default function Header({ openPortfolioItemModal }) {
           Latest Client
         </div>
         <div className='place-items-center xl:aspect-2/1 aspect-1/1 bg-gray-light md:mr-0 relative grid mr-4'>
+          <blockquote>
+            "Nick is continuing to help automate the order processing and
+            responds well to feedback and requests for new features. He is a
+            great problem solver and I would reccomend him..."
+          </blockquote>
+          {/* <div className='stylistic-quote-mark' className='w-8 h-8'></div> */}
           <a href='#projects' target='_blank'>
+            div.styl
             <div
               className='place-items-center hover:text-blue-600 hover:bg-gray-200 md:w-full md:h-12 absolute bottom-0 right-0 flex justify-between h-6 px-2 text-white translate-y-2 bg-blue-600 cursor-pointer'
               onClick={() => openPortfolioItemModal('auntJenny')}

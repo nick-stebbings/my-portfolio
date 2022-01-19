@@ -136,6 +136,10 @@ body.modal-active #root {
   @apply absolute hidden mr-2 font-sans leading-none text-red-900;
 }
 
+blockquote {
+  @apply md:text-xl mt-2 font-sans text-sm font-light leading-3 text-gray-50 mx-3;
+}
+
 /** Portfolio Section **/
 .portfolio {
   min-height: 80vh;
