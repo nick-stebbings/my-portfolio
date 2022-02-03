@@ -6,10 +6,10 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
+/* * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+} */
 
 html,
 body,
@@ -292,15 +292,25 @@ header nav {
   }
 }
 
+.hc-info {
+  left: 92%;
+}
+
 @media screen and (min-width: 400px) {
   h1.hero-title {
     @apply text-center text-5xl;
+  }
+  .hc-info {
+    left: 87%;
   }
 }
 
 @media screen and (min-width: 640px) {
   h1.hero-title {
     @apply text-7xl;
+  }
+  .hc-info {
+    left: 100%;
   }
 }
 
@@ -335,6 +345,10 @@ header nav {
     aspect-ratio: 2/1 !important;
   }
 
+  blockquote {
+    @apply text-xl;
+  }
+
   .main-header .quote-mark {
     height: 12rem;
   }
@@ -355,9 +369,13 @@ header nav {
 @layer base {
   h1.hero-title,
   .cta-btn {
-    font-family: 'Ubuntu Mono', monospace;
     font-weight: 400;
     @apply sm:text-left text-4xl px-4;
+  }
+
+  h1.hero-title,
+  .cta-circle {
+    font-family: 'Ubuntu Mono', monospace;
   }
 
   /* Write your own custom base styles here */

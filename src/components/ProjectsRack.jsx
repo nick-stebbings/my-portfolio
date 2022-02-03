@@ -51,7 +51,7 @@ export default function ProjectsRack({ openPortfolioItemModal }) {
           className='portfolio-item tall'
           onClick={() => openPortfolioItemModal('instagramClone')}
         >
-          <span className='project-tag'>Insta Clone</span>
+          <span className='project-tag'>Image Sharing App</span>
         </div>
         <div
           style={{

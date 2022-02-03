@@ -42,7 +42,7 @@ export default function Modal({ onClose, modalRef, cardData }) {
             <p className='md:text-2xl sm:w-auto relative w-full text-lg font-bold text-center'>
               {title}
               {title.includes('Holochain') && (
-                <div className='-right-6 absolute top-0'>
+                <span className='hc-info absolute top-0'>
                   <a
                     href={'https://holo.host/faq/what-is-holochain/'}
                     className='hover:text-blue-600'
@@ -61,7 +61,7 @@ export default function Modal({ onClose, modalRef, cardData }) {
                       />
                     </svg>
                   </a>
-                </div>
+                </span>
               )}
             </p>
             <div className='modal-close z-50 cursor-pointer'>

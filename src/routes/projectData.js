@@ -25,7 +25,7 @@ export const SKILLS = {
   apps: {
     'VSCode IDE': 4,
     'Chrome DevTools': 4,
-    'Linux Command Line': 3,
+    'Linux Command Line': 4,
     Git: 4,
     Docker: 4,
     Photoshop: 3,
@@ -34,10 +34,10 @@ export const SKILLS = {
   general: {
     'UX/UI Design': 4,
     'Figma to Code': 5,
-    Planning: 3,
+    Planning: 4,
     Debugging: 5,
     Networking: 4,
-    'Learning Pace': 4,
+    'Learning Speed': 4,
     Teamwork: 4,
   },
 };
@@ -66,7 +66,7 @@ export default {
   habitFractV2: {
     title: 'HabitFract v1 Frontend',
     mainText:
-      'A development of my first habit tracking app to include hierarchical visualisation of the habits using the d3 library (Data Driven Documents). This was a much more ambitious project than the one from which it stemmed. I moved to a multi-layered architecture: my first single-paged app. I also performed a full manual deployment to a Digital Ocean droplet, Dockerised both layers and used Github actions and DockerHub for CD//I spent some time working on integrating d3-hierarchy visualisations with a lightweight frontend framework called Mithril. Since Mithril is unopiniated about global state management I tried to find my own solutions using functional streams of data. This prepared me well for learning Redux and understanding React state hooks, but was ultimately buggy and hard to maintain. (I am now fixing that by migrating the UI to React & Redux.) //I plan to reuse the d3 interface in v2 of the project, since much of the logic was componentised and written in JSX',
+      'A development of my first habit tracking app to include hierarchical visualisation of the habits using the d3 library (Data Driven Documents). This was a much more ambitious project than the one from which it stemmed. I moved to a multi-layered architecture: my first single-paged app. I also performed a full manual deployment to a Digital Ocean droplet, Dockerised both layers and used Github actions and DockerHub for CD//I spent some time working on integrating d3-hierarchy visualisations with a lightweight frontend framework called Mithril. Since Mithril is unopiniated about global state management I tried to find my own solutions using functional streams of data. This prepared me well for learning Redux and understanding React state hooks, but was ultimately buggy and hard to maintain. // I plan to reuse the d3 interface in v2 of the project, since much of the logic was componentised and written in JSX// UPDATE: This version is no longer live as a migration to React is now complete. The demo link here demonstrates the new UI which is a clone of the v1 Frontend. Some features are yet to be migrated.',
     subText: 'A fractal habit tracking single page application',
     img2: habitFractV2Img,
     img: habitFractV2ImgFront,
@@ -80,7 +80,7 @@ export default {
     ],
     langs: 'Ruby, JavaScript, Sass & PostCSS',
     libs: ['D3js', 'Tailwind CSS', 'Webpack 4', 'Mithril'],
-    demoLink: 'https://habfract.life/#!/vis/habit-tree',
+    demoLink: 'https://demo.habfract.life',
     gitLink:
       'https://github.com/nick-stebbings/fractal-habits-SPA-tailwind-react-redux',
     blogLink:
@@ -90,7 +90,7 @@ export default {
     title: 'HabitFract: Synopsis',
     subText: 'An experiment in tracking habits Visually & Hierarchically',
     mainText:
-      "Ever tried to follow a goal and had trouble trying to put it into action? Ok - that's a leading question! // After trying many linear habit trackers (including some very visually and narratively interesting applications) I found that there was nothing meeting my personal requirements. I am a person who thinks in big ideas and then recursively breaks down what needs to be done to achieve these ideas (sometimes epic in scope).// // As a result of this top-down way of thinking - while it is always the day-to-day actions that one must focus on - it can be difficult to link them to the bigger picture and make consistent progress.",
+      "Ever tried to follow a goal and had trouble trying to put it into action? Ok - that's a leading question! // After trying many linear habit trackers (including some very visually and narratively interesting applications) I found that there was nothing meeting my personal requirements. I am a person who thinks in big ideas and then recursively breaks down what needs to be done to achieve these ideas (sometimes epic in scope).// // As a result of this top-down way of thinking - while it is always the day-to-day actions that one must focus on - it can be difficult to link them to the bigger picture and make consistent progress. // Conversely - I know many people who are great at breaking down and acting on small-magnitude behaviours (the list-writers!). HabitFract came about as a way of uniting the two ways of thinking in a way to provide visual cues and help build/break down habitual behaviour over time. // The future of the app is to be available only on the distributed data integrity framework 'Holochain', allowing all users to have sovereignty over personal habit data and exchange it with others as they see fit. For more info please see the p2p HabitFract popup in the Projects section. // For now, feel free to play around with the Web 2.0 version (there is no user login system but there are many templates available on the Demo which can be played with). Just follow the link to 'UI Demo' after closing this box. // Coming Soon: Video Demonstration",
     img3: habitFractV2ScreenshotMobile,
     img2: habitFractV2ScreenshotDesktop,
     img: habitFractV2TopImg,
@@ -147,10 +147,10 @@ export default {
       'https://n-stebbings.medium.com/from-local-storage-to-do-list-to-fractal-peer-to-peer-habit-tracker-3be56214c6ee?source=user_profile---------0-------------------------------',
   },
   instagramClone: {
-    title: 'React Instagram Clone',
+    title: 'React Image Sharing App',
     mainText:
       'I had fun building this copy of Instagram using a tutorial from Karl Hadwen. It was my second time using Firebase and I learnt how easy it is to setup user authentication. It was also good practice with React Hooks, Router, and managing loading states.',
-    subText: 'An instagram clone following the course of @karlhadwen',
+    subText: 'An image sharing app following the course of @karlhadwen',
     img: instaClone,
     img2: '',
     gitLink: 'https://github.com/nick-stebbings/insta-clone',

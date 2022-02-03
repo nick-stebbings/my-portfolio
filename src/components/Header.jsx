@@ -78,8 +78,8 @@ export default function Header({ openPortfolioItemModal }) {
                 <path d='M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z' />
               </svg>
             </div>
-            <span className='md:block pl-4 hidden text-base lg:text-xl xl:text-2xl font-semibold uppercase'>
-              Drop Me a Line
+            <span className='cta-circle md:block pl-4 hidden text-base lg:text-xl xl:text-2xl font-semibold'>
+              Get In Touch
             </span>
           </a>
         </div>
@@ -275,12 +275,12 @@ export default function Header({ openPortfolioItemModal }) {
           </blockquote>
           <img
             src={quote}
-            className='quote-mark absolute opacity-30 h-44 md:h-auto xl:h-72'
+            className='quote-mark absolute opacity-20 h-44 md:h-auto xl:h-72'
             alt='quotation mark'
           />
           <a href='#projects' target='_blank'>
             <div
-              className='place-items-center hover:text-blue-600 hover:bg-gray-200 md:w-full md:h-12 absolute xl:bottom-0 right-0 flex justify-between h-6 px-2 text-white translate-y-2 bg-blue-600 cursor-pointer'
+              className='place-items-center text-blue-600 bg-gray-200 md:w-full md:h-12 absolute xl:bottom-0 right-0 flex justify-between h-6 px-2 hover:text-white translate-y-2 hover:bg-blue-600 cursor-pointer'
               onClick={() => openPortfolioItemModal('auntJenny')}
             >
               <span className='md:block hidden'>Summary</span>

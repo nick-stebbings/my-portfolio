@@ -18,7 +18,10 @@ export default function ProjectCard({
     <div className='card-container border-8 border-gray-50 justify-center lg:mx-auto flex flex-col lg:flex-row w-full'>
       <div
         className='h-72 lg:h-auto lg:w-72 w-full lg:rounded-t-none lg:rounded-l flex-none overflow-hidden text-center bg-cover rounded-t'
-        style={{ backgroundImage: `url(${img})`, backgroundPosition: 'top' }}
+        style={{
+          backgroundImage: `url(${img})`,
+          backgroundPosition: title.includes('Synopsis') ? 'right' : 'top',
+        }}
         title={title}
       ></div>
       <div className='lg:rounded-b-none xl:max-w-1/2 drop-shadow-md bg-gray-50 flex flex-col justify-between p-4 leading-normal'>
@@ -46,11 +49,8 @@ export default function ProjectCard({
             {subText}
           </h2>
           {mainText.split('//').map((para, idx) => (
-            <>
-              <p
-                className='md:leading-normal font-serif lg:mx-4 lg:mt-6 mt-4 px-4 text-lg xl:text-xl leading-snug tracking-wide text-left text-gray-900'
-                key={idx}
-              >
+            <React.Fragment key={idx}>
+              <p className='md:leading-normal font-serif lg:mx-4 lg:mt-6 mt-4 px-4 text-lg xl:text-xl leading-snug tracking-wide text-left text-gray-900'>
                 {para}
               </p>
               {title.includes('Synopsis') && idx == 2 && (
@@ -58,12 +58,12 @@ export default function ProjectCard({
                   className='h-72 float-right w-1/2 m-2 bg-cover'
                   style={{
                     backgroundImage: `url(${img3})`,
-                    backgroundPosition: 'right',
+                    backgroundPosition: 'top',
                   }}
                   title={'second illustration'}
                 ></div>
               )}
-            </>
+            </React.Fragment>
           ))}
         </div>
 
@@ -190,7 +190,12 @@ export default function ProjectCard({
       {img2 && (
         <div
           className='h-72 lg:mt-0 lg:h-auto lg:w-72 w-full lg:rounded-t-none lg:rounded-l flex-none mt-4 overflow-hidden text-center bg-cover rounded-t'
-          style={{ backgroundImage: `url(${img2})`, backgroundPosition: 'top' }}
+          style={{
+            backgroundImage: `url(${img2})`,
+            backgroundPosition: title.includes('Synopsis')
+              ? 'top-right'
+              : 'top',
+          }}
           title={'second illustration'}
         ></div>
       )}
