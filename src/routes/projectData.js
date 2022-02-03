@@ -7,6 +7,7 @@ import habitPyramid from '/images/habit-pyramid.png';
 import habitFractV2Img from '/images/habfract-screenshot-masked.png';
 import habitFractV2ScreenshotDesktop from '/images/habit-synopsis-desktop-screenshot.png';
 import habitFractV2ScreenshotMobile from '/images/habit-synopsis-mobile-screenshot.png';
+import habitFractV2TopImg from '/images/habit-structure.png';
 import habitFractV2ImgFront from '/images/habitfractv2.png';
 
 //TODo: add character reference.
@@ -87,11 +88,12 @@ export default {
   },
   habitFractV2Synopsis: {
     title: 'HabitFract: Synopsis',
-    subText: 'An experiment in tracking habits visually & hierarchically',
+    subText: 'An experiment in tracking habits Visually & Hierarchically',
     mainText:
-      "Ever tried to follow a goal and had trouble trying to put it into action? Ok - that's a leading question... // An API developed for the single-page-application HabitFract. I tried to separate concerns as much as possible to allow the use of different storage mediums via adapters in the ROM-rb ORM library. This was a complicated library to learn but it ultimately enabled me to populate the visualisations on the frontend from web-scraped data.//I scraped data from eHow using Cheerio, formulated it in a YAML file, then used a Ruby Tree library to adapt it into a hierarchical JSON ternary tree. This could later allow rapid seeding of the database based on the user's choice of data.",
+      "Ever tried to follow a goal and had trouble trying to put it into action? Ok - that's a leading question! // After trying many linear habit trackers (including some very visually and narratively interesting applications) I found that there was nothing meeting my personal requirements. I am a person who thinks in big ideas and then recursively breaks down what needs to be done to achieve these ideas (sometimes epic in scope).// // As a result of this top-down way of thinking - while it is always the day-to-day actions that one must focus on - it can be difficult to link them to the bigger picture and make consistent progress.",
+    img3: habitFractV2ScreenshotMobile,
     img2: habitFractV2ScreenshotDesktop,
-    img: habitFractV2ScreenshotMobile,
+    img: habitFractV2TopImg,
   },
   habitFractV2api: {
     title: 'HabitFract v1 Web API',

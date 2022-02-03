@@ -4,6 +4,7 @@ export default function ProjectCard({
   title,
   img,
   img2,
+  img3,
   mainText,
   subText,
   demoLink,
@@ -41,20 +42,34 @@ export default function ProjectCard({
               <span className='pl-2'>{langs}</span>
             </span>
           )}
-          <h2 className='mt-2 leading-normal tracking-wide'>{subText}</h2>
+          <h2 className='mt-2 leading-normal my-4 lg:my-8 tracking-wide'>
+            {subText}
+          </h2>
           {mainText.split('//').map((para, idx) => (
-            <p
-              className='md:leading-normal font-serif lg:mx-4 lg:mt-6 mt-2 text-lg xl:text-xl leading-snug tracking-wide text-left text-gray-900'
-              key={idx}
-            >
-              {para}
-            </p>
+            <>
+              <p
+                className='md:leading-normal font-serif lg:mx-4 lg:mt-6 mt-4 px-4 text-lg xl:text-xl leading-snug tracking-wide text-left text-gray-900'
+                key={idx}
+              >
+                {para}
+              </p>
+              {title.includes('Synopsis') && idx == 2 && (
+                <div
+                  className='h-72 float-right w-1/2 m-2 bg-cover'
+                  style={{
+                    backgroundImage: `url(${img3})`,
+                    backgroundPosition: 'right',
+                  }}
+                  title={'second illustration'}
+                ></div>
+              )}
+            </>
           ))}
         </div>
 
         {!title.includes('Synopsis') && (
           <>
-            <div className='flex-nowrap flex justify-around w-full mt-4'>
+            <div className='flex-nowrap flex justify-around w-full my-4'>
               <div className='px-2 pb-4'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -87,7 +102,7 @@ export default function ProjectCard({
                 </ul>
               </div>
             </div>
-            <div className='flex justify-center'>
+            <div className='flex justify-center mb-12'>
               {gitLink && (
                 <div className='flex items-center justify-center'>
                   <a

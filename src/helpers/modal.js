@@ -3,6 +3,7 @@ export function toggleModal() {
   modal.classList.toggle('opacity-0');
   modal.classList.toggle('pointer-events-none');
   document.body.classList.toggle('modal-active');
+  document.querySelector('#projects').scrollIntoView();
 }
 
 document.addEventListener('DOMContentLoaded', () => {

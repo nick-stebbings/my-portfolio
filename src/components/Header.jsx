@@ -1,6 +1,7 @@
 import React from 'react';
 import { ROUTE_STRINGS } from '@/routes/Routes';
 
+import quote from '/images/quote.svg';
 import cvImg from '/images/cv-pic.png';
 import aJimg from '/images/aunt-jenny.jpg';
 import dots from '/images/dots.svg';
@@ -40,9 +41,9 @@ export default function Header({ openPortfolioItemModal }) {
         <img
           src={dots}
           alt='decorative dots'
-          className='md:-translate-y-1/4 sm:-translate-y-1/2 sm:-translate-x-1/2 absolute w-24'
+          className='opacity-40 md:-translate-y-1/4 sm:-translate-y-1/2 sm:-translate-x-1/2 absolute w-24'
         />
-        <div className='bg-accent flex items-center justify-center aspect-1/1 hover:text-gray-50 relative rounded-full p-2 text-gray-900'>
+        <div className='bg-accent flex items-center justify-center aspect-1/1 hover:text-gray-50 relative rounded-full p-1 text-gray-900'>
           <a
             href='#contact'
             className='hover:text-gray-50 flex pt-2 px-4 md:px-12 justify-center items-center'
@@ -61,7 +62,7 @@ export default function Header({ openPortfolioItemModal }) {
                 d='M13 5l7 7-7 7M5 5l7 7-7 7'
               />
             </svg>
-            <div className='md:hidden flex items-center text-gray-100'>
+            <div className='md:hidden translate-x-1/4 flex items-center text-gray-100'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 className='sm:w-16 sm:h-16 w-12 h-12'
@@ -77,17 +78,17 @@ export default function Header({ openPortfolioItemModal }) {
                 <path d='M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z' />
               </svg>
             </div>
-            <span className='md:block cta-btn hidden text-base lg:text-xl xl:text-2xl font-semibold uppercase'>
+            <span className='md:block pl-4 hidden text-base lg:text-xl xl:text-2xl font-semibold uppercase'>
               Drop Me a Line
             </span>
           </a>
         </div>
       </div>
-      <div className='md:col-start-2 md:col-end-4 md:row-span-2 aspect-1/1 md:row-start-5 md:col-span-4 md:-translate-y-1/4 sm:-translate-y-1/2 -translate-y-3/4 relative self-end col-span-2 col-start-2 row-start-6'>
+      <div className='md:col-start-2 md:col-end-4 md:row-span-2 aspect-1/1 md:row-start-5 md:col-span-4 md:-translate-y-1/4 sm:-translate-y-1/2 -translate-y-3/4 relative self-end col-span-3 sm:col-span-3 col-start-2 row-start-6'>
         <img
           src={dots}
           alt='decorative dots'
-          className='bottom-24 md:-translate-y-1/4 sm:-translate-y-1/2 -translate-y-3/4 absolute left-0 -translate-x-1/2'
+          className='opacity-40 bottom-24 md:-translate-y-1/4 sm:-translate-y-1/2 -translate-y-3/4 absolute left-0 -translate-x-1/2'
         />
         <img
           className='avatar-img rounded-full absolute lg:-top-40'
@@ -99,24 +100,31 @@ export default function Header({ openPortfolioItemModal }) {
         <div className='pl-5 pt-6 text-white text-md md:text-[20px] leading-relaxed tracking-widest uppercase border-l border-white'>
           Now Developing:
         </div>
-        <p className='pt-4 pl-5 text-[15px] text-gray-200 leading-extra-loose text-justify'>
-          A <span className='uppercase'>decentralised</span> and P2P,{' '}
-          <span className='bg-accent p-1 m-2 text-gray-800'>
-            <span className='text-gray-800 underline'>social</span>
-          </span>{' '}
-          &{' '}
+        <p className='pt-4 pl-5 text-[15px] xl:text-xl xl:w-2/3 xl:leading-loose text-gray-200 leading-extra-loose'>
+          A
           <span className='bg-accent p-1 m-2 text-gray-800 uppercase'>
             personal
           </span>
-          <span>
-            <em>fractally</em> structured
+          &{' '}
+          <span className='bg-accent p-1 m-2 text-gray-800'>
+            <span className='text-gray-800 underline'>social</span>
           </span>{' '}
-          <span className='text-gray-50'>Habit Tracking </span>application with{' '}
-          <span className='text-gray-50'>React & Redux</span> in{' '}
-          <span className='text-gray-50'>TypesScript & Rust</span>
+          <span>
+            <em>FRACTALLY</em> structured
+          </span>{' '}
+          <span
+            className='underline'
+            style={{ textDecorationColor: '#2563EB' }}
+          >
+            <span className='text-gray-50'>Habit Tracking </span>application
+          </span>
+          , <span className='uppercase'>decentralised</span> and P2P (on
+          Holochain), with{' '}
+          <span className='text-gray-50 font-semibold'>React & Redux, </span> in{' '}
+          <span className='text-gray-50 font-semibold'>TypesScript & Rust</span>
           <a
-            className='hover:text-blue-500 flex flex-row-reverse items-center text-right border-0'
-            href='https://habfract.life'
+            className='hover:text-blue-500 flex flex-row-reverse items-center text-right border-0 mt-4'
+            href='https://demo.habfract.life'
             target='_blank'
           >
             <svg
@@ -139,7 +147,7 @@ export default function Header({ openPortfolioItemModal }) {
             </span>
           </a>
           <span
-            className='hover:text-blue-500 flex flex-row-reverse items-center text-right border-0 cursor-pointer'
+            className='hover:text-blue-500 flex flex-row-reverse xl:flex-row items-center text-right border-0 cursor-pointer xl:float-left'
             onClick={() => openPortfolioItemModal('habitFractV2Synopsis')}
           >
             <svg
@@ -162,7 +170,7 @@ export default function Header({ openPortfolioItemModal }) {
             </span>
           </span>
           <a
-            className='hover:text-blue-500 flex flex-row-reverse items-center text-right border-0'
+            className='hover:text-blue-500 flex flex-row-reverse items-center text-right border-0 clear-both xl:mb-8'
             href='https://n-stebbings.medium.com/from-local-storage-to-do-list-to-fractal-peer-to-peer-habit-tracker-3be56214c6ee?source=your_stories_page----------------------------------------'
             target='_blank'
           >
@@ -186,7 +194,7 @@ export default function Header({ openPortfolioItemModal }) {
             </span>
           </a>
           <a
-            className='hover:text-blue-500 flex flex-row-reverse items-center text-right border-0'
+            className='hover:text-blue-500 flex flex-row-reverse items-center text-right border-0 xl:float-left'
             href='https://github.com/nick-stebbings/fractal-habits-SPA-tailwind-react-redux'
             target='_blank'
           >
@@ -205,7 +213,7 @@ export default function Header({ openPortfolioItemModal }) {
                 d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'
               />
             </svg>
-            <span className='cta-btn text-xl font-semibold tracking-widest uppercase'>
+            <span className='cta-btn text-sm font-semibold tracking-widest uppercase'>
               Frontend Repo
             </span>
           </a>
@@ -229,7 +237,7 @@ export default function Header({ openPortfolioItemModal }) {
                 d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'
               />
             </svg>
-            <span className='cta-btn text-xl font-semibold tracking-widest uppercase'>
+            <span className='cta-btn text-sm font-semibold tracking-widest uppercase'>
               Backend Repo
             </span>
           </a>
@@ -239,7 +247,7 @@ export default function Header({ openPortfolioItemModal }) {
         <img
           src={dots}
           alt='decorative dots'
-          className='w-36 -bottom-12 -right-12 absolute translate-x-1/2'
+          className='opacity-40 w-36 -bottom-12 -right-12 absolute translate-x-1/2'
         />
         <a href='https://zety.com/profile/nick-stebbings' target='_blank'>
           <div
@@ -255,21 +263,24 @@ export default function Header({ openPortfolioItemModal }) {
       <div className='aspect-1/1 col-start-5 row-start-6'>
         <img src={aJimg} className='rounded-full' alt='logo for Aunt Jenny' />
       </div>
-      <div className='md:col-span-2 md:col-start-6 col-span-4 row-start-6 mb-4'>
-        <div className='pl-5 pt-6 text-white text-md md:text-[20px] leading-relaxed tracking-widest uppercase border-l border-white mb-4'>
+      <div className='md:col-span-2 md:col-start-6 col-span-3 row-start-6 mb-4'>
+        <div className='pl-5 pt-6 text-white text-lg md:text-[20px] leading-relaxed tracking-widest uppercase border-l border-white mb-4'>
           Latest Client
         </div>
-        <div className='place-items-center xl:aspect-2/1 aspect-1/1 bg-gray-light md:mr-0 relative grid mr-4'>
+        <div className='testimonial place-items-center lg:aspect-1/1 bg-gray-50 md:mr-0 relative grid mr-4'>
           <blockquote>
             "Nick is continuing to help automate the order processing and
             responds well to feedback and requests for new features. He is a
-            great problem solver and I would reccomend him..."
+            great problem solver and I would reccommend him..."
           </blockquote>
-          {/* <div className='stylistic-quote-mark' className='w-8 h-8'></div> */}
+          <img
+            src={quote}
+            className='quote-mark absolute opacity-30 h-44 md:h-auto xl:h-72'
+            alt='quotation mark'
+          />
           <a href='#projects' target='_blank'>
-            div.styl
             <div
-              className='place-items-center hover:text-blue-600 hover:bg-gray-200 md:w-full md:h-12 absolute bottom-0 right-0 flex justify-between h-6 px-2 text-white translate-y-2 bg-blue-600 cursor-pointer'
+              className='place-items-center hover:text-blue-600 hover:bg-gray-200 md:w-full md:h-12 absolute xl:bottom-0 right-0 flex justify-between h-6 px-2 text-white translate-y-2 bg-blue-600 cursor-pointer'
               onClick={() => openPortfolioItemModal('auntJenny')}
             >
               <span className='md:block hidden'>Summary</span>

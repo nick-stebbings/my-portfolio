@@ -7,6 +7,7 @@ export default function Modal({ onClose, modalRef, cardData }) {
     title,
     img,
     img2,
+    img3,
     mainText,
     subText,
     gitLink,
@@ -36,9 +37,9 @@ export default function Modal({ onClose, modalRef, cardData }) {
           </svg>
         </div>
 
-        <div className='modal-content xl:text-center px-6 py-4 text-left'>
+        <div className='modal-content text-center px-1 md:px-6 py-4'>
           <div className='flex items-center justify-between pb-3'>
-            <p className='md:text-2xl sm:text-center sm:w-auto relative w-5/6 text-lg font-bold text-right'>
+            <p className='md:text-2xl sm:w-auto relative w-full text-lg font-bold text-center'>
               {title}
               {title.includes('Holochain') && (
                 <div className='-right-6 absolute top-0'>
@@ -80,6 +81,7 @@ export default function Modal({ onClose, modalRef, cardData }) {
             title={title}
             img={img}
             img2={img2}
+            img3={img3}
             mainText={mainText}
             subText={subText}
             gitLink={gitLink}

@@ -89,9 +89,7 @@ export default function Footer() {
               target='_blank'
               className='flex flex-col hover:text-blue-500 justify-end border-0'
             >
-              <span className='text-center text-white uppercase'>
-                Code Wars
-              </span>
+              <span className='text-center text-white uppercase'>CodeWars</span>
               <svg
                 className='w-24 h-24'
                 xmlns='http://www.w3.org/2000/svg'

@@ -10,7 +10,7 @@ export default function SkillsRack() {
   return (
     <section
       id='skills'
-      className='main-content-skills md:pt-20 relative flex flex-col items-center justify-around pt-12 bg-gray-100'
+      className='main-content-skills mb-52 sm:mb-12 md:pt-20 relative flex flex-col items-center justify-around pt-12 bg-gray-100'
     >
       <div className='md:w-3/4 md:p-8 absolute grid w-full h-full p-4 mx-auto'>
         <div
@@ -30,7 +30,7 @@ export default function SkillsRack() {
               }}
             />
             <label
-              className='block p-4 text-xl xl:text-2xl leading-normal cursor-pointer'
+              className='block p-4 text-base md:text-xl xl:text-2xl leading-normal cursor-pointer'
               htmlFor='tab-multi-one'
             >
               Programming Languages
@@ -53,7 +53,7 @@ export default function SkillsRack() {
               }}
             />
             <label
-              className='block p-4 text-xl xl:text-2xl leading-normal cursor-pointer'
+              className='block p-4 text-base md:text-xl xl:text-2xl leading-normal cursor-pointer'
               htmlFor='tab-multi-two'
             >
               Applications
@@ -76,7 +76,7 @@ export default function SkillsRack() {
               }}
             />
             <label
-              className='block p-4 text-xl leading-normal  xl:text-2xl cursor-pointer'
+              className='block p-4 text-base md:text-xl leading-normal  xl:text-2xl cursor-pointer'
               htmlFor='tab-multi-three'
             >
               General
