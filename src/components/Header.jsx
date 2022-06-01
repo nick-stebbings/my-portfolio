@@ -124,7 +124,7 @@ export default function Header({ openPortfolioItemModal }) {
           <span className='text-gray-50 font-semibold'>TypesScript & Rust</span>
           <a
             className='hover:text-blue-500 flex flex-row-reverse items-center text-right border-0 mt-4'
-            href='https://demo.habfract.life'
+            href='https://habfract.online'
             target='_blank'
           >
             <svg
