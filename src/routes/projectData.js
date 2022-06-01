@@ -80,7 +80,7 @@ export default {
     ],
     langs: 'Ruby, JavaScript, Sass & PostCSS',
     libs: ['D3js', 'Tailwind CSS', 'Webpack 4', 'Mithril'],
-    demoLink: 'https://demo.habfract.life',
+    demoLink: 'https://habfract.online',
     gitLink:
       'https://github.com/nick-stebbings/fractal-habits-SPA-tailwind-react-redux',
     blogLink:
@@ -113,7 +113,7 @@ export default {
     ],
     libs: ['Sinatra', 'Ruby Object Mapper', 'dry-rb', 'Cheerio', 'PostgreSQL'],
     langs: 'Ruby, SQL',
-    demoLink: 'https://api.habfract.life/demo/domain/1/habit_tree',
+    demoLink: 'https://api.habfract.online/demo/domain/1/habit_tree',
     gitLink:
       'https://github.com/nick-stebbings/fractal-habit-pyramid-sinatraAPI',
     blogLink:
