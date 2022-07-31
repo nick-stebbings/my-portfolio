@@ -5,10 +5,11 @@ import quote from '/images/quote.svg';
 import cvImg from '/images/cv-pic.png';
 import aJimg from '/images/aunt-jenny.jpg';
 import dots from '/images/dots.svg';
+import cvDoc from '/public/cv.pdf';
 
 export default function Header({ openPortfolioItemModal }) {
   return (
-    <header className='main-header bg-gray-900 sm:pb-24 gap-y-8 md:gap-y-16 gap-x-2 md:pt-12 relative grid w-full pb-16'>
+    <header className='main-header sm:pb-24 gap-y-8 md:gap-y-16 gap-x-2 md:pt-12 relative grid w-full pb-16 bg-gray-900'>
       <nav className='layout fixed inset-x-0 top-0 z-50 grid w-full bg-gray-900'>
         <div className='md:col-start-2 md:pl-0 md:py-2 grid items-center col-span-2 col-start-1 py-4 pl-4'>
           <a
@@ -43,14 +44,14 @@ export default function Header({ openPortfolioItemModal }) {
           alt='decorative dots'
           className='opacity-40 md:-translate-y-1/4 sm:-translate-y-1/2 sm:-translate-x-1/2 absolute w-24'
         />
-        <div className='bg-accent flex items-center justify-center aspect-1/1 hover:text-gray-50 relative rounded-full p-1 text-gray-900'>
+        <div className='bg-accent aspect-1/1 hover:text-gray-50 relative flex items-center justify-center p-1 text-gray-900 rounded-full'>
           <a
             href='#contact'
-            className='hover:text-gray-50 flex pt-2 px-4 md:px-12 justify-center items-center'
+            className='hover:text-gray-50 md:px-12 flex items-center justify-center px-4 pt-2'
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'
-              className='md:block hidden xl:w-20 xl:h-20 xl:ml-2 w-6 h-6'
+              className='md:block xl:w-20 xl:h-20 xl:ml-2 hidden w-6 h-6'
               fill='none'
               viewBox='0 0 24 24'
               stroke='currentColor'
@@ -66,7 +67,6 @@ export default function Header({ openPortfolioItemModal }) {
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 className='sm:w-16 sm:h-16 w-12 h-12'
-                fill='none'
                 viewBox='0 0 24 24'
                 fill='currentColor'
                 stroke='#353535'
@@ -78,20 +78,20 @@ export default function Header({ openPortfolioItemModal }) {
                 <path d='M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z' />
               </svg>
             </div>
-            <span className='cta-circle md:block pl-4 hidden text-base lg:text-xl xl:text-2xl font-semibold'>
+            <span className='cta-circle md:block lg:text-xl xl:text-2xl hidden pl-4 text-base font-semibold'>
               Get In Touch
             </span>
           </a>
         </div>
       </div>
-      <div className='md:col-start-2 md:col-end-4 md:row-span-2 aspect-1/1 md:row-start-5 md:col-span-4 md:-translate-y-1/4 sm:-translate-y-1/2 -translate-y-3/4 relative self-end col-span-3 sm:col-span-3 col-start-2 row-start-6'>
+      <div className='md:col-start-2 md:col-end-4 md:row-span-2 aspect-1/1 md:row-start-5 md:col-span-4 md:-translate-y-1/4 sm:-translate-y-1/2 -translate-y-3/4 sm:col-span-3 relative self-end col-span-3 col-start-2 row-start-6'>
         <img
           src={dots}
           alt='decorative dots'
           className='opacity-40 bottom-24 md:-translate-y-1/4 sm:-translate-y-1/2 -translate-y-3/4 absolute left-0 -translate-x-1/2'
         />
         <img
-          className='avatar-img rounded-full absolute lg:-top-40'
+          className='avatar-img lg:-top-40 absolute rounded-full'
           src='./images/avatar.jpg'
           alt='picture of nick'
         />
@@ -123,14 +123,13 @@ export default function Header({ openPortfolioItemModal }) {
           <span className='text-gray-50 font-semibold'>React & Redux, </span> in{' '}
           <span className='text-gray-50 font-semibold'>TypesScript & Rust</span>
           <a
-            className='hover:text-blue-500 flex flex-row-reverse items-center text-right border-0 mt-4'
+            className='hover:text-blue-500 flex flex-row-reverse items-center mt-4 text-right border-0'
             href='https://habfract.online'
             target='_blank'
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'
               className='w-12 h-12'
-              fill='none'
               viewBox='-24 -24 72 72'
               fill='currentColor'
               alt='demonstration of the UI'
@@ -147,13 +146,12 @@ export default function Header({ openPortfolioItemModal }) {
             </span>
           </a>
           <span
-            className='hover:text-blue-500 flex flex-row-reverse xl:flex-row items-center text-right border-0 cursor-pointer xl:float-left'
+            className='hover:text-blue-500 xl:flex-row xl:float-left flex flex-row-reverse items-center text-right border-0 cursor-pointer'
             onClick={() => openPortfolioItemModal('habitFractV2Synopsis')}
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'
               className='w-12 h-12'
-              fill='none'
               viewBox='-24 -24 72 72'
               fill='currentColor'
               alt='project synopsis'
@@ -170,7 +168,7 @@ export default function Header({ openPortfolioItemModal }) {
             </span>
           </span>
           <a
-            className='hover:text-blue-500 flex flex-row-reverse items-center text-right border-0 clear-both xl:mb-8'
+            className='hover:text-blue-500 xl:mb-8 flex flex-row-reverse items-center clear-both text-right border-0'
             href='https://n-stebbings.medium.com/from-local-storage-to-do-list-to-fractal-peer-to-peer-habit-tracker-3be56214c6ee?source=your_stories_page----------------------------------------'
             target='_blank'
           >
@@ -194,7 +192,7 @@ export default function Header({ openPortfolioItemModal }) {
             </span>
           </a>
           <a
-            className='hover:text-blue-500 flex flex-row-reverse items-center text-right border-0 xl:float-left'
+            className='hover:text-blue-500 xl:float-left flex flex-row-reverse items-center text-right border-0'
             href='https://github.com/nick-stebbings/fractal-habits-SPA-tailwind-react-redux'
             target='_blank'
           >
@@ -249,9 +247,9 @@ export default function Header({ openPortfolioItemModal }) {
           alt='decorative dots'
           className='opacity-40 w-36 -bottom-12 -right-12 absolute translate-x-1/2'
         />
-        <a href='https://zety.com/profile/nick-stebbings' target='_blank'>
+        <a href={cvDoc} target='_blank'>
           <div
-            className='cv-img aspect-1/1 -translate-y-6 rounded-full bg-opacity-50 bg-cover'
+            className='cv-img aspect-1/1 -translate-y-6 bg-opacity-50 bg-cover rounded-full'
             style={{
               backgroundImage: `url(${cvImg})`,
               backgroundColor: '#353535',
@@ -271,16 +269,16 @@ export default function Header({ openPortfolioItemModal }) {
           <blockquote>
             "Nick is continuing to help automate the order processing and
             responds well to feedback and requests for new features. He is a
-            great problem solver and I would reccommend him..."
+            great problem solver and I would reccommend him..." - Rewa Nolan, Aunt Jenny Ltd.
           </blockquote>
           <img
             src={quote}
-            className='quote-mark absolute opacity-20 h-44 md:h-auto xl:h-72'
+            className='quote-mark opacity-20 h-44 md:h-auto xl:h-72 absolute'
             alt='quotation mark'
           />
           <a href='#projects' target='_blank'>
             <div
-              className='place-items-center text-blue-600 bg-gray-200 md:w-full md:h-12 absolute xl:bottom-0 right-0 flex justify-between h-6 px-2 hover:text-white translate-y-2 hover:bg-blue-600 cursor-pointer'
+              className='place-items-center md:w-full md:h-12 xl:bottom-0 hover:text-white hover:bg-blue-600 absolute right-0 flex justify-between h-6 px-2 text-blue-600 translate-y-2 bg-gray-200 cursor-pointer'
               onClick={() => openPortfolioItemModal('auntJenny')}
             >
               <span className='md:block hidden'>Summary</span>

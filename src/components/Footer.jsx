@@ -8,13 +8,13 @@ export default function Footer() {
       className='flex flex-col items-center justify-end w-full bg-gray-900'
     >
       <ContactForm />
-      <header className='contact-info xl:relative xl:bottom-12 w-full bg-gray-900 flex flex-col items-center justify-between pb-4'>
+      <header className='contact-info xl:relative xl:bottom-12 flex flex-col items-center justify-between w-full pb-4 bg-gray-900'>
         <div className='icons xl:h-14 text-accent flex'>
           <div className='hover:text-gray-50 flex items-center justify-center'>
             <a
               href='https://www.linkedin.com/in/nick-stebbings-567ba4224/'
               target='_blank'
-              className='flex flex-col hover:text-blue-500 justify-end border-0'
+              className='hover:text-blue-500 flex flex-col justify-end border-0'
             >
               <span className='text-center text-white uppercase'>LinkedIn</span>
               <svg
@@ -38,7 +38,7 @@ export default function Footer() {
             <a
               href='https://github.com/nick-stebbings'
               target='_blank'
-              className='flex flex-col hover:text-blue-500 justify-end border-0'
+              className='hover:text-blue-500 flex flex-col justify-end border-0'
             >
               <span className='text-center text-white uppercase'>GitHub</span>
               <svg
@@ -63,7 +63,7 @@ export default function Footer() {
             <a
               href='https://n-stebbings.medium.com/'
               target='_blank'
-              className='flex flex-col hover:text-blue-500 justify-end border-0'
+              className='hover:text-blue-500 flex flex-col justify-end border-0'
             >
               <span className='text-center text-white uppercase'>Medium</span>
               <svg
@@ -87,7 +87,7 @@ export default function Footer() {
             <a
               href='https://www.codewars.com/users/nick-stebbings'
               target='_blank'
-              className='flex flex-col hover:text-blue-500 justify-end border-0'
+              className='hover:text-blue-500 flex flex-col justify-end border-0'
             >
               <span className='text-center text-white uppercase'>CodeWars</span>
               <svg
@@ -136,7 +136,7 @@ export default function Footer() {
               />
             </svg>
             <span className='flex items-center pb-2'>
-              Oamaru, New Zealand <br />
+              South Auckland, New Zealand <br />
             </span>
           </li>
           <li className='flex'>

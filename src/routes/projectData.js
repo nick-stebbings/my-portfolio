@@ -16,7 +16,7 @@ export const SKILLS = {
     JavaScript: 5,
     TypeScript: 3,
     Ruby: 4,
-    Rust: 3,
+    Rust: 4,
     SQL: 5,
     GraphQL: 4,
     HTML5: 5,
@@ -29,7 +29,7 @@ export const SKILLS = {
     Git: 4,
     Docker: 4,
     Photoshop: 3,
-    Figma: 3,
+    Figma: 4,
   },
   general: {
     'UX/UI Design': 4,
@@ -90,7 +90,7 @@ export default {
     title: 'HabitFract: Synopsis',
     subText: 'An experiment in tracking habits Visually & Hierarchically',
     mainText:
-      "Ever tried to follow a goal and had trouble trying to put it into action? Ok - that's a leading question! // After trying many linear habit trackers (including some very visually and narratively interesting applications) I found that there was nothing meeting my personal requirements. I am a person who thinks in big ideas and then recursively breaks down what needs to be done to achieve these ideas (sometimes epic in scope).// // As a result of this top-down way of thinking - while it is always the day-to-day actions that one must focus on - it can be difficult to link them to the bigger picture and make consistent progress. // Conversely - I know many people who are great at breaking down and acting on small-magnitude behaviours (the list-writers!). HabitFract came about as a way of uniting the two ways of thinking in a way to provide visual cues and help build/break down habitual behaviour over time. // The future of the app is to be available only on the distributed data integrity framework 'Holochain', allowing all users to have sovereignty over personal habit data and exchange it with others as they see fit. For more info please see the p2p HabitFract popup in the Projects section. // For now, feel free to play around with the Web 2.0 version (there is no user login system but there are many templates available on the Demo which can be played with). Just follow the link to 'UI Demo' after closing this box. // Coming Soon: Video Demonstration",
+      "Ever tried to follow a goal and had trouble trying to put it into action? Ok - that's a leading question! // After trying many linear habit trackers (including some very visually and narratively interesting applications) I found that there was nothing meeting my personal requirements. I am a person who thinks in big ideas and then recursively breaks down what needs to be done to achieve these ideas (sometimes epic in scope).// // As a result of this top-down way of thinking - while it is always the day-to-day actions that one must focus on - it can be difficult to link them to the bigger picture and make consistent progress. // Conversely - I know many people who are great at breaking down and acting on small-magnitude behaviours (the list-writers!). HabitFract came about as a way of uniting the two ways of thinking in a way to provide visual cues and help build/break down habitual behaviour over time. // The future of the app is to be available only on the distributed data integrity framework 'Holochain', allowing all users to have sovereignty over personal habit data and exchange it with others as they see fit. For more info please see the p2p HabitFract popup in the Projects section. // For now, feel free to play around with the Web 2.0 version (there is no user login system as the implementation for web3 will use private-public key encryption). Just follow the link to 'UI Demo' after closing this box. // UPDATE: The redesign of the frontend is coming together. For a sneak peak, have a look at the design frames in this Figma project: https://www.figma.com/file/2prmPWHnIqcfBabpjYv5Oj/Habit-Fract-Holochain-Onboarding-Process?node-id=321%3A15098",
     img3: habitFractV2ScreenshotMobile,
     img2: habitFractV2ScreenshotDesktop,
     img: habitFractV2TopImg,
