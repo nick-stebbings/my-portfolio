@@ -30,10 +30,10 @@ export default function SkillsRack() {
               }}
             />
             <label
-              className='block p-4 text-base md:text-xl xl:text-2xl leading-normal cursor-pointer'
+              className='md:text-xl xl:text-2xl block p-4 text-base leading-normal cursor-pointer'
               htmlFor='tab-multi-one'
             >
-              Programming Languages
+              Languages
             </label>
             <div className='tab-content hover:border-blue-600 overflow-hidden leading-normal bg-gray-100 border-l-2 border-blue-500'>
               <SkillStars skillsObj={SKILLS['langs']} />
@@ -53,7 +53,7 @@ export default function SkillsRack() {
               }}
             />
             <label
-              className='block p-4 text-base md:text-xl xl:text-2xl leading-normal cursor-pointer'
+              className='md:text-xl xl:text-2xl block p-4 text-base leading-normal cursor-pointer'
               htmlFor='tab-multi-two'
             >
               Applications
@@ -76,7 +76,7 @@ export default function SkillsRack() {
               }}
             />
             <label
-              className='block p-4 text-base md:text-xl leading-normal  xl:text-2xl cursor-pointer'
+              className='md:text-xl xl:text-2xl block p-4 text-base leading-normal cursor-pointer'
               htmlFor='tab-multi-three'
             >
               General

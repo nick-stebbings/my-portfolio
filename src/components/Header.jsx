@@ -100,7 +100,7 @@ export default function Header({ openPortfolioItemModal }) {
         <div className='pl-5 pt-6 text-white text-md md:text-[20px] leading-relaxed tracking-widest uppercase border-l border-white'>
           Now Developing:
         </div>
-        <p className='pt-4 pl-5 text-[15px] xl:text-xl xl:w-2/3 xl:leading-loose text-gray-200 leading-extra-loose'>
+        <p className='pt-4 pl-5 text-[16px] xl:text-xl xl:w-2/3 xl:leading-loose text-gray-200 leading-extra-loose'>
           A
           <span className='bg-accent p-1 m-2 text-gray-800 uppercase'>
             personal
@@ -193,7 +193,7 @@ export default function Header({ openPortfolioItemModal }) {
           </a>
           <a
             className='hover:text-blue-500 xl:float-left flex flex-row-reverse items-center text-right border-0'
-            href='https://github.com/nick-stebbings/fractal-habits-SPA-tailwind-react-redux'
+            href='https://github.com/HabFract/frontend'
             target='_blank'
           >
             <svg
@@ -217,7 +217,7 @@ export default function Header({ openPortfolioItemModal }) {
           </a>
           <a
             className='hover:text-blue-500 flex flex-row-reverse items-center text-right border-0'
-            href='https://github.com/nick-stebbings/hc-react-redux-shared-todo-feed/tree/red-dots'
+            href='https://github.com/HabFract/backend'
             target='_blank'
           >
             <svg
@@ -269,7 +269,7 @@ export default function Header({ openPortfolioItemModal }) {
           <blockquote>
             "Nick is continuing to help automate the order processing and
             responds well to feedback and requests for new features. He is a
-            great problem solver and I would reccommend him..." - Rewa Nolan, Aunt Jenny Ltd.
+            great problem solver and I would recommend him..."
           </blockquote>
           <img
             src={quote}
@@ -281,7 +281,7 @@ export default function Header({ openPortfolioItemModal }) {
               className='place-items-center md:w-full md:h-12 xl:bottom-0 hover:text-white hover:bg-blue-600 absolute right-0 flex justify-between h-6 px-2 text-blue-600 translate-y-2 bg-gray-200 cursor-pointer'
               onClick={() => openPortfolioItemModal('auntJenny')}
             >
-              <span className='md:block hidden'>Summary</span>
+              <span className='md:block hidden'><em>(Rewa Nolan, Aunt Jenny) </em> - Click for Summary</span>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 className='w-6 h-6'
