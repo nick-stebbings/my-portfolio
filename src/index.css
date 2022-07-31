@@ -206,7 +206,7 @@ header nav {
   @apply md:mx-auto;
 }
 
-.cv-img {
+.cv-img, .cr-img {
   @apply hover:bg-blend-normal;
   background-blend-mode: difference;
 }

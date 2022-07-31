@@ -6,6 +6,7 @@ import cvImg from '/images/cv-pic.png';
 import aJimg from '/images/aunt-jenny.jpg';
 import dots from '/images/dots.svg';
 import cvDoc from '/public/cv.pdf';
+import crDoc from '/public/cr.pdf';
 
 export default function Header({ openPortfolioItemModal }) {
   return (
@@ -90,11 +91,14 @@ export default function Header({ openPortfolioItemModal }) {
           alt='decorative dots'
           className='opacity-40 bottom-24 md:-translate-y-1/4 sm:-translate-y-1/2 -translate-y-3/4 absolute left-0 -translate-x-1/2'
         />
-        <img
-          className='avatar-img lg:-top-40 absolute rounded-full'
-          src='./images/avatar.jpg'
-          alt='picture of nick'
-        />
+
+        <a href={crDoc} target='_blank'>
+          <img
+            className='cr-img avatar-img lg:-top-40 absolute rounded-full'
+            src='./images/avatar.jpg'
+            alt='picture of nick'
+          />
+        </a>
       </div>
       <div className='md:col-span-3 md:row-start-5 col-span-6 col-start-2 row-start-4'>
         <div className='pl-5 pt-6 text-white text-md md:text-[20px] leading-relaxed tracking-widest uppercase border-l border-white'>
@@ -281,7 +285,7 @@ export default function Header({ openPortfolioItemModal }) {
               className='place-items-center md:w-full md:h-12 xl:bottom-0 hover:text-white hover:bg-blue-600 absolute right-0 flex justify-between h-6 px-2 text-blue-600 translate-y-2 bg-gray-200 cursor-pointer'
               onClick={() => openPortfolioItemModal('auntJenny')}
             >
-              <span className='md:block hidden'><em>(Rewa Nolan, Aunt Jenny) </em> - Click for Summary</span>
+              <span className='md:block hidden'><em>(Rewa Nolan, Aunt Jenny) </em></span>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 className='w-6 h-6'
