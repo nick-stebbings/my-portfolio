@@ -95,7 +95,7 @@ export default function Header({ openPortfolioItemModal }) {
         <a href={crDoc} target='_blank'>
 
         <div
-            className='cr-img avatar-img aspect-1/1 bg-opacity-50 bg-cover rounded-full'
+            className='cr-img avatar-img aspect-1/1 translate-x-1/4 -translate-y-6 bg-opacity-50 bg-cover rounded-full'
             style={{
               backgroundImage: `url(./images/avatar.jpg)`,
               backgroundColor: '#353535',
