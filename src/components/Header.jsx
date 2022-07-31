@@ -97,7 +97,7 @@ export default function Header({ openPortfolioItemModal }) {
         <div
             className='cr-img avatar-img aspect-1/1 bg-opacity-50 bg-cover rounded-full'
             style={{
-              backgroundImage: `url(${crImg})`,
+              backgroundImage: `url(./images/avatar.jpg)`,
               backgroundColor: '#353535',
               backgroundPositionX: '-20px',
             }}
