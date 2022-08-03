@@ -25,7 +25,7 @@ body.modal-active {
 
 .main-header::before,
 .main-header::after {
-  @apply w-full h-full absolute;
+  @apply absolute w-full h-full;
   content: '';
 }
 
@@ -34,7 +34,7 @@ body.modal-active {
 }
 
 .main-header::after {
-  @apply bg-gradient-to-br from-gray-900 to-transparent z-10;
+  @apply z-10 bg-gradient-to-br from-gray-900 to-transparent;
 }
 
 /* Hero img */
@@ -54,7 +54,7 @@ body.modal-active {
 .modal-container {
   z-index: 101;
   max-height: 100%;
-  @apply md:mx-auto ml-0;
+  @apply ml-0 md:mx-auto;
 }
 
 body.modal-active,
@@ -130,7 +130,7 @@ body.modal-active #root {
 }
 
 blockquote {
-  @apply md:text-xl mt-2 font-sans text-sm sm:text-sm xl:text-2xl xl:leading-10 xl:text-center font-light leading-4 text-gray-900 mx-2 my-4;
+  @apply mx-2 my-4 mt-2 font-sans text-sm font-light leading-4 text-gray-900 md:text-xl sm:text-sm xl:text-2xl xl:leading-10 xl:text-center;
 }
 
 /** Portfolio Section **/
@@ -139,31 +139,31 @@ blockquote {
 }
 
 .project-tag {
-  @apply bg-gray-light p-2 text-sm font-light;
+  @apply p-2 text-sm font-light bg-gray-light;
 }
 .portfolio-item {
-  @apply bg-accent bg-opacity-90 shadow-lg md:shadow-sm hover:bg-opacity-100 bg-blend-hard-light flex items-center justify-center font-sans text-xl font-semibold text-white bg-cover;
+  @apply flex items-center justify-center font-sans text-xl font-semibold text-white bg-cover shadow-lg bg-accent bg-opacity-90 md:shadow-sm hover:bg-opacity-100 bg-blend-hard-light;
   cursor: pointer;
 }
 
 .portfolio-item.small-square {
-  @apply md:row-span-1 md:col-span-1 col-span-5;
+  @apply col-span-5 md:row-span-1 md:col-span-1;
 }
 
 .portfolio-item.square {
-  @apply md:row-span-2 md:col-span-2 col-span-5;
+  @apply col-span-5 md:row-span-2 md:col-span-2;
 }
 
 .portfolio-item.large-square {
-  @apply md:row-span-3 md:col-span-3 col-span-5;
+  @apply col-span-5 md:row-span-3 md:col-span-3;
 }
 
 .portfolio-item.wide {
-  @apply md:row-span-2 md:col-span-3 col-span-5;
+  @apply col-span-5 md:row-span-2 md:col-span-3;
 }
 
 .portfolio-item.tall {
-  @apply md:row-span-3 md:col-span-2 col-span-5;
+  @apply col-span-5 md:row-span-3 md:col-span-2;
 }
 
 /** Footer/Contact Section **/
@@ -185,7 +185,7 @@ footer#contact {
 }
 .credits a,
 .aj-ref a {
-  @apply hover:underline text-sm italic text-white;
+  @apply text-sm italic text-white hover:underline;
 }
 
 /** Media Queries **/
@@ -209,6 +209,11 @@ header nav {
 .cv-img, .cr-img {
   @apply hover:bg-blend-normal;
   background-blend-mode: difference;
+}
+
+.cr-img {
+  max-width: 450px;
+  background-blend-mode: hard-light
 }
 
 @screen sm {
@@ -298,7 +303,7 @@ header nav {
 
 @media screen and (min-width: 400px) {
   h1.hero-title {
-    @apply text-center text-5xl;
+    @apply text-5xl text-center;
   }
   .hc-info {
     left: 87%;
@@ -334,7 +339,7 @@ header nav {
   }
 
   .bg-accent.aspect-1\/1 span {
-    @apply text-4xl ml-4;
+    @apply ml-4 text-4xl;
   }
 
   header > nav + div > span {
@@ -370,7 +375,7 @@ header nav {
   h1.hero-title,
   .cta-btn {
     font-weight: 400;
-    @apply sm:text-left text-4xl px-4;
+    @apply px-4 text-4xl sm:text-left;
   }
 
   h1.hero-title,
@@ -380,15 +385,15 @@ header nav {
 
   /* Write your own custom base styles here */
   h1 {
-    @apply md:text-8xl xl:leading-normal xl:text-center mb-8 font-sans text-5xl font-bold leading-10 tracking-wider;
+    @apply mb-8 font-sans text-5xl font-bold leading-10 tracking-wider md:text-8xl xl:leading-normal xl:text-center;
   }
 
   h2 {
-    @apply md:text-3xl xl:text-4xl xl:mb-8 xl:leading-normal font-sans text-2xl font-bold;
+    @apply font-sans text-2xl font-bold md:text-3xl xl:text-4xl xl:mb-8 xl:leading-normal;
   }
 
   h3 {
-    @apply md:text-xl mt-2 font-sans text-sm font-bold;
+    @apply mt-2 font-sans text-sm font-bold md:text-xl;
   }
 
   h4 {
@@ -396,12 +401,12 @@ header nav {
   }
 
   body {
-    @apply md:text-base font-sans text-sm;
+    @apply font-sans text-sm md:text-base;
   }
 
   #root {
     background-image: url('/images/funky-lines.png');
-    @apply bg-repeat bg-gray-900;
+    @apply bg-gray-900 bg-repeat;
   }
 
   .layout {
