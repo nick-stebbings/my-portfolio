@@ -134,7 +134,7 @@ export default function Header({ openPortfolioItemModal }) {
           , <span className='uppercase'>decentralised</span> and P2P (on
           Holochain), with{' '}
           <span className='font-semibold text-gray-50'>React & Redux, </span> in{' '}
-          <span className='font-semibold text-gray-50'>TypesScript & Rust</span>
+          <span className='font-semibold text-gray-50'>TypeScript & Rust</span>
           <a
             className='flex flex-row-reverse items-center mt-4 text-right border-0 hover:text-blue-500'
             href='https://habfract.online'
