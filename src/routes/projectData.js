@@ -180,6 +180,6 @@ export default {
       'Processing Webhooks',
     ],
     libs: ['NextJS', 'Koa', 'React', 'Polaris', 'Sequelize'],
-    langs: 'JavaScript, GraphQL, ',
+    langs: 'JavaScript, GraphQL, Liquid',
   },
 };
