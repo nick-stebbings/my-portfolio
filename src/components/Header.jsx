@@ -193,7 +193,6 @@ export default function Header({ openPortfolioItemModal }) {
             <svg
               xmlns='http://www.w3.org/2000/svg'
               className='w-12 h-12'
-              fill='none'
               viewBox='-24 -24 72 72'
               fill='currentColor'
               alt='related medium article'
@@ -217,7 +216,6 @@ export default function Header({ openPortfolioItemModal }) {
             <svg
               xmlns='http://www.w3.org/2000/svg'
               className='w-12 h-12'
-              fill='none'
               viewBox='-24 -24 72 72'
               fill='currentColor'
               alt='see the code (frontend)'
@@ -241,7 +239,6 @@ export default function Header({ openPortfolioItemModal }) {
             <svg
               xmlns='http://www.w3.org/2000/svg'
               className='w-12 h-12'
-              fill='none'
               viewBox='-24 -24 72 72'
               fill='currentColor'
               alt='see the code (backend)'
