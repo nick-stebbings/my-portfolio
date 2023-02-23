@@ -85,6 +85,11 @@ export default function Header({ openPortfolioItemModal }) {
           </a>
         </div>
       </div>
+      <div class="relative col-start-2 row-start-3 md:col-start-6 md:row-start-4 self-end" style="transform: scale(1.5) translateX(75px) translateY(-50px);">
+          <div class="relative flex items-center flex-row-reverse justify-center p-1 text-gray-900 rounded-full aspect-1/1 hover:text-gray-50 text-white" style="background-color: royalblue;">
+            <a href="https://new.n-stebb.dev" class="flex items-center justify-center px-4 pt-2 hover:text-gray-50 md:px-12">
+              <svg xmlns="http://www.w3.org/2000/svg" class="hidden w-6 h-6 md:block xl:w-20 xl:h-20 xl:ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"></path></svg>
+          <div class="flex items-center text-gray-100 md:hidden translate-x-1/4"><svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 sm:w-16 sm:h-16" viewBox="0 0 24 24" fill="currentColor" stroke="#353535" stroke-width="1px" stroke-opacity="0.5" alt="contact me"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg></div><span class="hidden pl-4 text-base font-semibold cta-circle md:block lg:text-xl xl:text-2xl">New Design Project</span></a></div></div>
       <div className='relative self-end col-span-3 col-start-2 row-start-6 md:col-start-2 md:col-end-4 md:row-span-2 aspect-1/1 md:row-start-5 md:col-span-4 md:-translate-y-1/4 sm:-translate-y-1/2 -translate-y-3/4 sm:col-span-3'>
         <img
           src={dots}
