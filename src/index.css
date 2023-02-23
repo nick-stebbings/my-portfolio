@@ -279,6 +279,10 @@ header nav {
     padding-top: 13vh;
     padding-bottom: 10vh;
   }
+
+  .cta-btn-designs {
+    transform: "scale(1.5) translateY(-50px)";
+  }
 }
 
 @screen xl {
