@@ -5,7 +5,7 @@ import quote from '/images/quote.svg';
 import cvImg from '/images/cv-pic.png';
 import aJimg from '/images/aunt-jenny.jpg';
 import dots from '/images/dots.svg';
-import cvDoc from '/public/cv.pdf';
+import cvDoc from '/public/resume.pdf';
 import crDoc from '/public/cr.pdf';
 
 export default function Header({ openPortfolioItemModal }) {
@@ -87,7 +87,7 @@ export default function Header({ openPortfolioItemModal }) {
       </div>
       <div class="cta-btn-designs relative col-start-2 row-start-3 md:col-start-6 md:row-start-4 self-end translate-x-1/2 scale-125 z-100">
           <div class="relative flex items-center flex-row-reverse justify-center p-1  rounded-full aspect-1/1 text-white" style={{"background-color": "royalblue"}}>
-            <a href="https://new.n-stebb.dev" target="_blank" class="flex items-center justify-center px-4 pt-2 hover:text-gray-50 md:px-12">
+            <a href="https://nickstebbings.com" target="_blank" class="flex items-center justify-center px-4 pt-2 hover:text-gray-50 md:px-12">
               
             <div class="flex items-center text-gray-100 md:hidden pb-1">
               <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 md:block xl:w-20 xl:h-20 xl:ml-2" viewBox="0 0 24 24" fill="currentColor">
