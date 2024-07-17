@@ -87,7 +87,7 @@ export default function Header({ openPortfolioItemModal }) {
       </div>
       <div class="cta-btn-designs relative col-start-2 row-start-3 md:col-start-6 md:row-start-4 self-end translate-x-1/2 scale-125 z-100">
           <div class="relative flex items-center flex-row-reverse justify-center p-1  rounded-full aspect-1/1 text-white" style={{"background-color": "royalblue"}}>
-            <a href="https://nickstebbings.com" target="_blank" class="flex items-center justify-center px-4 pt-2 hover:text-gray-50 md:px-12">
+            <a href="https://seashell-app-zf6of.ondigitalocean.app" target="_blank" class="flex items-center justify-center px-4 pt-2 hover:text-gray-50 md:px-12">
               
             <div class="flex items-center text-gray-100 md:hidden pb-1">
               <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 md:block xl:w-20 xl:h-20 xl:ml-2" viewBox="0 0 24 24" fill="currentColor">
@@ -146,11 +146,11 @@ export default function Header({ openPortfolioItemModal }) {
           </span>
           , <span className='uppercase'>decentralised</span> and P2P (on
           Holochain), with{' '}
-          <span className='font-semibold text-gray-50'>React & Redux, </span> in{' '}
+          <span className='font-semibold text-gray-50'>React, </span> in{' '}
           <span className='font-semibold text-gray-50'>TypeScript & Rust</span>
           <a
-            className='flex flex-row-reverse items-center mt-4 text-right border-0 hover:text-blue-500'
-            href='https://habfract.online'
+            className='flex flex-row-reverse items-center text-right border-0 hover:text-blue-500'
+            href='https://github.com/HabFract/monorepo/releases'
             target='_blank'
           >
             <svg
@@ -158,17 +158,17 @@ export default function Header({ openPortfolioItemModal }) {
               className='w-12 h-12'
               viewBox='-24 -24 72 72'
               fill='currentColor'
-              alt='demonstration of the UI'
+              alt='latest release'
             >
               <path
                 strokeLinecap='round'
                 strokeLinejoin='round'
-                strokeWidth={1}
-                d='M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1'
+                strokeWidth={2}
+                d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'
               />
             </svg>
             <span className='text-xl font-bold tracking-widest uppercase cta-btn'>
-              Proof of Concept
+              Releases
             </span>
           </a>
           <span
@@ -195,7 +195,7 @@ export default function Header({ openPortfolioItemModal }) {
           </span>
           <a
             className='flex flex-row-reverse items-center clear-both text-right border-0 hover:text-blue-500 xl:mb-8'
-            href='https://n-stebbings.medium.com/from-local-storage-to-do-list-to-fractal-peer-to-peer-habit-tracker-3be56214c6ee?source=your_stories_page----------------------------------------'
+            href='https://habitfract.net'
             target='_blank'
           >
             <svg
@@ -203,7 +203,7 @@ export default function Header({ openPortfolioItemModal }) {
               className='w-12 h-12'
               viewBox='-24 -24 72 72'
               fill='currentColor'
-              alt='related medium article'
+              alt='project website'
             >
               <path
                 strokeLinecap='round'
@@ -213,12 +213,12 @@ export default function Header({ openPortfolioItemModal }) {
               />
             </svg>
             <span className='text-xl font-bold tracking-widest uppercase cta-btn'>
-              Related Blog
+              Project Website
             </span>
           </a>
           <a
             className='flex flex-row-reverse items-center text-right border-0 hover:text-blue-500 xl:float-left'
-            href='https://github.com/HabFract/frontend'
+            href='https://github.com/HabFract/monorepo'
             target='_blank'
           >
             <svg
@@ -226,7 +226,7 @@ export default function Header({ openPortfolioItemModal }) {
               className='w-12 h-12'
               viewBox='-24 -24 72 72'
               fill='currentColor'
-              alt='see the code (frontend)'
+              alt='see the code'
             >
               <path
                 strokeLinecap='round'
@@ -236,12 +236,12 @@ export default function Header({ openPortfolioItemModal }) {
               />
             </svg>
             <span className='text-sm font-semibold tracking-widest uppercase cta-btn'>
-              Frontend Repo
+              Repo
             </span>
           </a>
           <a
-            className='flex flex-row-reverse items-center text-right border-0 hover:text-blue-500'
-            href='https://github.com/HabFract/backend'
+            className='flex flex-row-reverse items-center mt-4 text-right border-0 hover:text-blue-500'
+            href='https://habfract.online'
             target='_blank'
           >
             <svg
@@ -249,17 +249,17 @@ export default function Header({ openPortfolioItemModal }) {
               className='w-12 h-12'
               viewBox='-24 -24 72 72'
               fill='currentColor'
-              alt='see the code (backend)'
+              alt='demonstration of the UI'
             >
               <path
                 strokeLinecap='round'
                 strokeLinejoin='round'
-                strokeWidth={2}
-                d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'
+                strokeWidth={1}
+                d='M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1'
               />
             </svg>
             <span className='text-sm font-semibold tracking-widest uppercase cta-btn'>
-              Backend Repo
+              Proof of Concept
             </span>
           </a>
         </p>
@@ -286,11 +286,11 @@ export default function Header({ openPortfolioItemModal }) {
       </div>
       <div className='col-span-3 row-start-6 mb-4 md:col-span-2 md:col-start-6'>
         <div className='pl-5 pt-6 text-white text-lg md:text-[20px] leading-relaxed tracking-widest uppercase border-l border-white mb-4'>
-          Latest Client
+          Client Testimony
         </div>
         <div className='relative grid mr-4 testimonial place-items-center lg:aspect-1/1 bg-gray-50 md:mr-0'>
           <blockquote>
-            "Nick is continuing to help automate the order processing and
+            "Nick was able to help automate the order processing and
             responds well to feedback and requests for new features. He is a
             great problem solver and I would recommend him..."
           </blockquote>

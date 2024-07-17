@@ -14,7 +14,7 @@ import habitFractV2ImgFront from '/images/habitfractv2.png';
 export const SKILLS = {
   langs: {
     JavaScript: 5,
-    TypeScript: 3,
+    TypeScript: 4,
     Ruby: 4,
     Rust: 4,
     SQL: 5,
@@ -37,7 +37,7 @@ export const SKILLS = {
     Planning: 4,
     Debugging: 5,
     Networking: 4,
-    'Learning Speed': 4,
+    'Learning Speed': 5,
     Teamwork: 4,
   },
 };
@@ -90,7 +90,7 @@ export default {
     title: 'HabitFract: Synopsis',
     subText: 'An experiment in tracking habits Visually & Hierarchically',
     mainText:
-      "Ever tried to follow a goal and had trouble trying to put it into action? Ok - that's a leading question! // After trying many linear habit trackers (including some very visually and narratively interesting applications) I found that there was nothing meeting my personal requirements. I am a person who thinks in big ideas and then recursively breaks down what needs to be done to achieve these ideas (sometimes epic in scope).// // As a result of this top-down way of thinking - while it is always the day-to-day actions that one must focus on - it can be difficult to link them to the bigger picture and make consistent progress. // Conversely - I know many people who are great at breaking down and acting on small-magnitude behaviours (the list-writers!). HabitFract came about as a way of uniting the two ways of thinking in a way to provide visual cues and help build/break down habitual behaviour over time. // The future of the app is to be available only on the distributed data integrity framework 'Holochain', allowing all users to have sovereignty over personal habit data and exchange it with others as they see fit. For more info please see the p2p HabitFract popup in the Projects section. // For now, feel free to play around with the Web 2.0 version (there is no user login system as the implementation for web3 will use private-public key encryption). Just follow the link to 'UI Demo' after closing this box. // UPDATE: The redesign of the frontend is coming together. For a sneak peak, have a look at the design frames in this Figma project: www.figma.com/file/2prmPWHnIqcfBabpjYv5Oj/Habit-Fract-Holochain-Onboarding-Process?node-id=321%3A15098",
+      "Ever tried to follow a goal and had trouble trying to put it into action? Ok - that's a leading question! // After trying many linear habit trackers (including some very visually and narratively interesting applications) I found that there was nothing meeting my personal requirements. I am a person who thinks in big ideas and then recursively breaks down what needs to be done to achieve these ideas (sometimes epic in scope).// // As a result of this top-down way of thinking - while it is always the day-to-day actions that one must focus on - it can be difficult to link them to the bigger picture and make consistent progress. // Conversely - I know many people who are great at breaking down and acting on small-magnitude behaviours (the list-writers!). HabitFract came about as a way of uniting the two ways of thinking in a way to provide visual cues and help build/break down habitual behaviour over time. // The future of the app is to be available only on the distributed data integrity framework 'Holochain', allowing all users to have sovereignty over personal habit data and exchange it with others as they see fit. For more info please see the p2p HabitFract popup in the Projects section. // For now, feel free to play around with the Web 2.0 version (there is no user login system as the implementation for web3 will use private-public key encryption). Just follow the link to 'UI Demo' after closing this box. // UPDATE: you can now see more up to date information and screenshots at habitfract.net",
     img3: habitFractV2ScreenshotMobile,
     img2: habitFractV2ScreenshotDesktop,
     img: habitFractV2TopImg,
@@ -122,7 +122,7 @@ export default {
   habitFractV3: {
     title: 'HabitFract v2 on Holochain',
     mainText:
-      'This working project will in time be the culmination of my fractally-structured personal habit tracking application. Once I learnt the basics of Rust and was able to understand how to run a Holochain conductor on my local host, I started off with a "Profiles" microservice provided by members of the Holochain open-dev community.//I implemented Redux typesafe-actions in TypeScript which fits well with Redux Toolkit, simplifying the reducer while helping manage loading and error states.// Currently the app is a Todolist with the possibility to share lists with other agents running the same DNA. I will rebuild the hierarchy model of habits using paths instead of modified pre-order traversal. I have not yet decided whether to change, for performance and scalability, to an immediate mode graphics model like Canvas or WebGL. I also plan to implement caching with Redis.// The end goal for the UI is to have a "never-ending" fractal structure that can be added to at the top, or at the bottom, perhaps terminating at the bottom in an "atomic habit", the smallest unit of habit, which can be stored as a simple to do list.//The structures can be built, and then, if the agent wishes, tokenised and traded when the behaviour is valuable  (e.g. the running of a business) or shared for free. Holochain ensures encryption and fuil agent control of data.',
+      '(UPDATE: Please see habitfract.net for the current state of affairs.) //This working project will in time be the culmination of my fractally-structured personal habit tracking application. Once I learnt the basics of Rust and was able to understand how to run a Holochain conductor on my local host, I started off with a "Profiles" microservice provided by members of the Holochain open-dev community.//I implemented Redux typesafe-actions in TypeScript which fits well with Redux Toolkit, simplifying the reducer while helping manage loading and error states.// Currently the app is a Todolist with the possibility to share lists with other agents running the same DNA. I will rebuild the hierarchy model of habits using paths instead of modified pre-order traversal. I have not yet decided whether to change, for performance and scalability, to an immediate mode graphics model like Canvas or WebGL. I also plan to implement caching with Redis.// The end goal for the UI is to have a "never-ending" fractal structure that can be added to at the top, or at the bottom, perhaps terminating at the bottom in an "atomic habit", the smallest unit of habit, which can be stored as a simple to do list.//The structures can be built, and then, if the agent wishes, tokenised and traded when the behaviour is valuable  (e.g. the running of a business) or shared for free. Holochain ensures encryption and fuil agent control of data.',
     subText: 'Creating a distributed p2p marketplace for habit data',
     img: habitPyramid,
     img2: pyramidBlocks,

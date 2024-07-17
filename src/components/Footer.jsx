@@ -20,7 +20,6 @@ export default function Footer() {
               <svg
                 className='w-24 h-24'
                 xmlns='http://www.w3.org/2000/svg'
-                fill='none'
                 viewBox='-24 -24 72 72'
                 fill='currentColor'
                 alt='my linkedin account'
@@ -44,7 +43,6 @@ export default function Footer() {
               <svg
                 className='w-24 h-24'
                 xmlns='http://www.w3.org/2000/svg'
-                fill='none'
                 viewBox='-24 -24 72 72'
                 fill='currentColor'
                 alt='my github account'
@@ -69,7 +67,6 @@ export default function Footer() {
               <svg
                 className='w-24 h-24'
                 xmlns='http://www.w3.org/2000/svg'
-                fill='none'
                 viewBox='-24 -24 72 72'
                 fill='currentColor'
                 alt='related medium article'
@@ -93,7 +90,6 @@ export default function Footer() {
               <svg
                 className='w-24 h-24'
                 xmlns='http://www.w3.org/2000/svg'
-                fill='none'
                 viewBox='-24 -24 72 72'
                 fill='currentColor'
                 alt='my codewars account'
@@ -136,7 +132,7 @@ export default function Footer() {
               />
             </svg>
             <span className='flex items-center pb-2'>
-              South Auckland, New Zealand <br />
+              South Island, New Zealand <br />
             </span>
           </li>
           <li className='flex'>
@@ -205,7 +201,7 @@ export default function Footer() {
       </main>
       <footer className='bg-flex flex-col justify-center w-full bg-gray-900'>
         <div className='text-gray-50 w-full py-2 text-xs text-center'>
-          ©2021 Nick Stebbings. All rights reserved.
+          ©2024 Nick Stebbings. All rights reserved.
         </div>
       </footer>
     </footer>
