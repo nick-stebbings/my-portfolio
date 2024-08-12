@@ -32,7 +32,7 @@ const EmptyStar = ({ idx }) => (
 );
 
 export const SkillStars = ({ skillsObj }) => (
-  <div className='md:p-5 p-2'>
+  <div className='p-2'>
     <ul className='list-item mt-2 text-sm text-center'>
       {Object.entries(skillsObj).map(([lang, stars], idx) => {
         return (

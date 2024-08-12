@@ -10,9 +10,9 @@ export default function SkillsRack() {
   return (
     <section
       id='skills'
-      className='main-content-skills mb-52 sm:mb-12 md:pt-20 relative flex flex-col items-center justify-around pt-12 bg-gray-100'
+      className='main-content-skills mb-52 sm:mb-12 relative flex flex-col items-center justify-around pt-12 bg-gray-100'
     >
-      <div className='md:w-3/4 md:p-8 absolute grid w-full h-full p-4 mx-auto'>
+      <div className='md:w-3/4 md:p-8 absolute grid w-full p-4 mx-auto'>
         <div
           className='shadow-md'
           style={{ height: 'fit-content', marginTop: '15%' }}
