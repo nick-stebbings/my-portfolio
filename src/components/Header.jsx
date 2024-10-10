@@ -87,7 +87,7 @@ export default function Header({ openPortfolioItemModal }) {
       </div>
       <div class="cta-btn-designs relative col-start-2 row-start-3 md:col-start-6 md:row-start-4 self-end translate-x-1/2 scale-125 z-100">
           <div class="relative flex items-center flex-row-reverse justify-center p-1  rounded-full aspect-1/1 text-white" style={{"background-color": "royalblue"}}>
-            <a href="https://seashell-app-zf6of.ondigitalocean.app" target="_blank" class="flex items-center justify-center px-4 pt-2 hover:text-gray-50 md:px-12">
+            <a href="https://soft-starlight-ec9a11.netlify.app/" target="_blank" class="flex items-center justify-center px-4 pt-2 hover:text-gray-50 md:px-12">
               
             <div class="flex items-center text-gray-100 md:hidden pb-1">
               <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 md:block xl:w-20 xl:h-20 xl:ml-2" viewBox="0 0 24 24" fill="currentColor">
@@ -237,29 +237,6 @@ export default function Header({ openPortfolioItemModal }) {
             </svg>
             <span className='text-sm font-semibold tracking-widest uppercase cta-btn'>
               Repo
-            </span>
-          </a>
-          <a
-            className='flex flex-row-reverse items-center mt-4 text-right border-0 hover:text-blue-500'
-            href='https://habfract.online'
-            target='_blank'
-          >
-            <svg
-              xmlns='http://www.w3.org/2000/svg'
-              className='w-12 h-12'
-              viewBox='-24 -24 72 72'
-              fill='currentColor'
-              alt='demonstration of the UI'
-            >
-              <path
-                strokeLinecap='round'
-                strokeLinejoin='round'
-                strokeWidth={1}
-                d='M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1'
-              />
-            </svg>
-            <span className='text-sm font-semibold tracking-widest uppercase cta-btn'>
-              Proof of Concept
             </span>
           </a>
         </p>
