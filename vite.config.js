@@ -19,6 +19,13 @@ export default defineConfig({
   root: './',
   build: {
     outDir: 'dist',
+    rollupOptions: {
+      output: {
+        entryFileNames: 'assets/[name].mjs',
+        chunkFileNames: 'assets/[name].mjs',
+        assetFileNames: 'assets/[name].[ext]',
+      },
+    },
   },
   publicDir: 'public',
   server: {
