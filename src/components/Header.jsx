@@ -5,7 +5,7 @@ import quote from '/images/quote.svg';
 import cvImg from '/images/cv-pic.png';
 import aJimg from '/images/aunt-jenny.jpg';
 import dots from '/images/dots.svg';
-import cvDoc from '/public/resume.pdf';
+import cvDoc from '/public/resume.b20eb635.pdf';
 import crDoc from '/public/cr.pdf';
 
 export default function Header({ openPortfolioItemModal }) {
